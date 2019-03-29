@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: /Users/martin/Documents/GitHub/FYP-report/.texpadtmp/PhDThesis_example.aux
+A level-1 auxiliary file: Acknowledgement/acknowledgement.aux
+A level-1 auxiliary file: Abstract/abstract.aux
+A level-1 auxiliary file: Introduction/introduction.aux
+A level-1 auxiliary file: Chapter1/chapter1.aux
+A level-1 auxiliary file: Chapter2/chapter2.aux
+A level-1 auxiliary file: Chapter3/chapter3.aux
+A level-1 auxiliary file: Chapter4/chapter4.aux
+A level-1 auxiliary file: Chapter5/chapter5.aux
+A level-1 auxiliary file: Chapter6/chapter6.aux
+A level-1 auxiliary file: Chapter7/chapter7.aux
+A level-1 auxiliary file: Chapter8/chapter8.aux
+A level-1 auxiliary file: Chapter9/chapter9.aux
+A level-1 auxiliary file: Conclusions/conclusions.aux
+The style file: ieeetr.bst
+Database file #1: ../References/references.bib
+You've used 1 entry,
+            1876 wiz_defined-function locations,
+            497 strings with 4129 characters,
+and the built_in function-call counts, 348 in all, are:
+= -- 34
+> -- 8
+< -- 0
++ -- 3
+- -- 2
+* -- 24
+:= -- 52
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 18
+empty$ -- 36
+format.name$ -- 2
+if$ -- 83
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 6
+num.names$ -- 1
+pop$ -- 5
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 14
+stack$ -- 0
+substring$ -- 27
+swap$ -- 7
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 4
+width$ -- 2
+write$ -- 13

@@ -1,0 +1,855 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.29)  29 MAR 2019 19:20
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.tex
+(/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/Users/martin/Documents/GitHub/FYP-report/Classes/RoboticsLaTeX.cls
+Document Class: Classes/RoboticsLaTeX 2014/10/27 Robotics LaTeX theses class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/Users/martin/Documents/GitHub/FYP-report/StyleFiles/watermark.sty
+
+LaTeX Warning: You have requested package `StyleFiles/watermark',
+               but the package provides `watermark'.
+
+Package: watermark 2002/01/29 v1.00 Watermarks (NCC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)) (/Users/martin/Documents/GitHub/FYP-report/StyleFiles/fancyhdr.sty
+\headwidth=\dimen103
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/eucal.sty
+Package: eucal 2009/06/22 v3.00 Euler Script fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
+(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
+) (/Users/martin/Documents/GitHub/FYP-report/natbib.sty
+Package: natbib 1998/07/14 6.8c (PWD)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 467.
+\c@NAT@ctr=\count89
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/02/14 3.18 The Babel package
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count90
+\U@D=\dimen104
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count91
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks15
+\footnotemargin=\dimen105
+\c@pp@next@reset=\count92
+\c@@fnserial=\count93
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/nomencl/nomencl.sty
+Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
+\nomlabelwidth=\dimen106
+\nom@tempdim=\dimen107
+\nomitemsep=\skip45
+)
+\@glossaryfile=\write3
+\openout3 = `PhDThesis_example.glo'.
+
+
+Writing glossary file PhDThesis_example.glo 
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen108
+\Hy@linkcounter=\count94
+\Hy@pagecounter=\count95
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count96
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `plainpages' set `false' on input line 4383.
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4383.
+
+
+Package hyperref Warning: Values of option `pdfpagelayout':
+(hyperref)                * `SinglePage'
+(hyperref)                * `OneColumn'
+(hyperref)                * `TwoColumnLeft'
+(hyperref)                * `TwoColumnRight'
+(hyperref)                * `TwoPageLeft' (PDF 1.5)
+(hyperref)                * `TwoPageRight' (PDF 1.5)
+(hyperref)                * An empty value disables the option.
+(hyperref)                Unknown value `useoutlines' on input line 4383.
+
+Package hyperref Info: Option `bookmarks' set `true' on input line 4383.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4383.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4383.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4383.
+Package hyperref Info: Option `linktocpage' set `true' on input line 4383.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
+Package hyperref Info: Option `hyperindex' set `false' on input line 4383.
+Package hyperref Info: Option `hyperfigures' set `true' on input line 4383.
+Package hyperref Info: Hyper figures ON on input line 4507.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index OFF on input line 4519.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing ON on input line 4527.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2016/05/21 v1.39 Bibliographical back referencing
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+))
+\c@Hy@tempcnt=\count97
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen109
+\Fld@menulength=\count98
+\Field@Width=\dimen110
+\Fld@charsize=\dimen111
+Package hyperref Info: Hyper figures ON on input line 6367.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index OFF on input line 6379.
+Package hyperref Info: backreferencing ON on input line 6382.
+Package hyperref Info: Link coloring ON on input line 6387.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count99
+\c@Item=\count100
+\c@Hfootnote=\count101
+)
+Package hyperref Info: Driver: hpdftex.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count102
+\c@bookmark@seq@number=\count103
+\Hy@SectionHShift=\skip46
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen114
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen115
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count104
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count105
+\leftroot@=\count106
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count107
+\DOTSCASE@=\count108
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen116
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count109
+\c@MaxMatrixCols=\count110
+\dotsspace@=\muskip11
+\c@parentequation=\count111
+\dspbrk@lvl=\count112
+\tag@help=\toks18
+\row@=\count113
+\column@=\count114
+\maxfields@=\count115
+\andhelp@=\toks19
+\eqnshift@=\dimen117
+\alignsep@=\dimen118
+\tagshift@=\dimen119
+\tagwidth@=\dimen120
+\totwidth@=\dimen121
+\lineht@=\dimen122
+\@envbody=\toks20
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count116
+\float@exts=\toks22
+\float@box=\box28
+\@float@everytoks=\toks23
+\@floatcapt=\box29
+)
+\@float@every@algorithm=\toks24
+\c@algorithm=\count117
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count118
+\c@ALC@line=\count119
+\c@ALC@rem=\count120
+\c@ALC@depth=\count121
+\ALC@tlm=\skip50
+\algorithmicindent=\skip51
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip52
+\multirow@cntb=\count122
+\multirow@dima=\skip53
+\bigstrutjot=\dimen123
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
+\col@sep=\dimen124
+\ar@mcellbox=\box30
+\extrarowheight=\dimen125
+\NC@list=\toks25
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box31
+)
+\everycr=\toks26
+\minrowclearance=\skip56
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+\rownum=\count123
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/epigraph/epigraph.sty
+Package: epigraph 2009/09/02 v1.5c typesetting epigraphs
+\beforeepigraphskip=\skip57
+\afterepigraphskip=\skip58
+\epigraphwidth=\skip59
+\epigraphrule=\skip60
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen126
+\captionmargin@=\dimen127
+\captionwidth=\dimen128
+\caption@tempdima=\dimen129
+\caption@indent=\dimen130
+\caption@parindent=\dimen131
+\caption@hangindent=\dimen132
+)
+\c@ContinuedFloat=\count124
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count125
+\c@subtable=\count126
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+\TX@col@width=\dimen133
+\TX@old@table=\dimen134
+\TX@old@col=\dimen135
+\TX@target=\dimen136
+\TX@delta=\dimen137
+\TX@cols=\count127
+\TX@ftn=\toks27
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip61
+\LTright=\skip62
+\LTpre=\skip63
+\LTpost=\skip64
+\LTchunksize=\count128
+\LTcapwidth=\dimen138
+\LT@head=\box32
+\LT@firsthead=\box33
+\LT@foot=\box34
+\LT@lastfoot=\box35
+\LT@cols=\count129
+\LT@rows=\count130
+\c@LT@tables=\count131
+\c@LT@chunks=\count132
+\LT@p@ftn=\toks28
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count133
+\calc@Bcount=\count134
+\calc@Adimen=\dimen139
+\calc@Bdimen=\dimen140
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count135
+\calc@Cskip=\skip67
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+)
+\AM@pagewidth=\dimen141
+\AM@pageheight=\dimen142
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box36
+\AM@global@opts=\toks29
+\AM@toc@title=\toks30
+\c@AM@survey=\count136
+\AM@templatesizebox=\box37
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2018/04/07 v4.37 (NLCT)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks31
+\XKV@tempa@toks=\toks32
+)
+\XKV@depth=\count137
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count138
+)
+\@glsmfirst=\toks33
+\@glsmrest=\toks34
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2017/11/12 v2.29 (NLCT)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count139
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2017/11/12 v2.29 (NLCT)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+ `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count140
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count141
+\FP@xia=\count142
+\FP@xib=\count143
+\FP@xfa=\count144
+\FP@xfb=\count145
+\FP@rega=\count146
+\FP@regb=\count147
+\FP@regs=\count148
+\FP@times=\count149
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count150
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks35
+\@dtl@tmpcount=\count151
+\dtl@tmplength=\skip68
+\dtl@sortresult=\count152
+\@dtl@numgrpsepcount=\count153
+\@dtl@datatype=\count154
+\dtl@codeA=\count155
+\dtl@codeB=\count156
+\@dtl@foreach@level=\count157
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-307.sty
+Package: glossaries-compatible-307 2018/04/07 v4.37 (NLCT)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tracklang/tracklang.sty
+Package: tracklang 2018/02/21 v1.3.5 (NLCT) Track Languages
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/tracklang/tracklang.tex)) (/usr/local/texlive/2018/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries-english/glossaries-english.ldf
+File: glossaries-english.ldf 2014/11/23 v1.0
+)
+\gls@level=\count158
+\@gls@tmpb=\toks36
+\gls@tmplen=\skip69
+\glskeylisttok=\toks37
+\glslabeltok=\toks38
+\glsshorttok=\toks39
+\glslongtok=\toks40
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
+Package: glossary-hypernav 2018/04/07 v4.37 (NLCT)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2018/04/07 v4.37 (NLCT)
+\glslistdottedwidth=\skip70
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2018/04/07 v4.37 (NLCT)
+\glsdescwidth=\skip71
+\glspagelistwidth=\skip72
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2018/04/07 v4.37 (NLCT)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count159
+\ST@wd=\dimen143
+\ST@rightskip=\skip73
+\ST@leftskip=\skip74
+\ST@parfillskip=\skip75
+\ST@pageleft=\dimen144
+\ST@headht=\dimen145
+\ST@tailht=\dimen146
+\ST@pagesofar=\dimen147
+\ST@pboxht=\dimen148
+\ST@lineht=\dimen149
+\ST@stretchht=\dimen150
+\ST@prevht=\dimen151
+\ST@toadd=\dimen152
+\ST@dimen=\dimen153
+\ST@pbox=\box38
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2018/04/07 v4.37 (NLCT)
+\glstreeindent=\skip76
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+\glswrite=\write4
+\glo@main@file=\write5
+\openout5 = `PhDThesis_example.glo'.
+
+Package glossaries Info: Writing glossary file PhDThesis_example.glo on input line 71.
+\glo@acronym@file=\write6
+\openout6 = `PhDThesis_example.acn'.
+
+Package glossaries Info: Writing glossary file PhDThesis_example.acn on input line 71.
+ (/Users/martin/Documents/GitHub/FYP-report/glossary.tex) (/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.aux (/Users/martin/Documents/GitHub/FYP-report/Acknowledgement/acknowledgement.aux) (/Users/martin/Documents/GitHub/FYP-report/Abstract/abstract.aux) (/Users/martin/Documents/GitHub/FYP-report/Introduction/introduction.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter1/chapter1.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter2/chapter2.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter3/chapter3.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter4/chapter4.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter5/chapter5.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter6/chapter6.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter9/chapter9.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter7/chapter7.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter8/chapter8.aux) (/Users/martin/Documents/GitHub/FYP-report/Conclusions/conclusions.aux))
+\openout1 = `PhDThesis_example.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+ (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count160
+\scratchdimen=\dimen154
+\scratchbox=\box39
+\nofMPsegments=\count161
+\nofMParguments=\count162
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count163
+\MPscratchDim=\dimen155
+\MPnumerator=\count164
+\makeMPintoPDFobject=\count165
+\everyMPtoPDFconversion=\toks42
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.jpg,.pdf,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\AtBeginShipoutBox=\box40
+Package backref Info: ** backref set up for natbib ** on input line 74.
+Package hyperref Info: Link coloring ON on input line 74.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count166
+)
+LaTeX Info: Redefining \ref on input line 74.
+LaTeX Info: Redefining \pageref on input line 74.
+LaTeX Info: Redefining \nameref on input line 74.
+ (/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.out) (/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.out)
+\@outlinefile=\write7
+\openout7 = `PhDThesis_example.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+<UoB.png, id=172, 860.21375pt x 1027.84pt>
+File: UoB.png Graphic file (type png)
+<use UoB.png>
+Package pdftex.def Info: UoB.png  used on input line 83.
+(pdftex.def)             Requested size: 142.26378pt x 169.97836pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[1
+
+\openout4 = `PhDThesis_example.ist'.
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/martin/Documents/GitHub/FYP-report/UoB.png>]
+\openout2 = `Acknowledgement/acknowledgement.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Acknowledgement/acknowledgement.tex
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[1
+
+
+])
+\openout2 = `Abstract/abstract.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Abstract/abstract.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[2
+
+
+]) (/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [3
+\FN@pp@footnotehinttrue 
+
+
+] [4])
+\tf@toc=\write8
+\openout8 = `PhDThesis_example.toc'.
+
+ [5] (/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.lof)
+\tf@lof=\write9
+\openout9 = `PhDThesis_example.lof'.
+
+ [6
+
+] (/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.lot)
+\tf@lot=\write10
+\openout10 = `PhDThesis_example.lot'.
+
+
+No file PhDThesis_example.acr.
+[7
+
+]
+\openout2 = `Introduction/introduction.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Introduction/introduction.tex
+Chapter 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51 
+      [1
+
+
+
+] [2]) [3]
+\openout2 = `Chapter1/chapter1.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Chapter1/chapter1.tex
+Chapter 2.
+) [4
+
+
+
+]
+\openout2 = `Chapter2/chapter2.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Chapter2/chapter2.tex
+Chapter 3.
+) [5
+
+
+
+]
+\openout2 = `Chapter3/chapter3.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Chapter3/chapter3.tex
+Chapter 4.
+) [6
+
+
+
+]
+\openout2 = `Chapter4/chapter4.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Chapter4/chapter4.tex
+Chapter 5.
+) [7
+
+
+
+] [8]
+\openout2 = `Chapter5/chapter5.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Chapter5/chapter5.tex
+Chapter 6.
+) [9
+
+
+
+]
+\openout2 = `Chapter6/chapter6.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Chapter6/chapter6.tex
+Chapter 7.
+) [10
+
+
+
+]
+\openout2 = `Chapter9/chapter9.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Chapter9/chapter9.tex
+Chapter 8.
+) [11
+
+
+
+]
+\openout2 = `Chapter7/chapter7.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Chapter7/chapter7.tex
+Chapter 9.
+) [12
+
+
+
+]
+\openout2 = `Chapter8/chapter8.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Chapter8/chapter8.tex
+Chapter 10.
+) [13
+
+
+
+]
+\openout2 = `Conclusions/conclusions.aux'.
+
+ (/Users/martin/Documents/GitHub/FYP-report/Conclusions/conclusions.tex
+Chapter 11.
+) [14
+
+
+
+] (/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.bbl (/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.brf)
+\tf@brf=\write11
+\openout11 = `PhDThesis_example.brf'.
+
+ [15
+
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+ (/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.aux (/Users/martin/Documents/GitHub/FYP-report/Acknowledgement/acknowledgement.aux) (/Users/martin/Documents/GitHub/FYP-report/Abstract/abstract.aux) (/Users/martin/Documents/GitHub/FYP-report/Introduction/introduction.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter1/chapter1.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter2/chapter2.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter3/chapter3.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter4/chapter4.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter5/chapter5.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter6/chapter6.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter9/chapter9.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter7/chapter7.aux) (/Users/martin/Documents/GitHub/FYP-report/Chapter8/chapter8.aux) (/Users/martin/Documents/GitHub/FYP-report/Conclusions/conclusions.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
+Package rerunfilecheck Info: File `PhDThesis_example.out' has not changed.
+(rerunfilecheck)             Checksum: E042E4ADEB5191EB50779A7019AC8316;2869.
+Package rerunfilecheck Info: File `PhDThesis_example.brf' has not changed.
+(rerunfilecheck)             Checksum: 0A9913C56CAF9E9CBFF507B3DBA5ED6F;458.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
+ ) 
+Here is how much of TeX's memory you used:
+ 16575 strings out of 492649
+ 273205 string characters out of 6129622
+ 429928 words of memory out of 5000000
+ 19918 multiletter control sequences out of 15000+600000
+ 11103 words of font info for 41 fonts, out of 8000000 for 9000
+ 1147 hyphenation exceptions out of 8191
+ 45i,12n,45p,2045b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.pdf (24 pages, 320665 bytes).
+PDF statistics:
+ 411 PDF objects out of 1000 (max. 8388607)
+ 374 compressed objects within 4 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
+

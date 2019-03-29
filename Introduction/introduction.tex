@@ -24,11 +24,78 @@
 % \section{Context of the Study}
 % \label{context}
 
-\section{Introduction}
+\section{Project overview}
 \label{introduction}
 
-Music information retrieval (MIR) is an area of analysis dedicated to extracting information from music. It combines many different disciplines of science including psychology, psychoacoustics, signal processing and computer science. One of the main aims when performing MIR solving the task of song identification, i.e. matching an audio stream to a particular song \nocite{weinstein2007music}
+Music information retrieval (MIR) is an area of analysis dedicated to extracting
+information from music. It combines many different disciplines of science
+including psychology, psychoacoustics, signal processing and computer science.
+One of the main aims when applying MIR techniques solving the task of song
+identification, i.e. matching an audio stream to a particular song
+\cite{weinstein2007music}. This is usually achieved through a form of hashing
+applied on the digital signal and comparing the resulting representation to a
+reference fingerprint \cite{wang2003industrial}, \cite{haitsma2001robust}. This
+approach returns good results for the task, since we can easily quantify a good
+match between both fingerprints.
 
+We can further modify the original song identification task to apply to cover
+songs. A cover song is a very creative reinterpretation of a released song
+usually performed by an artist different than the original. The cover can
+therefore differ significantly from the origin in tempo, pitch or song structure
+(\textit{add more}). The amount of variation in a cover strongly depends on the
+genre of the primary track - Western popular music pieces are for example more
+likely to be transformed than ones from classical music
+\cite{ellis2007identifyingcover}. Therefore the only remaining common feature
+between the cover song and the original is the underlying fundamental melody of
+the piece and potentially the lyrics.
+
+Because of these potential disparities between two versions of a single song,
+the problem of identifying covers of songs is much more difficult than determing
+an identical match with the original. The above fingerprinting approach
+has been attempted \cite{bertin2011large} and the results are insignificant
+\cite{ellis2012large}. Direct comparison between the fingerprints of the song is
+unable to capture the remaining similarity within two audio files. Other MIR
+methods need to be considered in order to measure similarity when attempting
+cover song recognition.
+
+The general advances of technology have allowed companies such as Spotify
+\cite{spotify}, Apple \cite{applemusic}, SoundCloud \cite{soundcloud} and more
+to create large-scale music databases and offer them as commercial services.
+Proportionally to the increasing availability of large music collections grows
+the need for managing the volumes of audio information through MIR techniques,
+with cover song identification being one of them. As a consequence most modern
+mechanisms to cover song recognition work by comparing an audio track called
+\textit{query song} against a large database of songs, a \textit{reference
+database}. Each mechanism is evaluated based on its similarity estimation
+performance, as well as its scalability as we increase the database size.
+
+This project analyses the principles of a set of non-hashing based cover song
+identification algorithms and evaluates their performance. Most of the examined
+algorithms are designed to work with large-scale databases and follow the
+workflow model described above. The evaluation considers only their similarity
+estimation results and does not account for scalability. After analysis of the
+results a hypothesis on the best performing audio similarity technique is
+established (\textit{or maybe devised?}).
 
 \section{Report structure}
 \label{structure}
+The sections of this report are as follows:
+\begin{enumerate}
+    \item Chapter 2 offers a summary of the background information required to
+    understand and implement the audio similarity algorithms
+    \item Chapter 3 explores other state of the art methods of measuring
+    similarity not examined in detail by the project
+    \item Chapter 4 provides a description of the evaluation task through which
+    each algorithm is analysed
+    \item Chapter 5 contains detailed descriptions of each algorithm
+    \item Chapter 6 expands on implementation details related to the benchmark
+    tool
+    \item Chapter 7 outlines the best results achieved and offers an analysis on
+    them
+    \item Chapter 8 discusses the main challenges related to the project and the
+    task of cover song identification
+    \item Chapter 9 is a summary of the project management techniques utilised
+    during the project
+    \item Chapter 10 presents 
+
+\end{enumerate}
