@@ -13,14 +13,37 @@
 
 
 % short summary of the chapter `` ''
-\section*{Summary}
+% \section*{Summary}
 
-Describe here the state of the art of the research pertaining to this thesis. This part should contain all the relevant publications in the area with the corresponding citations. The cited works should be briefly described critically assessed.
+% Describe here the state of the art of the research pertaining to this thesis. This part should contain all the relevant publications in the area with the corresponding citations. The cited works should be briefly described critically assessed.
 %
 
+Each type of information extracted from an audio stream is referred to as an
+\textit{audio feature}. Audio features are mainly derived using various 
+transformations on the signal based on some basic properties of sound. This
+section presents low-level theory required to understand the high-level
+description of how each feature is obtained further in the report.
 
-\section{Properties of audio}
+
+\section{Basic properties of audio signal}
 \label{sec:audioprops}
+A \textit{digital audio signal} is a representation of the continuous sound
+wave as a discrete series of binary numbers. This
+representation helps preserve the \textit{frequency} (the speed of the
+vibrations), as well as the \textit{amplitude} (the fluctuations of the
+vibrations) of the sound. The energy that each sound wave emits through
+vibrations is called \textit{sound energy} and its rate is measured through
+\textit{sound power} \cite{acoustic-glossary-power}. The majority of audio
+features use frequency or power as a primary audio property used to define the
+feature (\textit{modify/change}).
+
+The process of converting an analog sound wave to a digital one involves a
+process of extracting points (samples) from the continuous signal and using them
+to describe the signal into a discrete form. This method is called
+\textit{sampling} and the amount of samples collected per time frame is
+\textit{sample rate}. The representation of a song used during feature
+extraction is a sequence of samples extracted from the digital signal of the
+song based on its sample rate.
 \subsection{Test subsection}
 \label{sec:subsec21}
 
