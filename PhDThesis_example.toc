@@ -4,40 +4,41 @@
 \contentsline {section}{\numberline {1.2}Report structure}{3}{section.1.2}
 \contentsline {chapter}{\numberline {2}Background theory}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Basic properties of audio signal}{4}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Test subsection}{5}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}Audio transformation techniques}{5}{section.2.2}
-\contentsline {chapter}{\numberline {3}Related work}{6}{chapter.3}
-\contentsline {section}{\numberline {3.1}Examination of other audio similarity techniques and algorithms not analysed by the project}{6}{section.3.1}
-\contentsline {section}{\numberline {3.2}Scientific paper rewritten}{6}{section.3.2}
-\contentsline {chapter}{\numberline {4}The task}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}Design}{7}{section.4.1}
-\contentsline {section}{\numberline {4.2}Evaluation methods and metrics}{7}{section.4.2}
-\contentsline {section}{\numberline {4.3}Datasets used for evaluation}{7}{section.4.3}
-\contentsline {chapter}{\numberline {5}The algorithms}{8}{chapter.5}
-\contentsline {section}{\numberline {5.1}Osmalskyj big algorithm}{9}{section.5.1}
-\contentsline {section}{\numberline {5.2}Osmalskyj weak features}{9}{section.5.2}
-\contentsline {section}{\numberline {5.3}Ellis cross-correlation algorithm}{9}{section.5.3}
-\contentsline {section}{\numberline {5.4}Osmalskyj quantisation algorithm}{9}{section.5.4}
-\contentsline {section}{\numberline {5.5}Tralie timbre algorithm}{9}{section.5.5}
-\contentsline {section}{\numberline {5.6}Rank aggregation techniques}{9}{section.5.6}
-\contentsline {section}{\numberline {5.7}Rafii audio fingerprinting algorithm}{9}{section.5.7}
-\contentsline {chapter}{\numberline {6}The benchmark}{10}{chapter.6}
-\contentsline {section}{\numberline {6.1}Implementation details}{10}{section.6.1}
-\contentsline {section}{\numberline {6.2}Brief usage information}{10}{section.6.2}
-\contentsline {section}{\numberline {6.3}Algorithm structure in the benchmark}{10}{section.6.3}
-\contentsline {section}{\numberline {6.4}Result format produced by benchmark}{10}{section.6.4}
-\contentsline {chapter}{\numberline {7}Results}{11}{chapter.7}
-\contentsline {section}{\numberline {7.1}Best results}{11}{section.7.1}
-\contentsline {section}{\numberline {7.2}Comparison to results from papers}{11}{section.7.2}
-\contentsline {section}{\numberline {7.3}Result analysis}{11}{section.7.3}
-\contentsline {chapter}{\numberline {8}Further work}{12}{chapter.8}
-\contentsline {chapter}{\numberline {9}Challenges}{13}{chapter.9}
-\contentsline {section}{\numberline {9.1}Lack of datasets}{13}{section.9.1}
-\contentsline {section}{\numberline {9.2}Lack of universal comparison metric?}{13}{section.9.2}
-\contentsline {section}{\numberline {9.3}Academic papers algorithm description}{13}{section.9.3}
-\contentsline {chapter}{\numberline {10}Project management}{14}{chapter.10}
-\contentsline {section}{\numberline {10.1}Using GitLab}{14}{section.10.1}
-\contentsline {section}{\numberline {10.2}Canvas logs}{14}{section.10.2}
-\contentsline {section}{\numberline {10.3}other? Gantt chart?}{14}{section.10.3}
-\contentsline {chapter}{\numberline {11}Conclusion}{15}{chapter.11}
-\contentsline {chapter}{References}{17}{appendix*.11}
+\contentsline {paragraph}{}{5}{section*.4}
+\contentsline {subsection}{\numberline {2.1.1}Test subsection}{8}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Audio transformation techniques}{8}{section.2.2}
+\contentsline {chapter}{\numberline {3}Related work}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Examination of other audio similarity techniques and algorithms not analysed by the project}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Scientific paper rewritten}{9}{section.3.2}
+\contentsline {chapter}{\numberline {4}The task}{10}{chapter.4}
+\contentsline {section}{\numberline {4.1}Design}{10}{section.4.1}
+\contentsline {section}{\numberline {4.2}Evaluation methods and metrics}{10}{section.4.2}
+\contentsline {section}{\numberline {4.3}Datasets used for evaluation}{10}{section.4.3}
+\contentsline {chapter}{\numberline {5}The algorithms}{11}{chapter.5}
+\contentsline {section}{\numberline {5.1}Osmalskyj big algorithm}{12}{section.5.1}
+\contentsline {section}{\numberline {5.2}Osmalskyj weak features}{12}{section.5.2}
+\contentsline {section}{\numberline {5.3}Ellis cross-correlation algorithm}{12}{section.5.3}
+\contentsline {section}{\numberline {5.4}Osmalskyj quantisation algorithm}{12}{section.5.4}
+\contentsline {section}{\numberline {5.5}Tralie timbre algorithm}{12}{section.5.5}
+\contentsline {section}{\numberline {5.6}Rank aggregation techniques}{12}{section.5.6}
+\contentsline {section}{\numberline {5.7}Rafii audio fingerprinting algorithm}{12}{section.5.7}
+\contentsline {chapter}{\numberline {6}The benchmark}{13}{chapter.6}
+\contentsline {section}{\numberline {6.1}Implementation details}{13}{section.6.1}
+\contentsline {section}{\numberline {6.2}Brief usage information}{13}{section.6.2}
+\contentsline {section}{\numberline {6.3}Algorithm structure in the benchmark}{13}{section.6.3}
+\contentsline {section}{\numberline {6.4}Result format produced by benchmark}{13}{section.6.4}
+\contentsline {chapter}{\numberline {7}Results}{14}{chapter.7}
+\contentsline {section}{\numberline {7.1}Best results}{14}{section.7.1}
+\contentsline {section}{\numberline {7.2}Comparison to results from papers}{14}{section.7.2}
+\contentsline {section}{\numberline {7.3}Result analysis}{14}{section.7.3}
+\contentsline {chapter}{\numberline {8}Further work}{15}{chapter.8}
+\contentsline {chapter}{\numberline {9}Challenges}{16}{chapter.9}
+\contentsline {section}{\numberline {9.1}Lack of datasets}{16}{section.9.1}
+\contentsline {section}{\numberline {9.2}Lack of universal comparison metric?}{16}{section.9.2}
+\contentsline {section}{\numberline {9.3}Academic papers algorithm description}{16}{section.9.3}
+\contentsline {chapter}{\numberline {10}Project management}{17}{chapter.10}
+\contentsline {section}{\numberline {10.1}Using GitLab}{17}{section.10.1}
+\contentsline {section}{\numberline {10.2}Canvas logs}{17}{section.10.2}
+\contentsline {section}{\numberline {10.3}other? Gantt chart?}{17}{section.10.3}
+\contentsline {chapter}{\numberline {11}Conclusion}{18}{chapter.11}
+\contentsline {chapter}{References}{21}{appendix*.14}

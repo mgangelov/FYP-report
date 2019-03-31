@@ -316,6 +316,12 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.tex
+INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/time_envelope.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/time_envelope.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/time_envelope.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectral_envelope.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectral_envelope.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectral_envelope.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/RelatedWork/relatedwork.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/RelatedWork/relatedwork.tex

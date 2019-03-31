@@ -42,8 +42,64 @@ D.~P. Ellis and B.-M. Thierry, ``Large-scale cover song recognition using the
   soundcloud,'' 2019.
 \newblock [Online; accessed 29-March-2019].
 
+\bibitem{wiki:tone}
+{Wikipedia contributors}, ``Musical tone --- {Wikipedia}{,} the free
+  encyclopedia,'' 2019.
+\newblock [Online; accessed 31-March-2019].
+
+\bibitem{music-noise}
+{The Physics Hypertextbook}, ``Music \& noise - the physics hypertextbook,''
+  2019.
+\newblock [Online; accessed 31-March-2019].
+
 \bibitem{acoustic-glossary-power}
 {Acoustic Glossary}, ``Sound power - acoustic glossary - article,'' 2019.
 \newblock [Online; accessed 29-March-2019].
+
+\bibitem{klapuri2007signal}
+A.~Klapuri and M.~Davy, {\em Signal processing methods for music
+  transcription}.
+\newblock Springer Science \& Business Media, 2007.
+
+\bibitem{helmholtz2013sensations}
+H.~Helmholtz, {\em On the sensations of tone}.
+\newblock Courier Corporation, 2013.
+
+\bibitem{fletcher1934loudness}
+H.~Fletcher, ``Loudness, pitch and the timbre of musical tones and their
+  relation to the intensity, the frequency and the overtone structure,'' {\em
+  The Journal of the Acoustical Society of America}, vol.~6, no.~2, pp.~59--69,
+  1934.
+
+\bibitem{acoustical1986american}
+A.~S. of~America.~Secretariat and A.~N.~S. Institute, {\em American National
+  Standard Psychoacoustical Terminology}.
+\newblock American National Standard, American National Standards Institute,
+  1986.
+
+\bibitem{young1939terminology}
+R.~W. Young, ``Terminology for logarithmic frequency units,'' {\em The Journal
+  of the Acoustical Society of America}, vol.~11, no.~1, pp.~134--139, 1939.
+
+\bibitem{mts}
+{MIDI}, ``The complete midi 1.0 detailed specification,'' 2019.
+\newblock [Online; accessed 31-March-2019].
+
+\bibitem{sound-pressure}
+{Engineering Toolbox}, ``Sound pressure,'' 2019.
+\newblock [Online; accessed 31-March-2019].
+
+\bibitem{erickson1975sound}
+R.~Erickson, {\em Sound structure in music}.
+\newblock Univ of California Press, 1975.
+
+\bibitem{wiki:envelope}
+{Wikipedia contributors}, ``Envelope (music) --- {Wikipedia}{,} the free
+  encyclopedia,'' 2019.
+\newblock [Online; accessed 31-March-2019].
+
+\bibitem{roederer2008physics}
+J.~G. Roederer, {\em The physics and psychophysics of music: an introduction}.
+\newblock Springer Science \& Business Media, 2008.
 
 \end{thebibliography}
