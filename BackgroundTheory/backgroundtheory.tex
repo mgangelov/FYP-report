@@ -39,6 +39,8 @@ and its rate is measured through \textit{sound power}. The majority of audio
 features use frequency or power as a primary audio property used to define the
 feature (\textit{modify/change}). 
 
+\subsection{Sampling and sample rate}
+\label{subsec:sampling}
 The process of converting an analogue sound wave to a digital one involves a
 process of extracting points (samples) from the continuous signal and using them
 to describe the signal into a discrete form. This method is called
@@ -47,7 +49,8 @@ to describe the signal into a discrete form. This method is called
 extraction is a sequence of samples extracted from the digital signal of the
 song based on its sample rate.
 
-\paragraph{}
+\subsection{Tones}
+\label{subsec:tones}
 In order to understand how properties of a digital signal could form audio
 features we first need to examine how they relate to the ways of how people
 perceive music and sound. Western music is described using \textit{tones},
@@ -59,6 +62,8 @@ the smallest measure of period between sounds. Semitones are grouped into
 of tone is noise, a disordered sound which is unpleasant to the human brain and
 is disruptive to hearing \cite{music-noise}.
 
+\subsection{Psychoacoustic properties}
+\label{subsec:psychoacoustic}
 Tones are distinguished by several basic perceptual properties of sound - pitch,
 loudness, timbre and duration \cite{acoustic-glossary-power}. Consequently these
 properties are also regularly used to describe what is accurately captured by
@@ -133,7 +138,8 @@ which is the easiest to directly measure. It is an indicator of a length of any
 part of a musical composition - tone, pitch, the whole piece, etc
 \cite{benward2014music}. The measurement is expressed using a base unit of time.
 
-\paragraph{}
+\subsection{Beat}
+\label{subsec:beat}
 One final basic concept that we need to introduce is the \textit{beat}. It
 signifies repeating portions in a song which define the overall rhythm of a
 music piece. Rhythm is formed of "strong" and "weak" beats, with the former
@@ -152,6 +158,8 @@ signifying a suitable moment for melody change.
 \section{Audio transformation techniques}
 \label{sec:audiotransform}
 
+\subsection{Fourier transform}
+\label{subsec:fourier}
 Any waveform including the audio ones could be presented as a sum of sinusoids
 of different frequencies \cite{fouriertransform}. In music each of the
 constituting frequencies represents a pure tone. In order to be able to work
@@ -205,19 +213,70 @@ represents the amount of frequency present in the original function at a point
 of time \cite{wiki:fourier}. This information is very valuable when determining
 sound properties such as pitch, power, timbre and more.
 
+\subsection{Filters}
+\label{subsec:filters}
+During the processing of the audio signal we want to detect the frequency maxima
+and minima of the wave, or possibly attenuate certain frequencies. In order to
+do that we use \textit{audio filters} - tools that pass certain frequencies and
+blocks others \cite{filters}. Filters are defined in terms of \textit{bands},
+the range of frequencies they pass. A combination of filters which helps us
+produce the required frequency cut-off is called a \textit{filter bank}.
 
-% fourier transform shift property
-% f
+\subsection{Mel scale}
+\label{subsec:melscale}
+The \textit{mel scale} presents a perceptual ordering of pitches which are
+determined to be equally far away from each other \cite{stevens1937scale}. The
+scale introduces a unit of perceptual pitch called \textit{mel}, where
+$1000\:mel = 1000\:Hz$. The rest of the mel-frequency mapping is displayed in
+figure \ref{fig:melscale}.
 
-% Explain spectrum first - we use a spectrum of a basic property to determine an
-% audio feature mention frequency spectrum for example - make the analogy with
-% determining loudness by projecting spl over the frequency spectrum then fourier
-% transform MENTION THAT THE FUNDAMENTAL FREQUENCY DETERMINES THE PITCH OF TONE
-% BECAUSE IT IS THE COMMON DENOMINATOR FREQUENCY OF ALL COMPRISING FREQUENCIES
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{BackgroundTheory/mel-scale.png}
+    \captionof{figure}[Mel-scale]{Perceived pitches on a Mel scale versus the Hertz frequency scale \cite{wiki:melscale}}
+    \label{fig:melscale}
+\end{figure}
 
 \section{Machine learning techniques}
 \label{sec:machinelearning}
+Some cover song identification algorithms create machine learning models based
+on which they measure similarity when a query song is provided. This section
+outlines the principles of each method used later in the algorithms.
 
-something from nothing
+\subsection{Random forests}
+\label{subsec:randomforests}
+Random forests are a form of ensemble learning for classification and regression
+\cite{ho1995random}. Ensemble methods train multiple learners in an attempt to
+solve the same problem \cite{zhou2012ensemble}, and in the case of random
+forests the type of learner is a decision tree. The method works by building a
+predefined number of decision trees during training, and return a result
+combining their individual outcomes. In the case of classification the mode of
+all returned class predictions is taken, while the mean of the predictions is
+used during regression. Random trees help avoid the tendency of individual
+decision trees to overfit to their training data \cite{friedman2001elements}.
+
+\subsection{K-means clustering}
+\label{subsec:kmeansclustering}
+K-means clustering is an unsupervised machine learning approach which aggregates
+a collection of data points together because of some similarity between them.
+The end result is a separation of the points into k distinct
+clusters. The outcome of the clustering is evaluated through the sum of squares
+defined as:
+\begin{figure}[H]
+   \begin{equation}
+        Sum\;of\;squares = \sum_{i=1}^{n}(x_i - \overline{x})^2
+   \end{equation} 
+   \captionof{figure}[Sum of squares equation]{The sum of squares for $n$ items where $x_i$ is the value of the i-th item and $\overline{x}$ is the mean of the set $n$.}
+   \label{fig:sumofsquares}
+\end{figure}
+
+The intent is to reduce the sum of squares as much as possible. Clustering is
+complete when either the sum of squares does not significantly change any more,
+or the algorithm runs a pre-determined number of iterations.
+
+In the area of digital signal processing K-means clustering is used to perform 
+\textit{quantisation} - mapping a large (possibly continuous) set of values to a
+countable smaller set which is easier to work with \cite{wiki:quantisation}.
+
 
 % add more sections and subsection here

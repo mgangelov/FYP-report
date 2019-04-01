@@ -17,45 +17,46 @@ A level-1 auxiliary file: Conclusions/conclusions.aux
 The style file: ieeetr.bst
 Database file #1: References/references.bib
 Warning--empty journal in ellis2012large
-You've used 28 entries,
+Warning--can't use both volume and number fields in friedman2001elements
+You've used 35 entries,
             1876 wiz_defined-function locations,
-            609 strings with 6904 characters,
-and the built_in function-call counts, 5192 in all, are:
-= -- 522
-> -- 147
+            639 strings with 7765 characters,
+and the built_in function-call counts, 6607 in all, are:
+= -- 667
+> -- 189
 < -- 0
-+ -- 65
-- -- 37
-* -- 253
-:= -- 722
-add.period$ -- 48
-call.type$ -- 28
-change.case$ -- 22
++ -- 83
+- -- 48
+* -- 333
+:= -- 915
+add.period$ -- 60
+call.type$ -- 35
+change.case$ -- 27
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 244
-empty$ -- 624
-format.name$ -- 37
-if$ -- 1315
+cite$ -- 37
+duplicate$ -- 310
+empty$ -- 785
+format.name$ -- 48
+if$ -- 1672
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 20
-newline$ -- 107
-num.names$ -- 28
-pop$ -- 166
+int.to.str$ -- 35
+missing$ -- 26
+newline$ -- 133
+num.names$ -- 35
+pop$ -- 202
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 148
+skip$ -- 190
 stack$ -- 0
-substring$ -- 196
-swap$ -- 59
+substring$ -- 260
+swap$ -- 80
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 49
-width$ -- 30
-write$ -- 266
-(There was 1 warning)
+warning$ -- 2
+while$ -- 62
+width$ -- 37
+write$ -- 335
+(There were 2 warnings)

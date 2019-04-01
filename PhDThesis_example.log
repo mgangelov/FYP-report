@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.29)  1 APR 2019 02:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.29)  1 APR 2019 19:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -641,7 +641,7 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-<UoB.png, id=172, 860.21375pt x 1027.84pt>
+<UoB.png, id=209, 860.21375pt x 1027.84pt>
 File: UoB.png Graphic file (type png)
 <use UoB.png>
 Package pdftex.def Info: UoB.png  used on input line 83.
@@ -737,28 +737,34 @@ Chapter 2.
 
 
 ] [5] [6]
-<BackgroundTheory/time_envelope.png, id=345, 561.59813pt x 288.3272pt>
+<BackgroundTheory/time_envelope.png, id=391, 561.59813pt x 288.3272pt>
 File: BackgroundTheory/time_envelope.png Graphic file (type png)
 <use BackgroundTheory/time_envelope.png>
-Package pdftex.def Info: BackgroundTheory/time_envelope.png  used on input line 119.
+Package pdftex.def Info: BackgroundTheory/time_envelope.png  used on input line 124.
 (pdftex.def)             Requested size: 309.4237pt x 158.8576pt.
-<BackgroundTheory/spectral_envelope.png, id=346, 704.6325pt x 378.41376pt>
+<BackgroundTheory/spectral_envelope.png, id=392, 704.6325pt x 378.41376pt>
 File: BackgroundTheory/spectral_envelope.png Graphic file (type png)
 <use BackgroundTheory/spectral_envelope.png>
-Package pdftex.def Info: BackgroundTheory/spectral_envelope.png  used on input line 126.
+Package pdftex.def Info: BackgroundTheory/spectral_envelope.png  used on input line 131.
 (pdftex.def)             Requested size: 309.4237pt x 166.16766pt.
- [7 </Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/time_envelope.png> </Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectral_envelope.png>]
-<BackgroundTheory/fourier-series.png, id=358, 596.72937pt x 472.76625pt>
+ [7 </Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/time_envelope.png>] [8 </Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectral_envelope.png>]
+<BackgroundTheory/fourier-series.png, id=412, 596.72937pt x 472.76625pt>
 File: BackgroundTheory/fourier-series.png Graphic file (type png)
 <use BackgroundTheory/fourier-series.png>
-Package pdftex.def Info: BackgroundTheory/fourier-series.png  used on input line 164.
+Package pdftex.def Info: BackgroundTheory/fourier-series.png  used on input line 172.
 (pdftex.def)             Requested size: 309.4237pt x 245.14734pt.
- [8] [9 </Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/fourier-series.png>]) [10]
+ [9 </Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/fourier-series.png>] [10]
+<BackgroundTheory/mel-scale.png, id=447, 2007.5pt x 952.55875pt>
+File: BackgroundTheory/mel-scale.png Graphic file (type png)
+<use BackgroundTheory/mel-scale.png>
+Package pdftex.def Info: BackgroundTheory/mel-scale.png  used on input line 235.
+(pdftex.def)             Requested size: 350.68272pt x 166.39503pt.
+ [11 </Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/mel-scale.png>]) [12]
 \openout2 = `RelatedWork/relatedwork.aux'.
 
  (/Users/martin/Documents/GitHub/FYP-report/RelatedWork/relatedwork.tex
 Chapter 3.
-) [11
+) [13
 
 
 
@@ -767,7 +773,7 @@ Chapter 3.
 
  (/Users/martin/Documents/GitHub/FYP-report/EvaluationTask/evaluationtask.tex
 Chapter 4.
-) [12
+) [14
 
 
 
@@ -776,16 +782,16 @@ Chapter 4.
 
  (/Users/martin/Documents/GitHub/FYP-report/Algorithms/algorithms.tex
 Chapter 5.
-) [13
+) [15
 
 
 
-] [14]
+] [16]
 \openout2 = `Benchmark/benchmark.aux'.
 
  (/Users/martin/Documents/GitHub/FYP-report/Benchmark/benchmark.tex
 Chapter 6.
-) [15
+) [17
 
 
 
@@ -794,7 +800,7 @@ Chapter 6.
 
  (/Users/martin/Documents/GitHub/FYP-report/Results/results.tex
 Chapter 7.
-) [16
+) [18
 
 
 
@@ -803,7 +809,7 @@ Chapter 7.
 
  (/Users/martin/Documents/GitHub/FYP-report/FurtherWork/furtherwork.tex
 Chapter 8.
-) [17
+) [19
 
 
 
@@ -812,7 +818,7 @@ Chapter 8.
 
  (/Users/martin/Documents/GitHub/FYP-report/Challenges/challenges.tex
 Chapter 9.
-) [18
+) [20
 
 
 
@@ -821,7 +827,7 @@ Chapter 9.
 
  (/Users/martin/Documents/GitHub/FYP-report/ProjectManagement/projectmanagement.tex
 Chapter 10.
-) [19
+) [21
 
 
 
@@ -830,7 +836,7 @@ Chapter 10.
 
  (/Users/martin/Documents/GitHub/FYP-report/Conclusions/conclusions.tex
 Chapter 11.
-) [20
+) [22
 
 
 
@@ -838,35 +844,35 @@ Chapter 11.
 \tf@brf=\write11
 \openout11 = `PhDThesis_example.brf'.
 
- [21
+ [23
 
 
-] [22])
+] [24] [25])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
- [23]
+ [26]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.aux (/Users/martin/Documents/GitHub/FYP-report/Acknowledgement/acknowledgement.aux) (/Users/martin/Documents/GitHub/FYP-report/Abstract/abstract.aux) (/Users/martin/Documents/GitHub/FYP-report/Introduction/introduction.aux) (/Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.aux) (/Users/martin/Documents/GitHub/FYP-report/RelatedWork/relatedwork.aux) (/Users/martin/Documents/GitHub/FYP-report/EvaluationTask/evaluationtask.aux) (/Users/martin/Documents/GitHub/FYP-report/Algorithms/algorithms.aux) (/Users/martin/Documents/GitHub/FYP-report/Benchmark/benchmark.aux) (/Users/martin/Documents/GitHub/FYP-report/Results/results.aux) (/Users/martin/Documents/GitHub/FYP-report/FurtherWork/furtherwork.aux) (/Users/martin/Documents/GitHub/FYP-report/Challenges/challenges.aux) (/Users/martin/Documents/GitHub/FYP-report/ProjectManagement/projectmanagement.aux) (/Users/martin/Documents/GitHub/FYP-report/Conclusions/conclusions.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `PhDThesis_example.out' has not changed.
-(rerunfilecheck)             Checksum: 0D68FEF60D0543E645AE62D3E7766F38;2899.
+(rerunfilecheck)             Checksum: 3ABB3B9A9C23713A9695018DD826F58F;3553.
 Package rerunfilecheck Info: File `PhDThesis_example.brf' has not changed.
-(rerunfilecheck)             Checksum: 8ACE62F68DB95CD0E31DA3631F76793E;1668.
+(rerunfilecheck)             Checksum: EAC9B37E5EAFABF219BAAAC713E22CF8;2202.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 16714 strings out of 492649
- 276592 string characters out of 6129622
- 430638 words of memory out of 5000000
- 20023 multiletter control sequences out of 15000+600000
- 10796 words of font info for 40 fonts, out of 8000000 for 9000
+ 16790 strings out of 492649
+ 277968 string characters out of 6129622
+ 431270 words of memory out of 5000000
+ 20077 multiletter control sequences out of 15000+600000
+ 11272 words of font info for 42 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 45i,12n,79p,2045b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.pdf (31 pages, 641589 bytes).
+ 45i,12n,79p,2045b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.pdf (34 pages, 743304 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 493 compressed objects within 5 object streams
- 126 named destinations out of 1000 (max. 500000)
- 357 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 648 PDF objects out of 1000 (max. 8388607)
+ 581 compressed objects within 6 object streams
+ 146 named destinations out of 1000 (max. 500000)
+ 434 words of extra memory for PDF output out of 10000 (max. 10000000)
 

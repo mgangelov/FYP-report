@@ -4,42 +4,49 @@
 \contentsline {section}{\numberline {1.2}Report structure}{3}{section.1.2}
 \contentsline {chapter}{\numberline {2}Background theory}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Basic properties of audio signal}{4}{section.2.1}
-\contentsline {paragraph}{}{5}{section*.4}
-\contentsline {paragraph}{}{8}{section*.7}
+\contentsline {subsection}{\numberline {2.1.1}Sampling and sample rate}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Tones}{5}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Psychoacoustic properties}{5}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Beat}{8}{subsection.2.1.4}
 \contentsline {section}{\numberline {2.2}Audio transformation techniques}{8}{section.2.2}
-\contentsline {section}{\numberline {2.3}Machine learning techniques}{10}{section.2.3}
-\contentsline {chapter}{\numberline {3}Related work}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Examination of other audio similarity techniques and algorithms not analysed by the project}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Scientific paper rewritten}{11}{section.3.2}
-\contentsline {chapter}{\numberline {4}The task}{12}{chapter.4}
-\contentsline {section}{\numberline {4.1}Design}{12}{section.4.1}
-\contentsline {section}{\numberline {4.2}Evaluation methods and metrics}{12}{section.4.2}
-\contentsline {section}{\numberline {4.3}Datasets used for evaluation}{12}{section.4.3}
-\contentsline {chapter}{\numberline {5}The algorithms}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}Osmalskyj big algorithm}{14}{section.5.1}
-\contentsline {section}{\numberline {5.2}Osmalskyj weak features}{14}{section.5.2}
-\contentsline {section}{\numberline {5.3}Ellis cross-correlation algorithm}{14}{section.5.3}
-\contentsline {section}{\numberline {5.4}Osmalskyj quantisation algorithm}{14}{section.5.4}
-\contentsline {section}{\numberline {5.5}Tralie timbre algorithm}{14}{section.5.5}
-\contentsline {section}{\numberline {5.6}Rank aggregation techniques}{14}{section.5.6}
-\contentsline {section}{\numberline {5.7}Rafii audio fingerprinting algorithm}{14}{section.5.7}
-\contentsline {chapter}{\numberline {6}The benchmark}{15}{chapter.6}
-\contentsline {section}{\numberline {6.1}Implementation details}{15}{section.6.1}
-\contentsline {section}{\numberline {6.2}Brief usage information}{15}{section.6.2}
-\contentsline {section}{\numberline {6.3}Algorithm structure in the benchmark}{15}{section.6.3}
-\contentsline {section}{\numberline {6.4}Result format produced by benchmark}{15}{section.6.4}
-\contentsline {chapter}{\numberline {7}Results}{16}{chapter.7}
-\contentsline {section}{\numberline {7.1}Best results}{16}{section.7.1}
-\contentsline {section}{\numberline {7.2}Comparison to results from papers}{16}{section.7.2}
-\contentsline {section}{\numberline {7.3}Result analysis}{16}{section.7.3}
-\contentsline {chapter}{\numberline {8}Further work}{17}{chapter.8}
-\contentsline {chapter}{\numberline {9}Challenges}{18}{chapter.9}
-\contentsline {section}{\numberline {9.1}Lack of datasets}{18}{section.9.1}
-\contentsline {section}{\numberline {9.2}Lack of universal comparison metric?}{18}{section.9.2}
-\contentsline {section}{\numberline {9.3}Academic papers algorithm description}{18}{section.9.3}
-\contentsline {chapter}{\numberline {10}Project management}{19}{chapter.10}
-\contentsline {section}{\numberline {10.1}Using GitLab}{19}{section.10.1}
-\contentsline {section}{\numberline {10.2}Canvas logs}{19}{section.10.2}
-\contentsline {section}{\numberline {10.3}other? Gantt chart?}{19}{section.10.3}
-\contentsline {chapter}{\numberline {11}Conclusion}{20}{chapter.11}
-\contentsline {chapter}{References}{23}{appendix*.18}
+\contentsline {subsection}{\numberline {2.2.1}Fourier transform}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Filters}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Mel scale}{11}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Machine learning techniques}{11}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Random forests}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}K-means clustering}{12}{subsection.2.3.2}
+\contentsline {chapter}{\numberline {3}Related work}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Examination of other audio similarity techniques and algorithms not analysed by the project}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Scientific paper rewritten}{13}{section.3.2}
+\contentsline {chapter}{\numberline {4}The task}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}Design}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Evaluation methods and metrics}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Datasets used for evaluation}{14}{section.4.3}
+\contentsline {chapter}{\numberline {5}The algorithms}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Osmalskyj big algorithm}{16}{section.5.1}
+\contentsline {section}{\numberline {5.2}Osmalskyj weak features}{16}{section.5.2}
+\contentsline {section}{\numberline {5.3}Ellis cross-correlation algorithm}{16}{section.5.3}
+\contentsline {section}{\numberline {5.4}Osmalskyj quantisation algorithm}{16}{section.5.4}
+\contentsline {section}{\numberline {5.5}Tralie timbre algorithm}{16}{section.5.5}
+\contentsline {section}{\numberline {5.6}Rank aggregation techniques}{16}{section.5.6}
+\contentsline {section}{\numberline {5.7}Rafii audio fingerprinting algorithm}{16}{section.5.7}
+\contentsline {chapter}{\numberline {6}The benchmark}{17}{chapter.6}
+\contentsline {section}{\numberline {6.1}Implementation details}{17}{section.6.1}
+\contentsline {section}{\numberline {6.2}Brief usage information}{17}{section.6.2}
+\contentsline {section}{\numberline {6.3}Algorithm structure in the benchmark}{17}{section.6.3}
+\contentsline {section}{\numberline {6.4}Result format produced by benchmark}{17}{section.6.4}
+\contentsline {chapter}{\numberline {7}Results}{18}{chapter.7}
+\contentsline {section}{\numberline {7.1}Best results}{18}{section.7.1}
+\contentsline {section}{\numberline {7.2}Comparison to results from papers}{18}{section.7.2}
+\contentsline {section}{\numberline {7.3}Result analysis}{18}{section.7.3}
+\contentsline {chapter}{\numberline {8}Further work}{19}{chapter.8}
+\contentsline {chapter}{\numberline {9}Challenges}{20}{chapter.9}
+\contentsline {section}{\numberline {9.1}Lack of datasets}{20}{section.9.1}
+\contentsline {section}{\numberline {9.2}Lack of universal comparison metric?}{20}{section.9.2}
+\contentsline {section}{\numberline {9.3}Academic papers algorithm description}{20}{section.9.3}
+\contentsline {chapter}{\numberline {10}Project management}{21}{chapter.10}
+\contentsline {section}{\numberline {10.1}Using GitLab}{21}{section.10.1}
+\contentsline {section}{\numberline {10.2}Canvas logs}{21}{section.10.2}
+\contentsline {section}{\numberline {10.3}other? Gantt chart?}{21}{section.10.3}
+\contentsline {chapter}{\numberline {11}Conclusion}{22}{chapter.11}
+\contentsline {chapter}{References}{26}{appendix*.18}
