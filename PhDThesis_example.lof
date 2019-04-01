@@ -1,8 +1,11 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Time envelope\relax }}{7}{figure.caption.5}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Spectral envelope\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Time envelope \textit {add citations and description}\relax }}{7}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Spectral envelope \textit {add citations and description}\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Fourier transform applied on a periodic function}}{9}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Fourier transformation equation for periodic functions}}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Fourier series parameter derivation}}{10}{figure.caption.10}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

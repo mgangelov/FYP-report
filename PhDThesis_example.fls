@@ -305,6 +305,7 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.toc
 INPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.lof
 INPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.lof
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.lof
 INPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.lot
 INPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.lot
@@ -312,7 +313,6 @@ OUTPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.lot
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/Introduction/introduction.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/Introduction/introduction.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/Introduction/introduction.tex
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.tex
@@ -322,7 +322,9 @@ INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/time_envelope.p
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectral_envelope.png
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectral_envelope.png
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectral_envelope.png
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/fourier-series.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/fourier-series.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/fourier-series.png
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/RelatedWork/relatedwork.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/RelatedWork/relatedwork.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/RelatedWork/relatedwork.tex
@@ -389,7 +391,12 @@ INPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.out
 INPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.brf
 INPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.brf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb

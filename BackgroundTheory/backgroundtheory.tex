@@ -22,7 +22,10 @@ Each type of information extracted from an audio stream is referred to as an
 \textit{audio feature}. Audio features are mainly derived using various 
 transformations on the signal based on some basic properties of sound. This
 section presents low-level theory required to understand the high-level
-description of how each feature is obtained further in the report.
+description of how each feature is obtained further in the report. At this level
+of the project description we only require an understanding of general
+principles related to audio and signal processing, therefore the explanations
+are kept concise without going deeper into technical details.
 
 
 \section{Basic properties of audio signal}
@@ -106,42 +109,115 @@ acoustic parameters of sound:
     \ref{fig:spectral-envelope} illustrate the difference of between both envelopes.
     \item Changes in the fundamental frequency
     \item Onset dissimilar to the dominant vibration - with \textit{onset}
-    signifying the start of a musical note we look for 'anomalies' in
+    being the start of a musical note we look for 'anomalies' in
     the vibration of the wave compared to the vibrations following the anomaly.
 
 \end{enumerate}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{BackgroundTheory/time_envelope.png}
-    \captionof{figure}{Time envelope}
+    \captionof{figure}{Time envelope \textit{add citations and description}}
     \label{fig:time-envelope}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{BackgroundTheory/spectral_envelope}
-    \captionof{figure}{Spectral envelope}
+    \captionof{figure}{Spectral envelope \textit{add citations and description}}
     \label{fig:spectral-envelope}
 \end{figure}
 
-ADD \textit{duration}
+Out of all psychoacoustical properties introduced \textit{duration} is the one
+which is the easiest to directly measure. It is an indicator of a length of any
+part of a musical composition - tone, pitch, the whole piece, etc
+\cite{benward2014music}. The measurement is expressed using a base unit of time.
 
+\paragraph{}
+One final basic concept that we need to introduce is the \textit{beat}. It
+signifies repeating portions in a song which define the overall rhythm of a
+music piece. Rhythm is formed of "strong" and "weak" beats, with the former
+signifying a suitable moment for melody change.
+
+% \paragraph{}
+% The basic properties of sound allow us to argue why a certain type of audio
+% feature is suitable for a given task.
 %  Connect the signal-based properties of sound with the musical ones - explain
 % pitch, octave, beat and beat onset, timbre, loudness
 
 
-\subsection{Test subsection}
-\label{sec:subsec21}
+% \subsection{Test subsection}
+% \label{sec:subsec21}
 
 \section{Audio transformation techniques}
-Explain spectrum first - we use a spectrum of a basic property to determine an
-audio feature
-mention frequency spectrum for example - make the analogy with determining
-loudness by projecting spl over the frequency spectrum
-then fourier transform
-MENTION THAT THE FUNDAMENTAL FREQUENCY DETERMINES THE PITCH OF TONE BECAUSE IT
-IS THE COMMON DENOMINATOR FREQUENCY OF ALL COMPRISING FREQUENCIES
-
 \label{sec:audiotransform}
+
+Any waveform including the audio ones could be presented as a sum of sinusoids
+of different frequencies \cite{fouriertransform}. In music each of the
+constituting frequencies represents a pure tone. In order to be able to work
+with the tonal representation of a song we need to find a way to separate the
+different frequencies within the audio signal. We achieve that using
+\textit{Fourier transform} - one of the most widely used audio transformations.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{BackgroundTheory/fourier-series.png}
+    \captionof{figure}[Fourier transform applied on a periodic function]{Fourier transform applied on a periodical function (in red). The transform distinguishes six sine functions (in blue) represented as an amplitude-frequency relationship \cite{fourierseries}}
+    \label{fig:fourierseriesimage}
+\end{figure}
+
+Fourier transform could be applied to either periodic (resulting in
+\textit{Fourier series}) or non-periodic functions. As we are working in the
+domain of music we are focussed on the Fourier workings on functions with
+periodicity. Using the transform our goal is finding an approximation for
+function $f(t)$ with period $T=2L$ using a sinusoid functions each with period a
+multiple of $T$ \cite{fourierseries}. Figure \ref{fig:fourierseriesimage} shows
+the destructuring that a Fourier transformation performs on a function. The
+resulting function $g(t)$ which is the transform of $f(t)$ takes the form of:
+
+\begin{figure}[H]
+    \label{fig:fourierseriesequation}
+    \begin{equation}
+        g(t) = \frac{a_0}{2} + \sum_{n=1}^{\infty}({a_n}\cos\frac{n{\pi}x}{L} + {b_n}\sin\frac{n{\pi}x}{L})
+    \end{equation}
+    \caption[Fourier transformation equation for periodic functions]{Fourier series representation of a periodic function \cite{fourierequations}.}
+\end{figure}
+
+The coefficients $a_n$ and $b_n$ determine the relative weights of each of the
+sinusoids \cite{fourierseries}. They are calculated using sine and cosine
+integrals over the function period:
+
+\begin{figure}[H]
+    \begin{equation}
+        a_n = \frac{1}{L}\int_{-L}^{L}f(x)\cos\frac{n{\pi}x}{L}dx,\; n = 1,2,3,\dots
+    \end{equation}
+
+    \begin{equation}
+        b_n = \frac{1}{L}\int_{-L}^{L}f(x)\sin\frac{n{\pi}x}{L}dx,\; n = 1,2,3,\dots
+    \end{equation}
+    \caption[Fourier series parameter derivation]{Derivation of the parameters for the Fourier transform \cite{fourierequations}.}
+\end{figure}
+
+
+
+From a frequency spectrum perspective the relative weights of the sinusoids also
+represents the amount of frequency present in the original function at a point
+of time \cite{wiki:fourier}. This information is very valuable when determining
+sound properties such as pitch, power, timbre and more.
+
+
+% fourier transform shift property
+% f
+
+% Explain spectrum first - we use a spectrum of a basic property to determine an
+% audio feature mention frequency spectrum for example - make the analogy with
+% determining loudness by projecting spl over the frequency spectrum then fourier
+% transform MENTION THAT THE FUNDAMENTAL FREQUENCY DETERMINES THE PITCH OF TONE
+% BECAUSE IT IS THE COMMON DENOMINATOR FREQUENCY OF ALL COMPRISING FREQUENCIES
+
+\section{Machine learning techniques}
+\label{sec:machinelearning}
+
+something from nothing
+
 % add more sections and subsection here
