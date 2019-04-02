@@ -210,8 +210,18 @@ integrals over the function period:
 
 From a frequency spectrum perspective the relative weights of the sinusoids also
 represents the amount of frequency present in the original function at a point
-of time \cite{wiki:fourier}. This information is very valuable when determining
-sound properties such as pitch, power, timbre and more.
+of time \cite{wiki:fourier}. 
+
+The result of a Fourier transform is represented in a spectrogram (figure
+\ref{fig:spectrogram}). The information contained in it is very valuable when
+determining sound properties such as pitch, power, timbre and more.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{BackgroundTheory/spectrogram.png}
+    \captionof{figure}[Spectrogram]{Spectrogram of a spoken word phrase. It shows the time versus frequency relationship produced by the Fourier transform, as well as the intensity (amount) of each frequency for a time frame \cite{wiki:spectrogram}.}
+    \label{fig:spectrogram}
+\end{figure}
 
 \subsection{Filters}
 \label{subsec:filters}
@@ -222,13 +232,20 @@ blocks others \cite{filters}. Filters are defined in terms of \textit{bands},
 the range of frequencies they pass. A combination of filters which helps us
 produce the required frequency cut-off is called a \textit{filter bank}.
 
-\subsection{Mel scale}
+\subsection{Scales}
+Earlier we mentioned that an octave contains 12 semitones. This is an
+established standard - the semitones are equal on a logarithmic scale and form
+the \textit{twelve-tone equal temperament scale}. It is the ordering that most
+Western music compositions employ and therefore the ordering we use to determine
+relative positions in tones of audio signals.
+
 \label{subsec:melscale}
-The \textit{mel scale} presents a perceptual ordering of pitches which are
-determined to be equally far away from each other \cite{stevens1937scale}. The
-scale introduces a unit of perceptual pitch called \textit{mel}, where
-$1000\:mel = 1000\:Hz$. The rest of the mel-frequency mapping is displayed in
-figure \ref{fig:melscale}.
+Another scale which is widely used to arrange values of a psychoacoustic
+variable is the \text{mel scale}. It presents a perceptual ordering of pitches
+which are determined to be equally far away from each other
+\cite{stevens1937scale}. The scale introduces a unit of perceptual pitch called
+\textit{mel}, where $1000\:mel = 1000\:Hz$. The rest of the mel-frequency
+mapping is displayed in figure \ref{fig:melscale}.
 
 \begin{figure}[H]
     \centering
