@@ -478,6 +478,9 @@ INPUT /Users/martin/Documents/GitHub/FYP-report/RelatedWork/relatedwork.tex
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/EvaluationTask/evaluationtask.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/EvaluationTask/evaluationtask.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/EvaluationTask/evaluationtask.tex
+INPUT /Users/martin/Documents/GitHub/FYP-report/EvaluationTask/benchmark_architecture.jpg
+INPUT /Users/martin/Documents/GitHub/FYP-report/EvaluationTask/benchmark_architecture.jpg
+INPUT /Users/martin/Documents/GitHub/FYP-report/EvaluationTask/benchmark_architecture.jpg
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/algorithms.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/algorithms.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/algorithms.tex

@@ -24,63 +24,39 @@ Cover song identification has been a very active topic of research in the last
 10 years. The task has spawned many solutions, so for the scope of this project
 it is infeasible for each technique to be analysed in detail - from technical
 implementation details to results on datasets. To fully cover the active
-developments in the research area this chapter offers a summary of other related
+developments in the research area should also examine related
 research which is not the direct focus of the project.
 
-The chapter is divided into two sections. The first one gives an overview of
-techniques of determining identification. Second one is an analysis of the
-algorithms submitted and their results for the \textit{Cover song
-identification} task, part of the Music Information Retrieval Evaluation
-eXchange (MIREX) conference \cite{mirex}. The format is similar to a
+The chapter presents an analysis of the algorithms submitted in the
+\textit{Cover song identification} task, part of the Music Information Retrieval
+Evaluation eXchange (MIREX) conference \cite{mirex}. The format is similar to a
 competition, where participating researchers submit potential solutions to a
 task and each proposal is evaluated under equal conditions. The evaluation
 environment is preserved throughout the MIREX editions, so results from
 different years are comparable between each other.
 
-Both studies into the field were conducted before the selection of the main
+The study of the conference was conducted before the selection of the main
 audio similarity algorithms for the project and their implementation in a
 benchmark. This allowed for an informed decision on what audio features are
 performing best and also ensured that algorithms not included in MIREX are
 picked, to potentially present a contribution to the field.
 
-\section{Examination of other audio similarity techniques and algorithms not analysed by the project}
-\label{sec:othersimilaritytechinques}
 \section{Cover song identification in MIREX 2005-2018}
 \label{sec:scientificpaper}
 
-To present and evaluate the workings on solving the cover song identification
-problem in 2006 the MIREX conference created the \textit{Cover Song
-Identification} task. The challenge involves an algorithm submission finding a
-cover version of a query song within a dataset. The versions of the cover songs
-would vary greatly in terms of genre (classical, jazz, gospel, etc.), styles and
-orchestrations. The datasets used for evaluation are the MIREX 2006 US Pop Music
-Cover Song dataset (1000 tracks, each track is 16-bit monophonic, 22.05 kHz
-sampling rate, wav format) and, beginning 2009, the Mazurka dataset (539 tracks,
-539 track queries, each track is 16bit monophonic, 22.05 kHz sampling rate, wav
-format). The former dataset has 30 cover songs each represented by 11 different
-versions for a total of 330 files. Each of the files are then individually run
-as queries for the algorithms. Each algorithm then attempts to return the other
-10 versions of the same song.  The latter dataset consists of mazurka dance
-music. Because of that 11 versions from 49 mazurkas are randomly picked (and
-thus 539 tracks are taken from the full set). Afterwards a 539x539 distance
-matrix is created which gives the ranks of each of the associated cover
-versions. The only output the submitted algorithms should return is a
-\textit{number of queries} $\times$ \textit{number of candidates} distance
-matrix. The task specification is taken from MIREX 2018 \cite{mirex:2018}.
-Information about winning participants and their ranking could be found under
-\ref{subsec:resultseval}.
+In 2006 the MIREX conference created the \textit{Cover Song Identification}
+task. The datasets used for evaluation are the MIREX 2006 US Pop Music Cover
+Song dataset (1000 tracks, each track is 16-bit monophonic, 22.05 kHz sampling
+rate, wav format). The dataset has 30 cover songs each represented by 11
+different versions for a total of 330 files. Each of the files are then
+individually run as queries for the algorithms. Each algorithm then attempts to
+return the other 10 versions of the same song. The only output the submitted
+algorithms should return is a \textit{number of queries} $\times$ \textit{number
+of candidates} distance matrix. 
 
-\subsection{Examined work}
-\label{subsec:examinedwork}
 Out of the 40 submissions related to the cover song task in the MIREX conference
-25 were considered. There are 15 papers missing from the MIREX website and are
-therefore excluded from this report. The missing submissions also unfortunately
-include winners of the challenge in 5 different years. The cover song algorithms
-were analysed to outline the most used techniques for capturing audio features
-suitable for determining similarity. The similarity metrics themselves were also
-examined.
+25 were considered. 
 
-From the work examined 5 of the papers present improvements to previous submitted algorithms. That makes the overall number of unique algorithms inspected to 20.
 \subsection{Results evaluation}
 \label{subsec:resultseval}
 
@@ -93,8 +69,7 @@ The results outlined here are based on the statistics provided by MIREX each
 year for the results of the cover song identification task. Each year MIREX
 publishes the total number of covers identified (TNCI), the mean number of
 covers identified (MNCI), the mean of average precisions (MAP) and the mean rank
-for first correctly identified cover (MRFCIC) for each algorithm. The results
-include the algorithms for which the corresponding paper is missing. 
+for first correctly identified cover (MRFCIC) for each algorithm.
 
 Let us look at the best THCI results plotted over the years for the MIREX cover
 song identification task:
@@ -141,16 +116,7 @@ song identification task:
 \end{figure}
 
 We could see that the best performing submissions are the ones published in
-2008, 2009 and 2018. It also seems that between 2009 and 2017 no significant
-improvement has been achieved. Based on that we could establish two imaginary
-'periods' in the challenge. If we set a threshold of 1500 average covers
-achieved we could see that this boundary outlines two groups of submissions. One
-of them includes the years 2008-2009 and 2017-2018 - the 'strong' period, where
-on average the algorithms perform better than the rest of the results. The
-'weak' period is between 2010-2016, where we can even observe the biggest dip in
-the results - in 2014 the max THCI was 33 covers identified, out of 2
-submissions. We use the strong period to give us a notion about techniques that
-perform well in the cover song identification task. 
+2008, 2009 and 2018. 
 
 To determine if there is a tendency into what type of audio feature is used, a
 table comprising of all audio features used is compiled from the available
@@ -177,14 +143,14 @@ submissions:
     \captionof{figure}[Audio feature frequency usage in MIREX 2005-2018]{Number of times a type of audio feature is used in MIREX 2005-2018. The \textit{Winner} column indicates whether the best algorithm for the year utilises the feature.}
 \end{figure}
 
-Unfortunately only 7 out of the 13 winning papers were available online, so it
-is unclear whether they are also using any of the features for information
-extraction. It is worth noting that the winning submissions from 2007, 2008 and
-2009 are evolutions of the same algorithm \cite{serra2007cover}
-\cite{serra2008improving} \cite{serra2009cover}. The \textit{custom technique}
-mentioned in the table refers to an algorithm implementing a non-conventional
-audio feature which achieves the worst winning result in the MIREX competition
-so far  -  only  33  covers  identified  (out  of  3300 possible).
+Based on this evaluation we could see that the best audio features for measuring
+song similarity are chroma features and HPCPs. Unfortunately only 7 out of the
+13 winning papers were available online, so it is unclear whether they are also
+using any of the features for information extraction. The \textit{custom
+technique} mentioned in the table refers to an algorithm implementing a
+non-conventional audio feature which achieves the worst winning result in the
+MIREX competition so far  -  only  33 covers  identified (out  of  3300
+possible).
 
 Some of the main audio similarity algorithms explored in the project use chroma
 features and MFCCs as audio features. Therefore in this section we only explore
@@ -208,3 +174,40 @@ constituting frequencies in the audio stream. The resulting spectrogram is then
 filtered to include only an audible spectrum of frequencies, which are then
 mapped to their pitch classes. Each time frame is then normalised to obtain the
 HPCP audio feature representation of a song.
+
+\subsection{Similarity methods}
+\label{subsec:simmethods}
+Besides introducing the audio features which provide a song representation, a
+majority of the MIREX submissions also outline the processes of measuring
+similarity between songs. A set of notable similarity techniques is of interest
+to background of the task. 
+
+\textit{Dynamic time warping (DTW)} is an algorithm for measuring similarity
+between two temporal sequences, which may vary in speed \cite{wiki:dtw}. The
+algorithm performs a sequence alignment method, which 'bends' the sequences
+non-linearly in the time dimension in order to determine the similarity
+independent of other non-linear variations in the time dimension. After
+sequences are aligned a rule-based matching is applied which determines the
+final similarity score. Dynamic time warping has been very successful when
+creating automatic speech recognition systems. The algorithm achieves great
+results when used in a voice recognition system with MFCC audio features
+\cite{muda2010voice}, a task not too dissimilar to cover song identification.
+
+\paragraph{}
+Because a digital audio signal is essentially a binary stream some submissions
+appropriate classic information theory techniques such as \textit{Normalised
+compression distance (NCD)} to establish whether two songs are covers. The
+origins of NCD come from the notion of information distance, a metric that
+represents the size of the shortest program required to convert one binary
+object into another. We apply normalisation to the result to obtain similarity
+based on the object lengths. If objects $a$ and $b$ are of length 1000000 bits
+and their distance is 1000 bits, then this should be a more significant result
+than having objects $c$ and $d$ of length 1000 bits with the same distance
+\cite{wiki:ncd}. Given this outcome a normalised information distance (NID)
+indicates that $a$ and $b$ are more similar than $c$ and $d$.
+
+NID however is proven to not be computable or semicomputable
+\cite{terwijn2011nonapproximability}. It is therefore approximated using a
+compressor algorithm applied on the objects, with the NID applied to the
+compressed results.
+ 

@@ -165,6 +165,56 @@ J.~Friedman, T.~Hastie, and R.~Tibshirani, {\em The elements of statistical
   2019.
 \newblock [Online; accessed 1-April-2019].
 
+\bibitem{fujishima1999real}
+T.~Fujishima, ``Real-time chord recognition of musical sound: A system using
+  common lisp music,'' {\em Proc. ICMC, Oct. 1999}, pp.~464--467, 1999.
+
+\bibitem{wiki:hpcp}
+{Wikipedia contributors}, ``Harmonic pitch class profiles --- {Wikipedia}{,}
+  the free encyclopedia,'' 2016.
+\newblock [Online; accessed 2-April-2019].
+
+\bibitem{wiki:dtw}
+{Wikipedia contributors}, ``Dynamic time warping --- {Wikipedia}{,} the free
+  encyclopedia,'' 2019.
+\newblock [Online; accessed 2-April-2019].
+
+\bibitem{muda2010voice}
+L.~Muda, M.~Begam, and I.~Elamvazuthi, ``Voice recognition algorithms using mel
+  frequency cepstral coefficient (mfcc) and dynamic time warping (dtw)
+  techniques,'' {\em arXiv preprint arXiv:1003.4083}, 2010.
+
+\bibitem{wiki:ncd}
+{Wikipedia contributors}, ``Normalized compression distance --- {Wikipedia}{,}
+  the free encyclopedia,'' 2019.
+\newblock [Online; accessed 2-April-2019].
+
+\bibitem{terwijn2011nonapproximability}
+S.~A. Terwijn, L.~Torenvliet, and P.~M. Vit{\'a}nyi, ``Nonapproximability of
+  the normalized information distance,'' {\em Journal of Computer and System
+  Sciences}, vol.~77, no.~4, pp.~738--742, 2011.
+
+\bibitem{python}
+{Python}, ``Python,'' 2019.
+\newblock [Online; accessed 3-April-2019].
+
+\bibitem{mongodb}
+{MongoDB}, ``Mongodb,'' 2019.
+\newblock [Online; accessed 3-April-2019].
+
+\bibitem{covers80}
+{D. P. W. Ellis}, ``The covers80 cover song data set,'' 2019.
+\newblock [Online; accessed 3-April-2019].
+
+\bibitem{roederer2008physics}
+J.~G. Roederer, {\em The physics and psychophysics of music: an introduction}.
+\newblock Springer Science \& Business Media, 2008.
+
+\bibitem{wiki:fouriesseries}
+{Wikipedia contributors}, ``Fourier series --- {Wikipedia}{,} the free
+  encyclopedia,'' 2019.
+\newblock [Online; accessed 31-March-2019].
+
 \bibitem{mirex:2018}
 {MIREX}, ``2018:audio cover song identification.''
   \url{https://www.music-ir.org/mirex/wiki/2018:Audio_Cover_Song_Identification},
@@ -183,23 +233,5 @@ J.~Serra, E.~G{\'o}mez, and P.~Herrera, ``Improving binary similarity and local
 \bibitem{serra2009cover}
 J.~Serra, M.~Zanin, and R.~G. Andrzejak, ``Cover song retrieval by cross
   recurrence quantification and unsupervised set detection,'' 2009.
-
-\bibitem{fujishima1999real}
-T.~Fujishima, ``Real-time chord recognition of musical sound: A system using
-  common lisp music,'' {\em Proc. ICMC, Oct. 1999}, pp.~464--467, 1999.
-
-\bibitem{wiki:hpcp}
-{Wikipedia contributors}, ``Harmonic pitch class profiles --- {Wikipedia}{,}
-  the free encyclopedia,'' 2016.
-\newblock [Online; accessed 2-April-2019].
-
-\bibitem{roederer2008physics}
-J.~G. Roederer, {\em The physics and psychophysics of music: an introduction}.
-\newblock Springer Science \& Business Media, 2008.
-
-\bibitem{wiki:fouriesseries}
-{Wikipedia contributors}, ``Fourier series --- {Wikipedia}{,} the free
-  encyclopedia,'' 2019.
-\newblock [Online; accessed 31-March-2019].
 
 \end{thebibliography}
