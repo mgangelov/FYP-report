@@ -57,7 +57,7 @@ The analysis if performed on the following algorithm:
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{Algorithms/algorithm_diagram_3.jpg}
-    \captionof{figure}[Algorithms diagram]{Diagram of chosen algorithms and the relationships between them. The aggregated rank rejector combines the results of 3 types of weak rejectors, as well as the quantisation, cross-correlation and timbre rejectors.}
+    \captionof{figure}[Algorithms diagram]{Diagram of chosen algorithms and the relationships between them. The aggregated rank rejector combines the results of 3 types of weak rejectors, as well as the quantisation, cross-correlation and timbre rejectors}
     \label{fig:algorithms}
 \end{figure}
 
@@ -118,15 +118,16 @@ required by the evaluation task.
 \section{Cross-correlation rejector} 
 \label{sec:weakfeatures}
 The cross-correlation rejector uses chroma features as the main audio feature
-describing each song. Chroma is another name for pitch class profiles, i.e. the
-intensity distribution in each of the twelve pitch classes part of the chromatic
-scale \cite{fujishima1999real}. Any feature that at its core uses chroma to
-represent a song is a chroma feature. That is why the terms harmonic pitch class
-profiles (HPCP) and chroma features have a very similar definition, in fact
-HPCP is a type of chroma feature. The main difference between chroma features is
-their method of extraction. Using chroma features produces a chromagram - a
-pitch class versus time plot showing the intensity of each pitch class at any
-time point (Figure \ref{fig:chromagram}).
+describing each song. Chroma is another name for pitch class profiles, i.e. a
+12-dimensional representation of the intensity distribution in each of the
+twelve pitch classes part of the chromatic scale \cite{fujishima1999real}. Any
+feature that at its core uses chroma to represent a song is a chroma feature.
+That is why the terms harmonic pitch class profiles (HPCP) and chroma features
+have a very similar definition, in fact HPCP is a type of chroma feature. The
+main difference between chroma features is their method of extraction. Using
+chroma features produces a chromagram - a pitch class versus time plot showing
+the intensity of each pitch class at any time point (Figure
+\ref{fig:chromagram}).
 
 \begin{figure}[H]
     \centering
@@ -135,14 +136,105 @@ time point (Figure \ref{fig:chromagram}).
     \label{fig:chromagram}
 \end{figure}
 
-The chroma features in the cross-correlation rejector are extracted using
-short-time Fourier transform (STFT). This is an audio transformation which
-performs Fourier transform on short segments of a signal and aims to determine
-the local frequency and phase changes over the small signal intervals.
-\textit{FINISH THIS}
+The chroma features in the cross-correlation rejector are extracted by
+performing short-time Fourier transform (STFT) analysis. It consists of running
+Fourier transform on short segments of a signal to determine how the frequency
+content changes over time \cite{gao2006non}. STFT improves upon the concepts of
+regular Fourier transform by not only telling us what frequencies are contained
+within the audio stream, but also at what time intervals does each frequency
+appear.
+
+The transformations are applied using the fast Fourier transform (FFT)
+algorithm. The short segments are calculated over sliding overlapping windows as
+illustrated on figure \ref{fig:stft}. The size of the sliding window is
+determined by \textit{FFT window size} and the overlap between each window
+depends on a parameter called \textit{hop length}. The actual window overlap is
+calculated as the difference between the window size and the hop length.
+
+\begin{figure}[H]
+   \centering 
+   \includegraphics[width=\textwidth]{Algorithms/stft.png}
+   \captionof{figure}[Short-time Fourier transform]{Workings of STFT on an audio signal $x(t)$. $g(t)$ is a function defined using the FFT window size and the hop length. The result of each FFT transformation is the amplitude and phase of frequency over the time period. \cite{gao2006non}}
+   \label{fig:stft}
+\end{figure}
+
+The next step into obtaining chroma features for the cross-correlation rejector
+is converting the spectrogram resulting from the STFT into a chromagram. Using
+the standard mapping of pitch $A4 = 440 Hz$ and knowing that pitches in music
+lay on an equal-tempered scale we can calculate the remaining pitches (relative
+to A4) from the frequency spectrum.  We then aggregate all pitches belonging to
+the same pitch class and that gives us the chroma value of the chroma value
+corresponding to the class.
+
+The conversion from frequency to pitch is regulated using a specification
+defining a function to be used when the pitches relative to $A4$ are calculated.
+This standardisation is commonly referred to as \textit{tuning standard}. The
+paper describing the cross-correlation rejector does not specify what tuning was
+used to generate the chroma features, so a library implementation of chroma
+feature extraction was used in the benchmark. To further explain the conversion
+of frequency to chroma an example using the \textit{MIDI tuning standard} is
+presented. Figure \ref{fig:spectrotochroma} follows each stage of the procedure.
+
+The MIDI tuning covers a range of 128 frequencies enumerated from 0 to 127. A4
+(which again corresponds to $440 Hz$) is assigned number 69 and all other
+pitches are calculated using the equation:
+
+\begin{figure}[H]
+    \label{fig:midiequation}
+    \begin{equation}
+       d = 69 + 12 \log_{2}(\frac{f}{440 Hz})
+    \end{equation} 
+    \captionof{figure}[MIDI Tuning pitch calculation equation]{Calculating pitch from frequency $f$ based on MIDI tuning standard \cite{mts}.}
+\end{figure} 
+
+This gives us a song representation similar to the one from
+\ref{fig:spectrotochroma} c). The final step is to sum all MIDI pitch
+coefficients into their corresponding pitch classes and obtain the chromagram
+from \ref{fig:spectrotochroma} d).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.69\textwidth]{Algorithms/spectrogram_to_chromagram.png}
+    \captionof{figure}[Spectrogram to chromagram conversion]{The separate stages of a spectrogram to chromagram conversion of a piano recording of the chromatic scale from A0 to C8 using MIDI tuning. \cite{mullershort}. a) The equal-tempered scale represented by the keys of a piano, with the pitch C3 mapped to 48 according to MIDI Tuning b) A spectrogram of the song, with the time frame where C3 was played marked in red c) Pitch log-frequency representation of the spectrogram d) Resulting chromagram}
+    \label{fig:spectrotochroma}
+\end{figure}
+
+\paragraph{}
+The chroma features in the cross-correlation rejector are
+\textit{beat-synchronous}. This means that the period over which a chroma
+feature is obtained is every beat of the song, rather than a shorter time
+segment. Understanding beat detection in detail was beyond my abilities and a
+library implementation of a beat tracker created by the algorithm creators is
+directly used to obtain a result \cite{librosa_beat}.
+
+\paragraph{}
+The resulting chromagrams for two songs are then scaled to unit length, so that
+the sum of all dimensions of the chroma vector has a sum of 1. The
+representation of the longer song is also shortened to be equal to the one of
+the shorter song. The chromagram matrices are then cross-correlated. To account
+for variations in the structure or pitch of the cover songs the shifts of the
+chromagrams between -500\dots500 beats are considered. The resulting intervals
+of peak values of peaks in the resulting cross-correlation matrix indicate a
+strong match between both tracks. Figure \ref{fig:cross-correlation} shows the
+correlation process of two chromagrams. The blue line in the cross-correlation
+matrix indicates the strong similarity detected.
+
+The similarity score that the rejector returns is the reciprocal value of the
+highest peak value in the cross correlation matrix.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{Algorithms/cross-correlation.png}
+    \captionof{figure}[Cross-correlation of chromagrams]{Extracted chromagrams of two cover songs and the resulting cross-correlation \cite{ellis2007identifyingcover}}
+    \label{fig:cross-correlation}
+\end{figure}
 
 \section{Quantisation rejector}
 \label{sec:ccs}
+
+
+
+
 \section{Timbre rejector} 
 \label{sec:quantisation}
 \section{Aggregated rank rejector} 

@@ -42,6 +42,9 @@ D.~P. Ellis and B.-M. Thierry, ``Large-scale cover song recognition using the
   {SoundCloud},'' 2019.
 \newblock [Online; accessed 29-March-2019].
 
+\bibitem{mullershort}
+M.~M{\"u}ller, ``Short-time fourier transform and chroma features,''
+
 \bibitem{wiki:tone}
 {Wikipedia contributors}, ``Musical tone --- {Wikipedia}{,} the free
   encyclopedia,'' 2019.
@@ -85,6 +88,11 @@ R.~W. Young, ``Terminology for logarithmic frequency units,'' {\em The Journal
 {MIDI}, ``The complete midi 1.0 detailed specification,'' 2019.
 \newblock [Online; accessed 31-March-2019].
 
+\bibitem{wiki:octave}
+{Wikipedia contributors}, ``Octave --- {Wikipedia}{,} the free encyclopedia,''
+  2019.
+\newblock [Online; accessed 4-April-2019].
+
 \bibitem{sound-pressure}
 {Engineering Toolbox}, ``Sound pressure,'' 2019.
 \newblock [Online; accessed 31-March-2019].
@@ -123,6 +131,15 @@ B.~Benward, {\em Music in Theory and Practice Volume 1}.
 \bibitem{wiki:dtft}
 {Wikipedia contributors}, ``Discrete-time fourier transform --- {Wikipedia}{,}
   the free encyclopedia,'' 2019.
+\newblock [Online; accessed 4-April-2019].
+
+\bibitem{fft}
+{Wolfram MathWorld}, ``Fast fourier transform,'' 2019.
+\newblock [Online; accessed 4-April-2019].
+
+\bibitem{wiki:fft}
+{Wikipedia contributors}, ``Fast fourier transform --- {Wikipedia}{,} the free
+  encyclopedia,'' 2019.
 \newblock [Online; accessed 4-April-2019].
 
 \bibitem{wiki:spectrogram}
@@ -254,6 +271,15 @@ P.~Geurts, D.~Ernst, and L.~Wehenkel, ``Extremely randomized trees,'' {\em
 {Wikipedia contributors}, ``Receiver operating characteristic ---
   {Wikipedia}{,} the free encyclopedia,'' 2019.
 \newblock [Online; accessed 4-April-2019].
+
+\bibitem{gao2006non}
+R.~X. Gao and R.~Yan, ``Non-stationary signal processing for bearing health
+  monitoring,'' {\em International journal of manufacturing research}, vol.~1,
+  no.~1, pp.~18--40, 2006.
+
+\bibitem{librosa_beat}
+{Librosa}, ``librosa.beat.beat\_track,'' 2019.
+\newblock [Online; accessed 5-April-2019].
 
 \bibitem{roederer2008physics}
 J.~G. Roederer, {\em The physics and psychophysics of music: an introduction}.

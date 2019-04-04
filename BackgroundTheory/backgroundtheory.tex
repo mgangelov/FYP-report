@@ -19,13 +19,15 @@
 %
 
 Each type of information extracted from an audio stream is referred to as an
-\textit{audio feature}. Audio features are mainly derived using various 
-transformations on the signal based on some basic properties of sound. This
-section presents low-level theory required to understand the high-level
-description of how each feature is obtained further in the report. At this level
-of the project description we only require an understanding of general
-principles related to audio and signal processing, therefore the explanations
-are kept concise without going deeper into technical details.
+\textit{audio feature}. Audio features are mainly derived using various
+transformations on the signal based on some basic properties of sound. They
+allow for music data to be comparable and algorithmically accessible
+\cite{mullershort}. This section presents low-level theory required to
+understand the high-level description of how each feature is obtained further in
+the report. At this level of the project description we only require an
+understanding of general principles related to audio and signal processing,
+therefore the explanations are kept concise without going deeper into technical
+details.
 
 
 \section{Basic properties of audio signal}
@@ -72,11 +74,12 @@ Several basic perceptual properties of sound are regularly used to describe what
 is captured by each audio feature. They are pitch, loudness, timbre and
 duration. Klapuri et al. \cite{klapuri2007signal} form good definitions of the
 psychoacoustical terms outlined. They define \textit{pitch} as a perceptual
-attribute which offers ordering of tones on a frequency-related scale. Different
-pitches could be labelled through the Helmholz pitch notation
-\cite{helmholtz2013sensations} using letters, through scientific pitch notation
-\cite{fletcher1934loudness} utilising letters and numbers, or directly using
-numbers representing the closest frequency in hertz (hz). Despite being
+attribute which offers ordering of tones on a frequency-related scale. The term
+is very closely related to tone and sometimes both definitions are used
+interchangeably. Different pitches could be labelled through the Helmholz pitch
+notation \cite{helmholtz2013sensations} using letters, through scientific pitch
+notation \cite{fletcher1934loudness} utilising letters and numbers, or directly
+using numbers representing the closest frequency in hertz (Hz). Despite being
 determined by clear and stable frequencies in sound, pitch is more importantly a
 subjective auditory sensation, so a strict mathematical relationship between
 frequency and pitch does not exist \cite{acoustical1986american}. As a standard
@@ -87,6 +90,11 @@ respect to a \textit{fundamental frequency}, the lowest frequency available in a
 tone and therefore determining the overall pitch of the tone. Using this notion
 of logarithmic perception there are various mappings of pitches to frequencies,
 the most famous of which is the MIDI tuning standard \cite{mts}.
+
+Similar to tones, pitches are also ordered in octaves, where an octave is an
+interval between one pitch and another with double its frequency
+\cite{wiki:octave}. The set of all pitches which are within one octave of each
+other is called a \textit{pitch class}.
 
 \textit{Loudness} is another subjective psychoacoustical attribute of sound
 \cite{klapuri2007signal}. Similar to how pitch is related to frequency, loudness
@@ -208,9 +216,21 @@ of time \cite{wiki:fourier}.
 There are different forms of Fourier analysis. In the area of MIR one of the
 most frequently used is the \textit{discrete-time Fourier transform (DTFT)}. It
 works on discrete uniformly spaced samples from a continuous function. The
-result produced is a periodic summation of the Fourier transform of the
-continuous function \cite{wiki:dtft}. To obtain DTFT we need to run
-\textit{discrete Fourier transform}, a type of Fourier transform, on the function samples.
+result produced is a periodic summation of the Fourier transform of the function
+\cite{wiki:dtft}. To obtain DTFT we need to run \textit{discrete Fourier
+transform (DFT)}, a type of Fourier transform, on the function samples. 
+
+Computing DFT directly is an operation on a sequence of complex numbers
+converting it into a new sequence of complex numbers. The computational
+complexity of the transformation is $\mathcal{O}(n^2)$. A class of algorithms
+called \textit{fast Fourier transform (FFT)} has been created to compute DFT
+more efficiently with complexity of $\mathcal{O}(n\log{}n)$ \cite{fft}. This is
+achieved by representing the DFT as a transformation matrix - a matrix which
+when multiplied with the input signal achieves the same result as normal DFT. To
+optimise the matrix multiplication process FFT algorithms factorise the
+transformation matrix into a product of several sparse factors \cite{wiki:fft}.
+In practice FFT is the main way to compute DFT and therefore both terms are used
+interchangeably.
 
 The result of a Fourier analysis is represented in a spectrogram (figure
 \ref{fig:spectrogram}). The information contained in it is very valuable when
@@ -238,7 +258,9 @@ Earlier we mentioned that an octave contains 12 semitones. This is an
 established standard - the semitones are equal on a logarithmic scale and form
 the twelve-tone equal temperament or \textit{chromatic scale}. It is the
 ordering that most Western music compositions employ and therefore the ordering
-we use to determine relative positions in tones of audio signals.
+we use to determine relative positions in tones of audio signals. It is also the
+scale which musical instruments often utilise. A good example of this are the
+keys of a piano, which are ordered based on an equal temperament scale.
 
 Another scale which is widely used to arrange values of a psychoacoustic
 variable is the \text{mel scale}. It presents a perceptual ordering of pitches

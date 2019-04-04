@@ -466,6 +466,11 @@ INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectral_envelo
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/fourier-series.png
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/fourier-series.png
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/fourier-series.png
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueus.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueus.fd
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/euler/eusm10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/euler/eusm10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/euler/eusm7.tfm
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectrogram.png
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectrogram.png
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectrogram.png
@@ -490,6 +495,15 @@ INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/algorithm_diagram_3.j
 INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/chromagram_picture.png
 INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/chromagram_picture.png
 INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/chromagram_picture.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/stft.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/stft.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/stft.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/spectrogram_to_chromagram.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/spectrogram_to_chromagram.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/spectrogram_to_chromagram.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/cross-correlation.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/cross-correlation.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/Algorithms/cross-correlation.png
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/Benchmark/benchmark.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/Benchmark/benchmark.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/Benchmark/benchmark.tex
@@ -558,3 +572,4 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb

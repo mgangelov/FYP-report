@@ -17,47 +17,49 @@ A level-1 auxiliary file: Conclusions/conclusions.aux
 The style file: ieeetr.bst
 Database file #1: References/references.bib
 Warning--empty journal in ellis2012large
+Warning--empty journal in mullershort
+Warning--empty year in mullershort
 Warning--can't use both volume and number fields in friedman2001elements
 Warning--empty journal in serra2009cover
-You've used 60 entries,
+You've used 66 entries,
             1876 wiz_defined-function locations,
-            741 strings with 11116 characters,
-and the built_in function-call counts, 11287 in all, are:
-= -- 1116
-> -- 363
+            761 strings with 11621 characters,
+and the built_in function-call counts, 12237 in all, are:
+= -- 1209
+> -- 391
 < -- 0
-+ -- 154
-- -- 94
-* -- 591
-:= -- 1584
-add.period$ -- 98
-call.type$ -- 60
-change.case$ -- 52
++ -- 167
+- -- 101
+* -- 637
+:= -- 1719
+add.period$ -- 107
+call.type$ -- 66
+change.case$ -- 58
 chr.to.int$ -- 0
-cite$ -- 63
-duplicate$ -- 528
-empty$ -- 1321
-format.name$ -- 94
-if$ -- 2833
+cite$ -- 71
+duplicate$ -- 568
+empty$ -- 1437
+format.name$ -- 101
+if$ -- 3070
 int.to.chr$ -- 0
-int.to.str$ -- 60
-missing$ -- 38
-newline$ -- 221
-num.names$ -- 60
-pop$ -- 345
+int.to.str$ -- 66
+missing$ -- 40
+newline$ -- 243
+num.names$ -- 66
+pop$ -- 381
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 316
+skip$ -- 342
 stack$ -- 0
-substring$ -- 431
-swap$ -- 133
+substring$ -- 455
+swap$ -- 140
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 105
-width$ -- 62
-write$ -- 561
-(There were 3 warnings)
+warning$ -- 5
+while$ -- 114
+width$ -- 68
+write$ -- 614
+(There were 5 warnings)
