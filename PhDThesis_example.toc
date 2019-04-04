@@ -26,30 +26,30 @@
 \contentsline {section}{\numberline {4.2}Evaluation methods and metrics}{16}{section.4.2}
 \contentsline {section}{\numberline {4.3}Datasets used for evaluation}{16}{section.4.3}
 \contentsline {chapter}{\numberline {5}The algorithms}{18}{chapter.5}
-\contentsline {section}{\numberline {5.1}Osmalskyj big algorithm}{18}{section.5.1}
-\contentsline {section}{\numberline {5.2}Osmalskyj weak features}{18}{section.5.2}
-\contentsline {section}{\numberline {5.3}Ellis cross-correlation algorithm}{18}{section.5.3}
-\contentsline {section}{\numberline {5.4}Osmalskyj quantisation algorithm}{18}{section.5.4}
-\contentsline {section}{\numberline {5.5}Tralie timbre algorithm}{18}{section.5.5}
-\contentsline {section}{\numberline {5.6}Rank aggregation techniques}{18}{section.5.6}
-\contentsline {section}{\numberline {5.7}Rafii audio fingerprinting algorithm}{18}{section.5.7}
-\contentsline {chapter}{\numberline {6}The benchmark}{19}{chapter.6}
-\contentsline {section}{\numberline {6.1}Implementation details}{19}{section.6.1}
-\contentsline {section}{\numberline {6.2}Brief usage information}{19}{section.6.2}
-\contentsline {section}{\numberline {6.3}Algorithm structure in the benchmark}{19}{section.6.3}
-\contentsline {section}{\numberline {6.4}Result format produced by benchmark}{19}{section.6.4}
-\contentsline {chapter}{\numberline {7}Results}{20}{chapter.7}
-\contentsline {section}{\numberline {7.1}Best results}{20}{section.7.1}
-\contentsline {section}{\numberline {7.2}Comparison to results from papers}{20}{section.7.2}
-\contentsline {section}{\numberline {7.3}Result analysis}{20}{section.7.3}
-\contentsline {chapter}{\numberline {8}Further work}{21}{chapter.8}
-\contentsline {chapter}{\numberline {9}Challenges}{22}{chapter.9}
-\contentsline {section}{\numberline {9.1}Lack of datasets}{22}{section.9.1}
-\contentsline {section}{\numberline {9.2}Lack of universal comparison metric?}{22}{section.9.2}
-\contentsline {section}{\numberline {9.3}Academic papers algorithm description}{22}{section.9.3}
-\contentsline {chapter}{\numberline {10}Project management}{23}{chapter.10}
-\contentsline {section}{\numberline {10.1}Using GitLab}{23}{section.10.1}
-\contentsline {section}{\numberline {10.2}Canvas logs}{23}{section.10.2}
-\contentsline {section}{\numberline {10.3}other? Gantt chart?}{23}{section.10.3}
-\contentsline {chapter}{\numberline {11}Conclusion}{24}{chapter.11}
-\contentsline {chapter}{References}{28}{appendix*.20}
+\contentsline {section}{\numberline {5.1}Algorithms list}{18}{section.5.1}
+\contentsline {section}{\numberline {5.2}Weak rejector}{19}{section.5.2}
+\contentsline {section}{\numberline {5.3}Cross-correlation rejector}{21}{section.5.3}
+\contentsline {section}{\numberline {5.4}Quantisation rejector}{21}{section.5.4}
+\contentsline {section}{\numberline {5.5}Timbre rejector}{21}{section.5.5}
+\contentsline {section}{\numberline {5.6}Aggregated rank rejector}{21}{section.5.6}
+\contentsline {section}{\numberline {5.7}Fingerprint rejector}{21}{section.5.7}
+\contentsline {chapter}{\numberline {6}The benchmark}{22}{chapter.6}
+\contentsline {section}{\numberline {6.1}Implementation details}{22}{section.6.1}
+\contentsline {section}{\numberline {6.2}Brief usage information}{22}{section.6.2}
+\contentsline {section}{\numberline {6.3}Algorithm structure in the benchmark}{22}{section.6.3}
+\contentsline {section}{\numberline {6.4}Result format produced by benchmark}{22}{section.6.4}
+\contentsline {chapter}{\numberline {7}Results}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}Best results}{23}{section.7.1}
+\contentsline {section}{\numberline {7.2}Comparison to results from papers}{23}{section.7.2}
+\contentsline {section}{\numberline {7.3}Result analysis}{23}{section.7.3}
+\contentsline {chapter}{\numberline {8}Further work}{24}{chapter.8}
+\contentsline {chapter}{\numberline {9}Challenges}{25}{chapter.9}
+\contentsline {section}{\numberline {9.1}Lack of datasets}{25}{section.9.1}
+\contentsline {section}{\numberline {9.2}Lack of universal comparison metric?}{25}{section.9.2}
+\contentsline {section}{\numberline {9.3}Academic papers algorithm description}{25}{section.9.3}
+\contentsline {chapter}{\numberline {10}Project management}{26}{chapter.10}
+\contentsline {section}{\numberline {10.1}Using GitLab}{26}{section.10.1}
+\contentsline {section}{\numberline {10.2}Canvas logs}{26}{section.10.2}
+\contentsline {section}{\numberline {10.3}other? Gantt chart?}{26}{section.10.3}
+\contentsline {chapter}{\numberline {11}Conclusion}{27}{chapter.11}
+\contentsline {chapter}{References}{32}{appendix*.20}

@@ -30,16 +30,16 @@ D.~P. Ellis and B.-M. Thierry, ``Large-scale cover song recognition using the
   2d fourier transform magnitude,'' 2012.
 
 \bibitem{spotify}
-{Spotify}, ``Music for everyone - spotify,'' 2019.
+{Spotify}, ``Music for everyone --- {Spotify},'' 2019.
 \newblock [Online; accessed 29-March-2019].
 
 \bibitem{applemusic}
-{Apple}, ``Music - apple (uk),'' 2019.
+{Apple}, ``Music --- {Apple} ({UK}),'' 2019.
 \newblock [Online; accessed 29-March-2019].
 
 \bibitem{soundcloud}
-{SoundCloud}, ``Soundcloud – listen to free music and podcasts on
-  soundcloud,'' 2019.
+{SoundCloud}, ``Soundcloud –-- {Listen} to free music and podcasts on
+  {SoundCloud},'' 2019.
 \newblock [Online; accessed 29-March-2019].
 
 \bibitem{wiki:tone}
@@ -205,6 +205,50 @@ S.~A. Terwijn, L.~Torenvliet, and P.~M. Vit{\'a}nyi, ``Nonapproximability of
 \bibitem{covers80}
 {D. P. W. Ellis}, ``The covers80 cover song data set,'' 2019.
 \newblock [Online; accessed 3-April-2019].
+
+\bibitem{osmalsky2015combining}
+J.~Osmalsky, J.-J. Embrechts, P.~Foster, and S.~Dixon, ``Combining features for
+  cover song identification,'' in {\em 16th International Society for Music
+  Information Retrieval Conference}, 2015.
+
+\bibitem{osmalsky2016enhancing}
+J.~Osmalsky, M.~Van~Droogenbroeck, and J.-J. Embrechts, ``Enhancing cover song
+  identification with hierarchical rank aggregation,'' in {\em Proceedings of
+  the 17th International for Music Information Retrieval Conference},
+  pp.~136--142, 2016.
+
+\bibitem{ellis2008cross}
+D.~P. Ellis, C.~V. Cotton, and M.~I. Mandel, ``Cross-correlation of
+  beat-synchronous representations for music similarity,'' in {\em 2008 IEEE
+  International Conference on Acoustics, Speech and Signal Processing},
+  pp.~57--60, IEEE, 2008.
+
+\bibitem{tralie2015cover}
+C.~J. Tralie and P.~Bendich, ``Cover song identification with timbral shape
+  sequences,'' {\em arXiv preprint arXiv:1507.05143}, 2015.
+
+\bibitem{rafii2014audio}
+Z.~Rafii, B.~Coover, and J.~Han, ``An audio fingerprinting system for live
+  version identification using image processing techniques,'' in {\em 2014 IEEE
+  International Conference on Acoustics, Speech and Signal Processing
+  (ICASSP)}, pp.~644--648, IEEE, 2014.
+
+\bibitem{slowpop}
+{Elias Leight}, ``Producers, songwriters on how pop songs got so slow,'' 2019.
+\newblock [Online; accessed 3-April-2019].
+
+\bibitem{geurts2006extremely}
+P.~Geurts, D.~Ernst, and L.~Wehenkel, ``Extremely randomized trees,'' {\em
+  Machine learning}, vol.~63, no.~1, pp.~3--42, 2006.
+
+\bibitem{shs}
+{Labrosa}, ``The secondhandsongs dataset | million song dataset,'' 2019.
+\newblock [Online; accessed 4-April-2019].
+
+\bibitem{wiki:roc}
+{Wikipedia contributors}, ``Receiver operating characteristic ---
+  {Wikipedia}{,} the free encyclopedia,'' 2019.
+\newblock [Online; accessed 4-April-2019].
 
 \bibitem{roederer2008physics}
 J.~G. Roederer, {\em The physics and psychophysics of music: an introduction}.

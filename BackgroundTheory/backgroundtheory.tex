@@ -269,8 +269,24 @@ forests the type of learner is a decision tree. The method works by building a
 predefined number of decision trees during training, and return a result
 combining their individual outcomes. In the case of classification the mode of
 all returned class predictions is taken, while the mean of the predictions is
-used during regression. Random trees help avoid the tendency of individual
-decision trees to overfit to their training data \cite{friedman2001elements}.
+used during regression. 
+
+Random trees learning generally builds upon the idea of recursive partitioning
+used in decision tree learning. Partitioning builds a decision tree from the
+training data based by asking questions related to the independent variables
+(attributes) formed by the data samples. The 'answer' or split points for the
+tree are called cut points. They are calculated to be the local optima values
+which best split the data into homogenous sets based on the attribute. This
+principle fails to create generalised models, since as the tree becomes deeper
+and deeper the more it tends to overfit on their training data
+\cite{friedman2001elements}.
+
+Random trees help avoid the overfitting tendency of individual decision trees by
+implementing bootstrap aggregating, also known as bagging. The learning
+algorithm creates several small sets of uniformly sampled observations from the
+training set and constructs trees using them. Depending on the configuration
+some samples can be picked in more than one set. The end result is achieved
+through the voting approaches explained above.
 
 \subsection{K-means clustering}
 \label{subsec:kmeansclustering}
