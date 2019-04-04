@@ -51,40 +51,42 @@ song based on its sample rate.
 
 \subsection{Tones}
 \label{subsec:tones}
-In order to understand how properties of a digital signal could form audio
-features we first need to examine how they relate to the ways of how people
-perceive music and sound. Western music is described using \textit{tones},
-steady periodic sounds \cite{wiki:tone}. They can be pure if the sound has
-sinusoidal waveform, or complex if they are a combination of pure tones with a
-periodic repetition pattern. A half tone is called a \textit{semitone} and it is
-the smallest measure of period between sounds. Semitones are grouped into
-\textit{octaves} where each octave contains 12 semitones. The acoustic opposite
-of tone is noise, a disordered sound which is unpleasant to the human brain and
-is disruptive to hearing \cite{music-noise}.
+Western music is described using \textit{tones}, steady periodic sounds
+\cite{wiki:tone}. They can be pure if the sound has sinusoidal waveform, or
+complex if they are a combination of pure tones with a periodic repetition
+pattern. Tones are distinguished by several basic perceptual properties of sound
+- pitch, loudness, timbre and duration \cite{acoustic-glossary-power}. A half
+tone is called a \textit{semitone} and it is the smallest measure of period
+between sounds. Semitones are grouped into \textit{octaves} where each octave
+contains 12 semitones. The acoustic opposite of tone is noise, a disordered
+sound which is unpleasant to the human brain and is disruptive to hearing
+\cite{music-noise}. 
 
 \subsection{Psychoacoustic properties}
 \label{subsec:psychoacoustic}
-Tones are distinguished by several basic perceptual properties of sound - pitch,
-loudness, timbre and duration \cite{acoustic-glossary-power}. Consequently these
-properties are also regularly used to describe what is accurately captured by
-each audio feature. Klapuri et al. \cite{klapuri2007signal} form good
-definitions of the psychoacoustical terms outlined. They define \textit{pitch}
-as a perceptual attribute which offers ordering of tones on a
-frequency-related scale. Different pitches could be labelled through the
-Helmholz pitch notation \cite{helmholtz2013sensations} using letters, through
-scientific pitch notation \cite{fletcher1934loudness} utilising letters and
-numbers, or directly using numbers representing the closest frequency in hertz
-(hz). Despite being determined by clear and stable frequencies in sound, pitch
-is more importantly a subjective auditory sensation, so a strict mathematical
-relationship between frequency and pitch does not exist
-\cite{acoustical1986american}. As a standard it is accepted the musical note of
-A above C (Helmholz notation) or A4 (scientific notation) has a frequency of 440
-Hz \cite{young1939terminology}. The human ear perceives musical intervals on an
-approximately logarithmic scale with respect to a \textit{fundamental
-frequency}, the lowest frequency available in a tone and therefore determining
-the overall pitch of the tone. Using this notion of logarithmic perception there
-are various mappings of pitches to frequencies, the most famous of which is the
-MIDI tuning standard \cite{mts}.
+In order to understand how properties of a digital signal could form audio
+features we first need to examine how they relate to the ways of how people
+perceive music and sound. 
+
+Several basic perceptual properties of sound are regularly used to describe what
+is captured by each audio feature. They are pitch, loudness, timbre and
+duration. Klapuri et al. \cite{klapuri2007signal} form good definitions of the
+psychoacoustical terms outlined. They define \textit{pitch} as a perceptual
+attribute which offers ordering of tones on a frequency-related scale. Different
+pitches could be labelled through the Helmholz pitch notation
+\cite{helmholtz2013sensations} using letters, through scientific pitch notation
+\cite{fletcher1934loudness} utilising letters and numbers, or directly using
+numbers representing the closest frequency in hertz (hz). Despite being
+determined by clear and stable frequencies in sound, pitch is more importantly a
+subjective auditory sensation, so a strict mathematical relationship between
+frequency and pitch does not exist \cite{acoustical1986american}. As a standard
+it is accepted the musical note of A above C (Helmholz notation) or A4
+(scientific notation) has a frequency of 440 Hz \cite{young1939terminology}. The
+human ear perceives musical intervals on an approximately logarithmic scale with
+respect to a \textit{fundamental frequency}, the lowest frequency available in a
+tone and therefore determining the overall pitch of the tone. Using this notion
+of logarithmic perception there are various mappings of pitches to frequencies,
+the most famous of which is the MIDI tuning standard \cite{mts}.
 
 \textit{Loudness} is another subjective psychoacoustical attribute of sound
 \cite{klapuri2007signal}. Similar to how pitch is related to frequency, loudness
@@ -145,16 +147,6 @@ signifies repeating portions in a song which define the overall rhythm of a
 music piece. Rhythm is formed of "strong" and "weak" beats, with the former
 signifying a suitable moment for melody change.
 
-% \paragraph{}
-% The basic properties of sound allow us to argue why a certain type of audio
-% feature is suitable for a given task.
-%  Connect the signal-based properties of sound with the musical ones - explain
-% pitch, octave, beat and beat onset, timbre, loudness
-
-
-% \subsection{Test subsection}
-% \label{sec:subsec21}
-
 \section{Audio transformation techniques}
 \label{sec:audiotransform}
 
@@ -163,9 +155,10 @@ signifying a suitable moment for melody change.
 Any waveform including the audio ones could be presented as a sum of sinusoids
 of different frequencies \cite{fouriertransform}. In music each of the
 constituting frequencies represents a pure tone. In order to be able to work
-with the tonal representation of a song we need to find a way to separate the
-different frequencies within the audio signal. We achieve that using
-\textit{Fourier transform} - one of the most widely used audio transformations.
+with the tonal representation of a song we need to perform \textit{Fourier
+analysis}, that is, find a way to separate the different frequencies within the
+audio signal. We achieve that using a decomposition called \textit{Fourier
+transform} - one of the most widely used audio transformations.
 
 \begin{figure}[H]
     \centering
@@ -212,7 +205,14 @@ From a frequency spectrum perspective the relative weights of the sinusoids also
 represents the amount of frequency present in the original function at a point
 of time \cite{wiki:fourier}. 
 
-The result of a Fourier transform is represented in a spectrogram (figure
+There are different forms of Fourier analysis. In the area of MIR one of the
+most frequently used is the \textit{discrete-time Fourier transform (DTFT)}. It
+works on discrete uniformly spaced samples from a continuous function. The
+result produced is a periodic summation of the Fourier transform of the
+continuous function \cite{wiki:dtft}. To obtain DTFT we need to run
+\textit{discrete Fourier transform}, a type of Fourier transform, on the function samples.
+
+The result of a Fourier analysis is represented in a spectrogram (figure
 \ref{fig:spectrogram}). The information contained in it is very valuable when
 determining sound properties such as pitch, power, timbre and more.
 
@@ -233,13 +233,13 @@ the range of frequencies they pass. A combination of filters which helps us
 produce the required frequency cut-off is called a \textit{filter bank}.
 
 \subsection{Scales}
+\label{subsec:scales}
 Earlier we mentioned that an octave contains 12 semitones. This is an
 established standard - the semitones are equal on a logarithmic scale and form
-the \textit{twelve-tone equal temperament scale}. It is the ordering that most
-Western music compositions employ and therefore the ordering we use to determine
-relative positions in tones of audio signals.
+the twelve-tone equal temperament or \textit{chromatic scale}. It is the
+ordering that most Western music compositions employ and therefore the ordering
+we use to determine relative positions in tones of audio signals.
 
-\label{subsec:melscale}
 Another scale which is widely used to arrange values of a psychoacoustic
 variable is the \text{mel scale}. It presents a perceptual ordering of pitches
 which are determined to be equally far away from each other

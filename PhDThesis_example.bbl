@@ -47,14 +47,14 @@ D.~P. Ellis and B.-M. Thierry, ``Large-scale cover song recognition using the
   encyclopedia,'' 2019.
 \newblock [Online; accessed 31-March-2019].
 
+\bibitem{acoustic-glossary-power}
+{Acoustic Glossary}, ``Sound power - acoustic glossary - article,'' 2019.
+\newblock [Online; accessed 29-March-2019].
+
 \bibitem{music-noise}
 {The Physics Hypertextbook}, ``Music \& noise - the physics hypertextbook,''
   2019.
 \newblock [Online; accessed 31-March-2019].
-
-\bibitem{acoustic-glossary-power}
-{Acoustic Glossary}, ``Sound power - acoustic glossary - article,'' 2019.
-\newblock [Online; accessed 29-March-2019].
 
 \bibitem{klapuri2007signal}
 A.~Klapuri and M.~Davy, {\em Signal processing methods for music
@@ -119,6 +119,11 @@ B.~Benward, {\em Music in Theory and Practice Volume 1}.
 {Wikipedia contributors}, ``Fourier transform --- {Wikipedia}{,} the free
   encyclopedia,'' 2019.
 \newblock [Online; accessed 31-March-2019].
+
+\bibitem{wiki:dtft}
+{Wikipedia contributors}, ``Discrete-time fourier transform --- {Wikipedia}{,}
+  the free encyclopedia,'' 2019.
+\newblock [Online; accessed 4-April-2019].
 
 \bibitem{wiki:spectrogram}
 {Wikipedia contributors}, ``Spectrogram --- {Wikipedia}{,} the free

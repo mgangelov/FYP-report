@@ -19,36 +19,36 @@ Database file #1: References/references.bib
 Warning--empty journal in ellis2012large
 Warning--can't use both volume and number fields in friedman2001elements
 Warning--empty journal in serra2009cover
-You've used 59 entries,
+You've used 60 entries,
             1876 wiz_defined-function locations,
-            739 strings with 11035 characters,
-and the built_in function-call counts, 11155 in all, are:
-= -- 1103
-> -- 359
+            741 strings with 11116 characters,
+and the built_in function-call counts, 11287 in all, are:
+= -- 1116
+> -- 363
 < -- 0
-+ -- 152
-- -- 93
-* -- 587
-:= -- 1565
-add.period$ -- 96
-call.type$ -- 59
-change.case$ -- 51
++ -- 154
+- -- 94
+* -- 591
+:= -- 1584
+add.period$ -- 98
+call.type$ -- 60
+change.case$ -- 52
 chr.to.int$ -- 0
-cite$ -- 62
-duplicate$ -- 524
-empty$ -- 1303
-format.name$ -- 93
-if$ -- 2799
+cite$ -- 63
+duplicate$ -- 528
+empty$ -- 1321
+format.name$ -- 94
+if$ -- 2833
 int.to.chr$ -- 0
-int.to.str$ -- 59
+int.to.str$ -- 60
 missing$ -- 38
-newline$ -- 217
-num.names$ -- 59
-pop$ -- 338
+newline$ -- 221
+num.names$ -- 60
+pop$ -- 345
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 313
+skip$ -- 316
 stack$ -- 0
 substring$ -- 431
 swap$ -- 133
@@ -57,7 +57,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 104
-width$ -- 61
-write$ -- 552
+while$ -- 105
+width$ -- 62
+write$ -- 561
 (There were 3 warnings)

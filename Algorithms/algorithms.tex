@@ -114,13 +114,34 @@ converted into the training set format and passed to the model for class
 prediction. The output result is a probability of every pair of songs being
 covers. Grouping the results per song produces a database ordering that is
 required by the evaluation task.
+
 \section{Cross-correlation rejector} 
 \label{sec:weakfeatures}
 The cross-correlation rejector uses chroma features as the main audio feature
-describing each song. Being a powerful representation of the distinct 12
-semitones part of an octave, they are very similar to the harmonic pitch class
-profiles (HPCPs) discussed earlier. 
-\section{Quantisation rejector} 
+describing each song. Chroma is another name for pitch class profiles, i.e. the
+intensity distribution in each of the twelve pitch classes part of the chromatic
+scale \cite{fujishima1999real}. Any feature that at its core uses chroma to
+represent a song is a chroma feature. That is why the terms harmonic pitch class
+profiles (HPCP) and chroma features have a very similar definition, in fact
+HPCP is a type of chroma feature. The main difference between chroma features is
+their method of extraction. Using chroma features produces a chromagram - a
+pitch class versus time plot showing the intensity of each pitch class at any
+time point (Figure \ref{fig:chromagram}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Algorithms/chromagram_picture.png}
+    \captionof{figure}[Chromagram]{Chromagram of the song \textit{Little Liar} by Joan Jett}
+    \label{fig:chromagram}
+\end{figure}
+
+The chroma features in the cross-correlation rejector are extracted using
+short-time Fourier transform (STFT). This is an audio transformation which
+performs Fourier transform on short segments of a signal and aims to determine
+the local frequency and phase changes over the small signal intervals.
+\textit{FINISH THIS}
+
+\section{Quantisation rejector}
 \label{sec:ccs}
 \section{Timbre rejector} 
 \label{sec:quantisation}
