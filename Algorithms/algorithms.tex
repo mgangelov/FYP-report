@@ -232,9 +232,53 @@ highest peak value in the cross correlation matrix.
 \section{Quantisation rejector}
 \label{sec:ccs}
 
+The dominant audio feature in the quantisation rejector is again chroma vectors
+which are beat-synchronous and unit normalised. The extraction implementation is
+the same, with some modifications to the FFT window size and hop length
+parameters. The general idea of the rejector is to represent songs using
+\textit{codewords} which are generated using K-means clustering of a large
+number of chroma vectors. The resulting cluster centers are the codewords. Each
+song is then represented using a histogram showing the codewords frequency for
+each track. As illustrated in figure \ref{fig:quantisation} the approach leads
+to visible similarity between cover songs. 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Algorithms/quantisation.png}
+    \captionof{figure}[Quantisation example]{Histogram representations of songs utilising codewords. The first two histograms illustrate the visual similarity occurring between two cover, in comparison to the third song which is not related to the first two \cite{osmalskyj2013efficient}}
+    \label{fig:quantisation}
+\end{figure}
 
+Sometimes a cover song can shift up or down the overall pitches of the original
+by a fixed interval. This technique is called \textit{key transpositions}. To
+take possible transpositions into consideration the quantisation rejector
+implements \textit{Optimal Transposition Index (OTI)} \cite{serra2008audio}. It
+is a calculation on the number of positions one of the histograms needs to be
+shifted in order to achieve best possible alignment with the other. For two
+histograms represented as $n$-dimensional vectors $\vec{A}$ and $\vec{B}$, where
+$n$ is the number of codewords used, the OTI is derived from:
 
+\begin{figure}[H]
+   \begin{equation}
+       OTI(\vec{A}, \vec{B}) = \argmax_{0 \leq m \leq {n-1}}\{\vec{A} \cdot circshift_{R}(\vec{B}, m)\}
+   \end{equation}
+   \captionof{figure}[Optimal Transposition Index (OTI) equation]{OTI equation}
+\end{figure}
+
+$circshift_R$ is a function shifting the vector $\vec{B}$ $m$ positions to the
+right. The shift is circular, which means that the last element of the vector
+becomes the first one after every position shift. The operator $\cdot$ specify a
+dot product operation between both vectors. The OTI is used to shift one of the
+vectors to achieve best alignment between both songs:
+\begin{figure}[H]
+\begin{equation}
+    \vec{A^{Tr}} = circshift_R(\vec{A}, OTI(\vec{A}, \vec{B})) 
+\end{equation}
+\captionof{figure}[Transposing a histogram based on OTI]{Shifting $\vec{A}$ to best align with $\vec{B}$}
+\end{figure}
+
+The final similarity metric returned
+by the quantisation rejector is the cosine similarity between both histograms.
 \section{Timbre rejector} 
 \label{sec:quantisation}
 \section{Aggregated rank rejector} 

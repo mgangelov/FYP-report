@@ -281,6 +281,17 @@ R.~X. Gao and R.~Yan, ``Non-stationary signal processing for bearing health
 {Librosa}, ``librosa.beat.beat\_track,'' 2019.
 \newblock [Online; accessed 5-April-2019].
 
+\bibitem{osmalskyj2013efficient}
+J.~Osmalskyj, S.~Pi{\'e}rard, M.~Van~Droogenbroeck, and J.-J. Embrechts,
+  ``Efficient database pruning for large-scale cover song recognition,'' in
+  {\em 2013 IEEE International Conference on Acoustics, Speech and Signal
+  Processing}, pp.~714--718, IEEE, 2013.
+
+\bibitem{serra2008audio}
+J.~Serra and E.~G{\'o}mez, ``Audio cover song identification based on tonal
+  sequence alignment,'' in {\em 2008 IEEE International Conference on
+  Acoustics, Speech and Signal Processing}, pp.~61--64, IEEE, 2008.
+
 \bibitem{roederer2008physics}
 J.~G. Roederer, {\em The physics and psychophysics of music: an introduction}.
 \newblock Springer Science \& Business Media, 2008.
