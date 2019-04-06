@@ -228,6 +228,10 @@ S.~A. Terwijn, L.~Torenvliet, and P.~M. Vit{\'a}nyi, ``Nonapproximability of
 {D. P. W. Ellis}, ``The covers80 cover song data set,'' 2019.
 \newblock [Online; accessed 3-April-2019].
 
+\bibitem{gitlabrepo}
+{Martin Angelov}, ``mod-ug-proj-2018/mxa487,'' 2019.
+\newblock [Online; accessed 5-April-2019].
+
 \bibitem{osmalsky2015combining}
 J.~Osmalsky, J.-J. Embrechts, P.~Foster, and S.~Dixon, ``Combining features for
   cover song identification,'' in {\em 16th International Society for Music
@@ -291,6 +295,32 @@ J.~Osmalskyj, S.~Pi{\'e}rard, M.~Van~Droogenbroeck, and J.-J. Embrechts,
 J.~Serra and E.~G{\'o}mez, ``Audio cover song identification based on tonal
   sequence alignment,'' in {\em 2008 IEEE International Conference on
   Acoustics, Speech and Signal Processing}, pp.~61--64, IEEE, 2008.
+
+\bibitem{martin1986power}
+R.~Martin and C.~Burley, ``Power cepstrum technique with application to model
+  helicopter acoustic data,'' 1986.
+
+\bibitem{viikki1998cepstral}
+O.~Viikki and K.~Laurila, ``Cepstral domain segmental feature vector
+  normalization for noise robust speech recognition,'' {\em Speech
+  Communication}, vol.~25, no.~1-3, pp.~133--147, 1998.
+
+\bibitem{wiki:cepstrum}
+{Wikipedia contributors}, ``Cepstrum --- {Wikipedia}{,} the free
+  encyclopedia,'' 2019.
+\newblock [Online; accessed 5-April-2019].
+
+\bibitem{cepstrumgraph}
+{Ricardo Gutierrez-Osuna}, ``L9: Cepstral analysis,'' 2019.
+\newblock [Online; accessed 5-April-2019].
+
+\bibitem{cepstralanalysis}
+{John Coleman}, ``Cepstral analysis,'' 2019.
+\newblock [Online; accessed 5-April-2019].
+
+\bibitem{noll1967cepstrum}
+A.~M. Noll, ``Cepstrum pitch determination,'' {\em The journal of the
+  acoustical society of America}, vol.~41, no.~2, pp.~293--309, 1967.
 
 \bibitem{roederer2008physics}
 J.~G. Roederer, {\em The physics and psychophysics of music: an introduction}.

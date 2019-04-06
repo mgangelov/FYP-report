@@ -56,12 +56,17 @@ song based on its sample rate.
 Western music is described using \textit{tones}, steady periodic sounds
 \cite{wiki:tone}. They can be pure if the sound has sinusoidal waveform, or
 complex if they are a combination of pure tones with a periodic repetition
-pattern. Tones are distinguished by several basic perceptual properties of sound
-- pitch, loudness, timbre and duration \cite{acoustic-glossary-power}. A half
-tone is called a \textit{semitone} and it is the smallest measure of period
-between sounds. Semitones are grouped into \textit{octaves} where each octave
-contains 12 semitones. The acoustic opposite of tone is noise, a disordered
-sound which is unpleasant to the human brain and is disruptive to hearing
+pattern. Any of the waves contained in a complex tone is called a
+\textit{partial}. The lowest of the tones determined by frequency is called a
+\textit{fundamental}, with each of the tones higher than the fundamental defined
+as \textit{overtones}. 
+
+Tones are distinguished by several basic perceptual properties of sound - pitch,
+loudness, timbre and duration \cite{acoustic-glossary-power}. A half tone is
+called a \textit{semitone} and it is the smallest measure of period between
+sounds. Semitones are grouped into \textit{octaves} where each octave contains
+12 semitones. The acoustic opposite of tone is noise, a disordered sound which
+is unpleasant to the human brain and is disruptive to hearing
 \cite{music-noise}. 
 
 \subsection{Psychoacoustic properties}
@@ -87,9 +92,15 @@ it is accepted the musical note of A above C (Helmholz notation) or A4
 (scientific notation) has a frequency of 440 Hz \cite{young1939terminology}. The
 human ear perceives musical intervals on an approximately logarithmic scale with
 respect to a \textit{fundamental frequency}, the lowest frequency available in a
-tone and therefore determining the overall pitch of the tone. Using this notion
-of logarithmic perception there are various mappings of pitches to frequencies,
-the most famous of which is the MIDI tuning standard \cite{mts}.
+tone and therefore determining the overall pitch of the tone. The set of sounds
+with frequencies an integer multiple to the fundamental frequency is called
+\textit{harmonic series} with every member of the set being a \textit{harmonic}.
+In relation to this any partial with a frequency matching a harmonic is called a
+\textit{harmonic partial}.
+
+Using this notion of logarithmic perception there are various mappings of
+pitches to frequencies, the most famous of which is the MIDI tuning standard
+\cite{mts}.
 
 Similar to tones, pitches are also ordered in octaves, where an octave is an
 interval between one pitch and another with double its frequency
@@ -106,11 +117,19 @@ quiet to loud \cite{acoustical1986american}.
 Tones also have a "colour" attribute attached to them through the introduction
 of \textit{timbre}. Timbre allows distinguishing sounds with potentially
 identical pitch, loudness and duration, but produced by different musical
-instruments \cite{klapuri2007signal}. It is a complex concept which cannot be
-defined by a single property of sound. There are many attempts at breaking down
-the attribute into components. Robert Erickson \cite{erickson1975sound} offers
-one of the most accepted decompositions where timbre relates to the following
-acoustic parameters of sound:
+instruments \cite{klapuri2007signal}. In large part this is determined by the
+overtones in the sound generated alongside the fundamental frequency when a
+musical instrument is played. While we already established that the fundamental
+frequency determines the pitch of a tone, the added overtones create a more
+complex and richer sound, they add "colour" to it. Overtones cannot be perceived
+as separate notes, but we do hear them - they determine the timbre of an
+instrument.
+
+Timbre is a complex concept which cannot be defined by a single property of
+sound. There are many attempts at breaking down the attribute into components.
+Robert Erickson \cite{erickson1975sound} offers one of the most accepted
+decompositions where timbre relates to the following acoustic parameters of
+sound:
 \begin{enumerate}
     \item Tonal and noise characters
     \item Time envelope - A \textit{time envelope} describes how sounds changes
@@ -234,7 +253,9 @@ interchangeably.
 
 The result of a Fourier analysis is represented in a spectrogram (figure
 \ref{fig:spectrogram}). The information contained in it is very valuable when
-determining sound properties such as pitch, power, timbre and more.
+determining sound properties such as pitch, power, timbre and more. The original
+audio signal could be re-obtained by performing \textit{inverse discrete Fourier
+transform (IDFT)} on the spectrogram resulting from the Fourier analysis.
 
 \begin{figure}[H]
     \centering
@@ -267,7 +288,14 @@ variable is the \text{mel scale}. It presents a perceptual ordering of pitches
 which are determined to be equally far away from each other
 \cite{stevens1937scale}. The scale introduces a unit of perceptual pitch called
 \textit{mel}, where $1000\:mel = 1000\:Hz$. The rest of the mel-frequency
-mapping is displayed in figure \ref{fig:melscale}.
+mapping is displayed in figure \ref{fig:melscale}. The conversion from $Hz$ to
+$mel$ is calculated as:
+\begin{figure}
+    \begin{equation}
+       Mel(f) = 2595\log{}(1 + \frac{f}{700})
+    \end{equation}
+    \captionof{figure}[Hz to mel conversion equation]{Converting a frequency of $f Hz$ into $mels$}
+\end{figure}
 
 \begin{figure}[H]
     \centering

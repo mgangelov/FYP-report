@@ -28,7 +28,8 @@ algorithm paper and its rejector term is outlined in section \ref{sec:algolist}.
 The final selection includes 5 individual algorithms and an algorithm
 aggregating results from 4 of them. Each of the algorithms is examined
 individually, with the results from some of them combined through the rank
-aggregation algorithm.
+aggregation algorithm. A lot of the algorithm details are deduced based on
+related literature or past papers written by the academics who created the algorithm.
 
 
 \section{Algorithms list}
@@ -203,9 +204,12 @@ from \ref{fig:spectrotochroma} d).
 The chroma features in the cross-correlation rejector are
 \textit{beat-synchronous}. This means that the period over which a chroma
 feature is obtained is every beat of the song, rather than a shorter time
-segment. Understanding beat detection in detail was beyond my abilities and a
-library implementation of a beat tracker created by the algorithm creators is
-directly used to obtain a result \cite{librosa_beat}.
+segment. The technique is very popular within cover song algorithms due to its
+ability to make comparisons between songs invariant to tempo, a property which
+is often modified by the cover song artists. Understanding beat detection in
+detail was beyond my abilities and a library implementation of a beat tracker
+created by the algorithm creators is directly used to obtain a result
+\cite{librosa_beat}.
 
 \paragraph{}
 The resulting chromagrams for two songs are then scaled to unit length, so that
@@ -279,8 +283,225 @@ vectors to achieve best alignment between both songs:
 
 The final similarity metric returned
 by the quantisation rejector is the cosine similarity between both histograms.
+
 \section{Timbre rejector} 
 \label{sec:quantisation}
+Beat synchronisation deals with tempo variations, but cannot handle any key
+changes in a cover song compared to the original. Chroma features also mix all
+octaves into pitch classes which obscures the nuances in the "colour" of sound.
+The timbre rejector aims to present a solution by examining the relative change
+of timbre over time.
+
+The timbre rejector uses \textit{Mel-frequency cepstrum coefficients (MFCCs)} as
+audio features due to their ability to preserve the timbral information after
+transformation of the signal \cite{tralie2015cover}. MFCCs take the cepstrum of
+a song and project it on a mel scale. The main purpose of the feature is to
+serve as a bridge between the ways humans perceive sound (logarithmic frequency
+distinction, mel scale, etc) with the mechanics of musical instruments, in
+particular harmonics generation.
+
+\textit{Cepstrum} was originally created to describe a technique for detecting
+echoed signals in measured time series \cite{martin1986power}. Since then it has
+been applied in many speech recognition problems \cite{muda2010voice}
+\cite{viikki1998cepstral}, and now it is also used in other MIR tasks such as
+cover song identification.
+
+Cepstrum is informally defined as a nonlinear "spectrum of a spectrum". All
+types of cepstrum are usually obtained through a configuration of Fourier
+transform of a Fourier transform. For MFCCs we need to obtain the \textit{power
+cepstrum} $c[n]$ defined as:
+\begin{figure}[H]
+    \begin{equation}
+        c[n] = |\mathcal{F}^{-1}\{\log{}(|\mathcal{F}\{ x[n]\}|^2)\}|^2
+    \end{equation}
+    \captionof{figure}[Power cepstrum equation]{Derivation of a power cepstrum, where $\mathcal{F}$ denotes a discrete Fourier transform (DFT), $\mathcal{F}^{-1}$ is the inverse discrete Fourier transform (IDFT) and $x[n]$ is the audio signal to be transformed \cite{wiki:cepstrum}}
+\end{figure}
+
+\paragraph{}
+Another representation of the operation is available on figure \ref{fig:powerspectrumsequence}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{Algorithms/powercepstrum.png}
+    \captionof{figure}[Sequence diagram of obtaining power cepstrum]{Sequence of Fourier transforms to obtain power spectrogram \cite{cepstrumgraph}}
+    \label{fig:powerspectrumsequence}
+\end{figure}
+
+By applying DFT we obtain the power spectrum of a song - a projection of sound
+power versus frequency resulting in a log spectrogram such as the one from
+figure \ref{fig:powercepstrum}. The aim of the power cepstrum is to measure the
+periods of the resulting functions - on figure \ref{fig:powercepstrum} the
+frequency with a longer period (described by the dashed line) is a
+representation of the fundamental frequency, while the one with lower period
+represents the harmonic overtones. By applying IDFT to the spectrogram we derive
+the power cepstrum in the second graph of figure \ref{fig:powercepstrum}. The
+peak in the the cepstrum represents the fundamental frequency and its period as
+at \textit{quefrency} T. A quefrency is intended to denote the inverse of
+frequency as a time domain unit \cite{cepstralanalysis}. On the left side of the
+quefrency axis we have peaks which represent the periods of each harmonic.
+
+By having the period sizes of the harmonics relative to each other we can
+gain information about the harmonic evolution over time. This harmonic
+information tends to be present even in cover songs significantly different than
+the original \cite{tralie2015cover}.
+
+MFCCs are coefficients that are part of the \textit{Mel-frequency
+cepstrum}, a variation of the power cepstrum where the extracted peaks of
+each harmonic are projected on a mel scale based on their frequencies. They are
+extracted as 20-dimensional vectors from a song.
+
+\begin{figure}[H]
+    \includegraphics[width=\textwidth]{Algorithms/powercepstrum2.png}
+    \captionof{figure}[Comparison between a log spectrogram and a power cepstrum]{Spectrogram after applying DFT on the signal and  a power cepstrum of it. $F(W)$ is equivalent to $\mathcal{F}\{x[n]\}$ \cite{noll1967cepstrum}}
+    \label{fig:powercepstrum}
+\end{figure}
+
+Just like most of the previous rejectors, MFCCs in the timbre rejector are
+extracted using over the identified beat intervals in a track. There is one
+significant difference however - each extraction time frame is a \textit{block}
+enclosing $B$ time-contiguous beat intervals. Every two successive blocks
+overlap in a way that only the first beat of the first block and the last beat
+of the second block differ between two blocks. For a song which contains $N$
+beat intervals, the total number of blocks is $N - B + 1$. The MFCC features are
+extracted from each block using \textit{discrete Cosine transform (DCT)}, a
+Fourier transform very similar to the discrete Fourier transform. As with STFT,
+DCT requires a sliding window size and hop length. The specific parameters for
+the MFCC extraction are discussed in chapter \ref{chap:benchmark}. One MFCC
+vector is extracted over every sliding window.
+
+The group of 20-dimensional MFCC vectors within one block is called a
+\textit{20-dimensional point cloud}. A self-similarity matrix (SSM) is
+constructed from every point cloud. If we have a cloud $X \in \mathbb{R}^{M
+\times 20}$ where $M$ is the number of points in the cloud, the derived SSM
+matrix $D$ has dimensions $M \times M$. As a pre-processing method aiming to
+normalise for loudness we center the cloud on its mean and scale each point to
+unit norm:
+\begin{equation}
+    \overset{\wedge}{X} = \{\frac{x - mean(x)}{||x - mean(x)||_2}:\; x \in X\}
+\end{equation}
+
+Where the distance metric is \textit{L2 vector norm}, defined as $||x||_2 =
+\sqrt{\sum_ix_i^2}$. Each element of the SSM is then calculated using:
+    \begin{equation}
+        D_{ij} = |\overset{\wedge}{X}[i] - \overset{\wedge}{X}[j]||_2
+    \end{equation}
+
+The length of a beat segment depends strictly of the tempo of a track, therefore
+it is common that we end up with different SSM dimensions for each song. To
+enable comparisons between matrices from different songs, all SSMs are resized
+to a dimension $d \times d$, where $d$ is an empirically selected parameter.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Algorithms/ssms.png}
+    \captionof{figure}[Self-similarity matrices from MFCCs]{Example self-similarity matrices across 4 beats of the song "We Can Work It Out" by The Beatles (left) and its cover version created by Five Man Acoustical Jam (right). Some similarity is clearly visible \cite{tralie2015cover}}
+    \label{fig:ssmexamples}
+\end{figure}
+
+The final song representation is a set of all SSMs extracted from a
+song and ordered by blocks. The matrices for each database song is generated and
+stored, as it is needed for comparisons with the query song.
+
+\paragraph{}
+When a query song is passed to the timbre rejector, the algorithm extracts the
+MFCCs and constructs the SSM representation of a song as described above. The
+query song is then paired with every database song and a cross-similarity matrix
+(CSM) is created for each pair. By having a set of $N$ SSMs for song A and a set
+of $M$ SSMs for song B, the CSM has dimensions $N \times M$, with an element
+calculated using:
+\begin{equation}
+    CSM_{ij} = ||SSMA_i - SSMB_j||_2
+\end{equation}
+
+$SSMA_i$ and $SSMB_j$ identify the $i^{th}$ block from song A and the $j^{th}$
+block from song B respectively. The distance metric is the \textit{Frobenius
+norm}, where given a matrix $X$ of size $D \times E$:
+\begin{equation}
+    ||X||_2 = \sqrt{\sum_{i=1}^D\sum_{j=1}^E|a_{i, j}|^2} : \; a \in X
+\end{equation}
+
+To obtain a similarity score, we need to binarise the CSM. The binary matrix is
+computed using mutual fraction $\kappa$ nearest neighbours, i.e. $B^M_{ij} = 1$
+if $CSM_{ij}$ is within the $\kappa M^{th}$ smallest values in row $i$ and also
+within the $\kappa N^{th}$ smallest values in column $j$ of the CSM
+\cite{tralie2015cover}. The value of $\kappa$ is a proportion between 0 and 1.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Algorithms/csmbm.png}
+    \captionof{figure}[Cross-similarity matrix and binary matrix from two cover songs]{Cross-similarity matrix (left) which is then converted to a binary matrix (right). The two songs examined are two versions of "We Can Work It Out" by The Beatles and Five Man Acoustic Jam \cite{tralie2015cover}}
+    \label{fig:csmbm}
+\end{figure}
+
+The final step of the rejector is to measure similarity using
+\textit{Smith-Waterman (SW) algorithm}. It presents a technique for detecting
+the best local alignment between tracks by evaluating the binary matrix from the
+previous step. The rejector implementation prefers local over global alignment
+due to the fact that cover versions of songs could add custom intro, outro and
+bridge sections, but be very similar otherwise to the original. Smith Waterman
+creates another matrix $D$ from the binary matrix based on the following
+recursive function:
+\begin{equation}
+   D_{ij} = max \begin{cases}
+    D_{i-1, j-1} + (2\delta(B^M_{i-1, j-1}, 1) - 1) + \Delta(B^M_{i-2, j-2}, B^M_{i-1, j-1}), \\
+    D_{i-2, j-1} + (2\delta(B^M_{i-1, j-1}, 1) - 1) + \Delta(B^M_{i-3, j-2}, B^M_{i-1, j-1}), \\
+    D_{i-1, j-2} + (2\delta(B^M_{i-1, j-1}, 1) - 1) + \Delta(B^M_{i-2, j-3}, B^M_{i-1, j-1}), \\
+    0
+   \end{cases}
+   \label{eq:sw}
+\end{equation}
+
+The sign $\delta$ represents Kronecker delta function, which given two variables
+$i$ and $j$ it returns values:
+\begin{equation}
+    \delta_{ij} = \begin{cases}
+       0\; if \; i \neq j, \\
+       1\; if \; i = j
+    \end{cases}
+\end{equation}
+
+Based on the Kronecker delta the term $2\delta(B^M_{i-1, j-1}, 1) - 1$ assigns
+score of +1 if there is a match between the two songs, and -1 if there is
+mismatch between both tracks.
+
+The $\Delta$ function is called \textit{affine gap penalty} and assigns a score
+to an identified gap. The scoring takes the form of:
+\begin{equation}
+    \Delta(a, b) = \begin{cases}
+        \;\;\:0\; if \; b = 1, \\
+       -0.5\; if \; b = 0, a = 1, \\
+       -0.7\; if \; b = 0, a = 0 
+    \end{cases}
+\end{equation}
+
+The Smith-Waterman algorithm configuration is adapted to prioritise diagonal
+alignment, rather than horizontal or vertical one. Any gaps that occur on the
+diagonal are appearing in both songs almost simultaneously in time, which is
+also a form of similarity. At the same time if large gaps happen in a horizontal
+or vertical line, they would indicate a large mismatch between both songs.
+
+An illustration of the different matrix evaluated is given in figure
+\ref{fig:swworkings}. The resulting SW matrix for the two versions of "We Can
+Work It Out" is shown on figure \ref{fig:swmatrix}.
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[height=4cm, keepaspectratio]{Algorithms/swworkings.png}
+      \captionof{figure}[Smith-Waterman algorithm traversal]{SW algorithm traversal}
+      \label{fig:swworkings}
+    \end{minipage}%
+    \begin{minipage}{.5\textwidth}
+      \centering
+      \includegraphics[height=5cm, keepaspectratio]{Algorithms/swmatrix.png}
+      \captionof{figure}[Smith-Waterman matrix]{Smith-Waterman matrix displaying the scores calculated using equation \ref{eq:sw}}
+      \label{fig:swmatrix}
+    \end{minipage}
+ \end{figure}
+
+The finalised similarity score assigned after a run of the Smith-Waterman
+algorithm is the sum of the scores along the longest identified local alignment.
+
 \section{Aggregated rank rejector} 
 \label{sec:timbre}
 \section{Fingerprint rejector} 

@@ -8,8 +8,8 @@
 \contentsline {subsection}{\numberline {2.1.2}Tones}{4}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Psychoacoustic properties}{4}{subsection.2.1.3}
 \contentsline {subsection}{\numberline {2.1.4}Beat}{6}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Audio transformation techniques}{6}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Fourier transform}{6}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.2}Audio transformation techniques}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Fourier transform}{7}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Filters}{9}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Scales}{9}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Machine learning techniques}{10}{section.2.3}
@@ -20,7 +20,7 @@
 \contentsline {subsection}{\numberline {3.1.1}Results evaluation}{13}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Harmonic Pitch Class Profiles}{14}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}Similarity methods}{15}{subsection.3.1.3}
-\contentsline {paragraph}{}{15}{section*.13}
+\contentsline {paragraph}{}{15}{section*.14}
 \contentsline {chapter}{\numberline {4}The task}{16}{chapter.4}
 \contentsline {section}{\numberline {4.1}Design}{16}{section.4.1}
 \contentsline {section}{\numberline {4.2}Evaluation methods and metrics}{17}{section.4.2}
@@ -29,29 +29,31 @@
 \contentsline {section}{\numberline {5.1}Algorithms list}{19}{section.5.1}
 \contentsline {section}{\numberline {5.2}Weak rejector}{20}{section.5.2}
 \contentsline {section}{\numberline {5.3}Cross-correlation rejector}{22}{section.5.3}
-\contentsline {paragraph}{}{25}{section*.20}
 \contentsline {paragraph}{}{25}{section*.21}
+\contentsline {paragraph}{}{26}{section*.22}
 \contentsline {section}{\numberline {5.4}Quantisation rejector}{26}{section.5.4}
-\contentsline {section}{\numberline {5.5}Timbre rejector}{27}{section.5.5}
-\contentsline {section}{\numberline {5.6}Aggregated rank rejector}{27}{section.5.6}
-\contentsline {section}{\numberline {5.7}Fingerprint rejector}{27}{section.5.7}
-\contentsline {chapter}{\numberline {6}The benchmark}{28}{chapter.6}
-\contentsline {section}{\numberline {6.1}Implementation details}{28}{section.6.1}
-\contentsline {section}{\numberline {6.2}Brief usage information}{28}{section.6.2}
-\contentsline {section}{\numberline {6.3}Algorithm structure in the benchmark}{28}{section.6.3}
-\contentsline {section}{\numberline {6.4}Result format produced by benchmark}{28}{section.6.4}
-\contentsline {chapter}{\numberline {7}Results and experimentation}{29}{chapter.7}
-\contentsline {section}{\numberline {7.1}Best results}{29}{section.7.1}
-\contentsline {section}{\numberline {7.2}Comparison to results from papers}{29}{section.7.2}
-\contentsline {section}{\numberline {7.3}Result analysis}{29}{section.7.3}
-\contentsline {chapter}{\numberline {8}Further work}{30}{chapter.8}
-\contentsline {chapter}{\numberline {9}Challenges}{31}{chapter.9}
-\contentsline {section}{\numberline {9.1}Lack of datasets}{31}{section.9.1}
-\contentsline {section}{\numberline {9.2}Lack of universal comparison metric?}{31}{section.9.2}
-\contentsline {section}{\numberline {9.3}Academic papers algorithm description}{31}{section.9.3}
-\contentsline {chapter}{\numberline {10}Project management}{32}{chapter.10}
-\contentsline {section}{\numberline {10.1}Using GitLab}{32}{section.10.1}
-\contentsline {section}{\numberline {10.2}Canvas logs}{32}{section.10.2}
-\contentsline {section}{\numberline {10.3}other? Gantt chart?}{32}{section.10.3}
-\contentsline {chapter}{\numberline {11}Conclusion}{33}{chapter.11}
-\contentsline {chapter}{References}{39}{appendix*.30}
+\contentsline {section}{\numberline {5.5}Timbre rejector}{28}{section.5.5}
+\contentsline {paragraph}{}{29}{section*.28}
+\contentsline {paragraph}{}{31}{section*.32}
+\contentsline {section}{\numberline {5.6}Aggregated rank rejector}{34}{section.5.6}
+\contentsline {section}{\numberline {5.7}Fingerprint rejector}{34}{section.5.7}
+\contentsline {chapter}{\numberline {6}The benchmark}{35}{chapter.6}
+\contentsline {section}{\numberline {6.1}Implementation details}{35}{section.6.1}
+\contentsline {section}{\numberline {6.2}Brief usage information}{35}{section.6.2}
+\contentsline {section}{\numberline {6.3}Algorithm structure in the benchmark}{35}{section.6.3}
+\contentsline {section}{\numberline {6.4}Result format produced by benchmark}{35}{section.6.4}
+\contentsline {chapter}{\numberline {7}Results and experimentation}{36}{chapter.7}
+\contentsline {section}{\numberline {7.1}Best results}{36}{section.7.1}
+\contentsline {section}{\numberline {7.2}Comparison to results from papers}{36}{section.7.2}
+\contentsline {section}{\numberline {7.3}Result analysis}{36}{section.7.3}
+\contentsline {chapter}{\numberline {8}Further work}{37}{chapter.8}
+\contentsline {chapter}{\numberline {9}Challenges}{38}{chapter.9}
+\contentsline {section}{\numberline {9.1}Lack of datasets}{38}{section.9.1}
+\contentsline {section}{\numberline {9.2}Lack of universal comparison metric?}{38}{section.9.2}
+\contentsline {section}{\numberline {9.3}Academic papers algorithm description}{38}{section.9.3}
+\contentsline {chapter}{\numberline {10}Project management}{39}{chapter.10}
+\contentsline {section}{\numberline {10.1}Using GitLab}{39}{section.10.1}
+\contentsline {section}{\numberline {10.2}Canvas logs}{39}{section.10.2}
+\contentsline {section}{\numberline {10.3}other? Gantt chart?}{39}{section.10.3}
+\contentsline {chapter}{\numberline {11}Conclusion}{40}{chapter.11}
+\contentsline {chapter}{References}{46}{appendix*.39}

@@ -20,46 +20,47 @@ Warning--empty journal in ellis2012large
 Warning--empty journal in mullershort
 Warning--empty year in mullershort
 Warning--can't use both volume and number fields in friedman2001elements
+Warning--empty journal in martin1986power
 Warning--empty journal in serra2009cover
-You've used 68 entries,
+You've used 75 entries,
             1876 wiz_defined-function locations,
-            769 strings with 11982 characters,
-and the built_in function-call counts, 12925 in all, are:
-= -- 1278
-> -- 413
+            798 strings with 12610 characters,
+and the built_in function-call counts, 14247 in all, are:
+= -- 1416
+> -- 449
 < -- 0
-+ -- 175
-- -- 107
-* -- 682
-:= -- 1806
-add.period$ -- 109
-call.type$ -- 68
-change.case$ -- 60
++ -- 191
+- -- 116
+* -- 751
+:= -- 1989
+add.period$ -- 120
+call.type$ -- 75
+change.case$ -- 67
 chr.to.int$ -- 0
-cite$ -- 73
-duplicate$ -- 608
-empty$ -- 1508
-format.name$ -- 107
-if$ -- 3242
+cite$ -- 81
+duplicate$ -- 667
+empty$ -- 1657
+format.name$ -- 116
+if$ -- 3574
 int.to.chr$ -- 0
-int.to.str$ -- 68
-missing$ -- 42
-newline$ -- 249
-num.names$ -- 68
-pop$ -- 393
+int.to.str$ -- 75
+missing$ -- 45
+newline$ -- 274
+num.names$ -- 75
+pop$ -- 429
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 370
+skip$ -- 413
 stack$ -- 0
-substring$ -- 511
-swap$ -- 156
+substring$ -- 575
+swap$ -- 174
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 122
-width$ -- 70
-write$ -- 634
-(There were 5 warnings)
+warning$ -- 6
+while$ -- 135
+width$ -- 77
+write$ -- 699
+(There were 6 warnings)
