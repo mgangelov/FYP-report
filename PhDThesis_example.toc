@@ -53,12 +53,12 @@
 \contentsline {section}{\numberline {7.3}Result analysis}{40}{section.7.3}
 \contentsline {chapter}{\numberline {8}Further work}{41}{chapter.8}
 \contentsline {chapter}{\numberline {9}Challenges}{42}{chapter.9}
-\contentsline {section}{\numberline {9.1}Lack of datasets}{42}{section.9.1}
-\contentsline {section}{\numberline {9.2}Lack of universal comparison metric?}{42}{section.9.2}
-\contentsline {section}{\numberline {9.3}Academic papers algorithm description}{42}{section.9.3}
-\contentsline {chapter}{\numberline {10}Project management}{43}{chapter.10}
-\contentsline {section}{\numberline {10.1}Using GitLab}{43}{section.10.1}
-\contentsline {section}{\numberline {10.2}Canvas logs}{43}{section.10.2}
-\contentsline {section}{\numberline {10.3}other? Gantt chart?}{43}{section.10.3}
-\contentsline {chapter}{\numberline {11}Conclusion}{44}{chapter.11}
-\contentsline {chapter}{References}{50}{appendix*.49}
+\contentsline {section}{\numberline {9.1}Lack of supporting academic infrastructure}{42}{section.9.1}
+\contentsline {section}{\numberline {9.2}Project scope}{43}{section.9.2}
+\contentsline {section}{\numberline {9.3}Ambiguity in the algorithm papers}{43}{section.9.3}
+\contentsline {chapter}{\numberline {10}Project management}{44}{chapter.10}
+\contentsline {section}{\numberline {10.1}Using GitLab}{44}{section.10.1}
+\contentsline {section}{\numberline {10.2}Canvas logs}{44}{section.10.2}
+\contentsline {section}{\numberline {10.3}other? Gantt chart?}{44}{section.10.3}
+\contentsline {chapter}{\numberline {11}Conclusion}{45}{chapter.11}
+\contentsline {chapter}{References}{51}{appendix*.48}
