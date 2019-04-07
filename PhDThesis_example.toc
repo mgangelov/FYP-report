@@ -58,7 +58,7 @@
 \contentsline {section}{\numberline {9.3}Ambiguity in the algorithm papers}{43}{section.9.3}
 \contentsline {chapter}{\numberline {10}Project management}{44}{chapter.10}
 \contentsline {section}{\numberline {10.1}Using GitLab}{44}{section.10.1}
-\contentsline {section}{\numberline {10.2}Canvas logs}{44}{section.10.2}
-\contentsline {section}{\numberline {10.3}other? Gantt chart?}{44}{section.10.3}
-\contentsline {chapter}{\numberline {11}Conclusion}{45}{chapter.11}
-\contentsline {chapter}{References}{51}{appendix*.48}
+\contentsline {section}{\numberline {10.2}Canvas logs}{45}{section.10.2}
+\contentsline {section}{\numberline {10.3}Supervisor meetings}{45}{section.10.3}
+\contentsline {chapter}{\numberline {11}Conclusion}{46}{chapter.11}
+\contentsline {chapter}{References}{52}{appendix*.48}

@@ -555,6 +555,9 @@ INPUT /Users/martin/Documents/GitHub/FYP-report/Challenges/challenges.tex
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/ProjectManagement/projectmanagement.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/ProjectManagement/projectmanagement.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/ProjectManagement/projectmanagement.tex
+INPUT /Users/martin/Documents/GitHub/FYP-report/ProjectManagement/commitgraph.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/ProjectManagement/commitgraph.png
+INPUT /Users/martin/Documents/GitHub/FYP-report/ProjectManagement/commitgraph.png
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/Conclusions/conclusions.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/Conclusions/conclusions.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/Conclusions/conclusions.tex
