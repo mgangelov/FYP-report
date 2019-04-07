@@ -6,32 +6,37 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Fourier transform applied on a periodic function}}{7}{figure.caption.5}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Fourier transformation equation for periodic functions}}{8}{figure.caption.6}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Fourier series parameter derivation}}{8}{figure.caption.7}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Spectrogram}}{9}{figure.caption.8}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Hz to mel conversion equation}}{10}{figure.caption.9}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Mel-scale}}{10}{figure.caption.10}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Sum of squares equation}}{11}{figure.caption.11}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Discrete-time Fourier transform (DTFT) and discrete Fourier transform (DFT)}}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Spectrogram}}{10}{figure.caption.11}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Hz to mel conversion equation}}{11}{figure.caption.12}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Mel-scale}}{11}{figure.caption.13}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Sum of squares equation}}{12}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces THCI of winning submissions in MIREX 2005-2018}}{13}{figure.caption.12}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Audio feature frequency usage in MIREX 2005-2018}}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces THCI of winning submissions in MIREX 2005-2018}}{14}{figure.caption.15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Audio feature frequency usage in MIREX 2005-2018}}{15}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Benchmark architecture diagram}}{17}{figure.caption.15}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Benchmark architecture diagram}}{18}{figure.caption.18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Algorithms diagram}}{20}{figure.caption.16}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Chromagram}}{22}{figure.caption.17}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Short-time Fourier transform}}{23}{figure.caption.18}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces MIDI Tuning pitch calculation equation}}{24}{figure.caption.19}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Spectrogram to chromagram conversion}}{25}{figure.caption.20}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Cross-correlation of chromagrams}}{26}{figure.caption.23}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Quantisation example}}{27}{figure.caption.24}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Optimal Transposition Index (OTI) equation}}{28}{figure.caption.25}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Transposing a histogram based on OTI}}{28}{figure.caption.26}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Power cepstrum equation}}{29}{figure.caption.27}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Sequence diagram of obtaining power cepstrum}}{29}{figure.caption.29}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Comparison between a log spectrogram and a power cepstrum}}{30}{figure.caption.30}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Self-similarity matrices from MFCCs}}{31}{figure.caption.31}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Cross-similarity matrix and binary matrix from two cover songs}}{32}{figure.caption.33}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Smith-Waterman algorithm traversal}}{33}{figure.caption.34}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Smith-Waterman matrix}}{33}{figure.caption.34}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Algorithms diagram}}{21}{figure.caption.19}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Chromagram}}{23}{figure.caption.20}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Short-time Fourier transform}}{24}{figure.caption.21}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces MIDI Tuning pitch calculation equation}}{25}{figure.caption.22}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Spectrogram to chromagram conversion}}{26}{figure.caption.23}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Cross-correlation of chromagrams}}{27}{figure.caption.26}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Quantisation example}}{28}{figure.caption.27}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Optimal Transposition Index (OTI) equation}}{29}{figure.caption.28}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Transposing a histogram based on OTI}}{29}{figure.caption.29}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Power cepstrum equation}}{30}{figure.caption.30}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Sequence diagram of obtaining power cepstrum}}{30}{figure.caption.32}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Comparison between a log spectrogram and a power cepstrum}}{31}{figure.caption.33}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Self-similarity matrices from MFCCs}}{32}{figure.caption.34}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Cross-similarity matrix and binary matrix from two cover songs}}{33}{figure.caption.36}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Smith-Waterman algorithm traversal}}{34}{figure.caption.37}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Smith-Waterman matrix}}{34}{figure.caption.37}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Adaptive thresholding on CQT spectrogram}}{36}{figure.caption.40}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Hesse normal form of line}}{37}{figure.caption.41}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Sinusoidal curve of all lines within a point in relation to Hough transform}}{38}{figure.caption.42}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Matching phase of the fingerprint rejector}}{38}{figure.caption.44}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

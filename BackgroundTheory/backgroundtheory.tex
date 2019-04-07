@@ -34,19 +34,22 @@ details.
 \label{sec:audioprops}
 A \textit{digital audio signal} is a representation of the continuous sound wave
 as a series of binary numbers. This representation helps preserve the
-\textit{frequency} (the speed of the vibrations), as well as the
-\textit{amplitude} (the fluctuations of the vibrations) of the sound. The energy
-that each sound wave emits through vibrations is called \textit{sound energy}
-and its rate is measured through \textit{sound power}. The majority of audio
-features use frequency or power as a primary audio property used to define the
-feature (\textit{modify/change}). 
+\textit{frequency} (the speed of the vibrations), \textit{amplitude} (the
+fluctuations of the vibrations) and \textit{period} (the time for which a wave
+completes one vibration) of the sound. The energy that each sound wave emits
+through vibrations is called \textit{sound energy} and its rate is measured
+through \textit{sound power}. The amount of energy in sound is related to its
+amplitude - The higher the amplitude the larger the amount of energy is.
+
+The majority of audio features use frequency or power extracted over a period as
+primary audio information used to define the feature (\textit{modify/change}). 
 
 \subsection{Sampling and sample rate}
 \label{subsec:sampling}
 The process of converting an analogue sound wave to a digital one involves a
 process of extracting points (samples) from the continuous signal and using them
 to describe the signal into a discrete form. This method is called
-\textit{sampling} and the amount of samples collected per time frame is
+\textit{sampling} and the average amount of samples collected per one second is
 \textit{sample rate}. The representation of a song used during feature
 extraction is a sequence of samples extracted from the digital signal of the
 song based on its sample rate.
@@ -184,8 +187,10 @@ of different frequencies \cite{fouriertransform}. In music each of the
 constituting frequencies represents a pure tone. In order to be able to work
 with the tonal representation of a song we need to perform \textit{Fourier
 analysis}, that is, find a way to separate the different frequencies within the
-audio signal. We achieve that using a decomposition called \textit{Fourier
-transform} - one of the most widely used audio transformations.
+audio signal. The result is a complex-valued continuous function. We perform the
+analysis using a decomposition called \textit{Fourier transform} - one of the
+most widely used audio transformations for conversion of a signal from a time
+domain representation into the frequency domain.
 
 \begin{figure}[H]
     \centering
@@ -194,14 +199,15 @@ transform} - one of the most widely used audio transformations.
     \label{fig:fourierseriesimage}
 \end{figure}
 
-Fourier transform could be applied to either periodic (resulting in
-\textit{Fourier series}) or non-periodic functions. As we are working in the
-domain of music we are focussed on the Fourier workings on functions with
-periodicity. Using the transform our goal is finding an approximation for
-function $f(t)$ with period $T=2L$ using a sinusoid functions each with period a
-multiple of $T$ \cite{fourierseries}. Figure \ref{fig:fourierseriesimage} shows
-the destructuring that a Fourier transformation performs on a function. The
-resulting function $g(t)$ which is the transform of $f(t)$ takes the form of:
+Fourier transform could be applied to either periodic (resulting in a periodic
+function of combined harmonics called \textit{Fourier series}) or non-periodic
+functions. As we are working in the domain of music we are focussed on the
+Fourier workings on functions with periodicity. Using the transform our goal is
+finding an approximation for function $f(t)$ with period $T=2L$ using a sinusoid
+functions each with period a multiple of $T$ \cite{fourierseries}. Figure
+\ref{fig:fourierseriesimage} shows the destructuring that a Fourier
+transformation performs on a function. The resulting function $g(t)$ which is
+the transform of $f(t)$ takes the form of:
 
 \begin{figure}[H]
     \label{fig:fourierseriesequation}
@@ -233,24 +239,44 @@ represents the amount of frequency present in the original function at a point
 of time \cite{wiki:fourier}. 
 
 There are different forms of Fourier analysis. In the area of MIR one of the
-most frequently used is the \textit{discrete-time Fourier transform (DTFT)}. It
-works on discrete uniformly spaced samples from a continuous function. The
-result produced is a periodic summation of the Fourier transform of the function
-\cite{wiki:dtft}. To obtain DTFT we need to run \textit{discrete Fourier
-transform (DFT)}, a type of Fourier transform, on the function samples. 
+most frequently used types is the \textit{discrete-time Fourier transform
+(DTFT)}. DTFT is a \textit{periodic summation} of the regular Fourier transform.
+A periodic summation is a representation of a periodic function with a period
+$P$ by multiple aperiodic ones separated by periods with a length multiples of
+$P$ \cite{wiki:periodicsummation}. A comparison between regular Fourier
+transform and DTFT is shown on top and bottom left of figure \ref{fig:dftdtft}.
 
-Computing DFT directly is an operation on a sequence of complex numbers
-converting it into a new sequence of complex numbers. The computational
-complexity of the transformation is $\mathcal{O}(n^2)$. A class of algorithms
-called \textit{fast Fourier transform (FFT)} has been created to compute DFT
-more efficiently with complexity of $\mathcal{O}(n\log{}n)$ \cite{fft}. This is
-achieved by representing the DFT as a transformation matrix - a matrix which
-when multiplied with the input signal achieves the same result as normal DFT. To
-optimise the matrix multiplication process FFT algorithms factorise the
-transformation matrix into a product of several sparse factors \cite{wiki:fft}.
-In practice FFT is the main way to compute DFT and therefore both terms are used
-interchangeably.
+\paragraph{}
+In order to obtain a finite sequence of DTFT samples we perform \textit{discrete
+Fourier transform (DFT)} on equally-spaced samples from the original audio
+signal (bottom right of figure \ref{fig:dftdtft}). Computing DFT directly is an
+operation on a sequence of complex numbers converting it into a new sequence of
+complex numbers. The computational complexity of the transformation is
+$\mathcal{O}(n^2)$. A class of algorithms called \textit{fast Fourier transform
+(FFT)} has been created to compute DFT more efficiently with complexity of
+$\mathcal{O}(n\log{}n)$ \cite{fft}. This is achieved by representing the DFT as
+a transformation matrix - a matrix which when multiplied with the input signal
+achieves the same result as normal DFT. To optimise the matrix multiplication
+process FFT algorithms factorise the transformation matrix into a product of
+several sparse factors \cite{wiki:fft}. In practice FFT is the main way to
+compute DFT and therefore both terms are used interchangeably.
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=\textwidth]{Algorithms/dft.png} 
+   \captionof{figure}[Discrete-time Fourier transform (DTFT) and discrete
+   Fourier transform (DFT)]{Regular fourier transform (top left), DTFT (bottom
+   left) and DFT (bottom right) side by side. If we apply Fourier transform to a
+   function $s(t)$ we get the standard representation in the top left corner.
+   The top right corner shows the result of applying periodic summation to the
+   function with period $P$ and then applying the transformation. When the
+   function $s(t)$ is sampled over interval $T$ the Fourier transform produces
+   DTFT (bottom left). If both periodic sampling and periodic summation are
+   combined the transform produces DFT (bottom right)
+   \cite{wiki:periodicsummation}}
+   \label{fig:dftdtft}
+\end{figure}
 
+\paragraph{}
 The result of a Fourier analysis is represented in a spectrogram (figure
 \ref{fig:spectrogram}). The information contained in it is very valuable when
 determining sound properties such as pitch, power, timbre and more. The original

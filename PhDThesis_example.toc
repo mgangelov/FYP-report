@@ -10,50 +10,55 @@
 \contentsline {subsection}{\numberline {2.1.4}Beat}{6}{subsection.2.1.4}
 \contentsline {section}{\numberline {2.2}Audio transformation techniques}{7}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Fourier transform}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Filters}{9}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Scales}{9}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Machine learning techniques}{10}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Random forests}{10}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}K-means clustering}{11}{subsection.2.3.2}
-\contentsline {chapter}{\numberline {3}Related work}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}Cover song identification in MIREX 2005 - 2018}{12}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Results evaluation}{13}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Harmonic Pitch Class Profiles}{14}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Similarity methods}{15}{subsection.3.1.3}
-\contentsline {paragraph}{}{15}{section*.14}
-\contentsline {chapter}{\numberline {4}The task}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Design}{16}{section.4.1}
-\contentsline {section}{\numberline {4.2}Evaluation methods and metrics}{17}{section.4.2}
-\contentsline {section}{\numberline {4.3}Datasets used for evaluation}{17}{section.4.3}
-\contentsline {chapter}{\numberline {5}The algorithms}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}Algorithms list}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Weak rejector}{20}{section.5.2}
-\contentsline {section}{\numberline {5.3}Cross-correlation rejector}{22}{section.5.3}
-\contentsline {paragraph}{}{25}{section*.21}
-\contentsline {paragraph}{}{26}{section*.22}
-\contentsline {section}{\numberline {5.4}Quantisation rejector}{26}{section.5.4}
-\contentsline {section}{\numberline {5.5}Timbre rejector}{28}{section.5.5}
-\contentsline {paragraph}{}{29}{section*.28}
-\contentsline {paragraph}{}{31}{section*.32}
-\contentsline {section}{\numberline {5.6}Aggregated rank rejector}{34}{section.5.6}
-\contentsline {section}{\numberline {5.7}Fingerprint rejector}{34}{section.5.7}
-\contentsline {chapter}{\numberline {6}The benchmark}{35}{chapter.6}
-\contentsline {section}{\numberline {6.1}Implementation details}{35}{section.6.1}
-\contentsline {section}{\numberline {6.2}Brief usage information}{35}{section.6.2}
-\contentsline {section}{\numberline {6.3}Algorithm structure in the benchmark}{35}{section.6.3}
-\contentsline {section}{\numberline {6.4}Result format produced by benchmark}{35}{section.6.4}
-\contentsline {chapter}{\numberline {7}Results and experimentation}{36}{chapter.7}
-\contentsline {section}{\numberline {7.1}Best results}{36}{section.7.1}
-\contentsline {section}{\numberline {7.2}Comparison to results from papers}{36}{section.7.2}
-\contentsline {section}{\numberline {7.3}Result analysis}{36}{section.7.3}
-\contentsline {chapter}{\numberline {8}Further work}{37}{chapter.8}
-\contentsline {chapter}{\numberline {9}Challenges}{38}{chapter.9}
-\contentsline {section}{\numberline {9.1}Lack of datasets}{38}{section.9.1}
-\contentsline {section}{\numberline {9.2}Lack of universal comparison metric?}{38}{section.9.2}
-\contentsline {section}{\numberline {9.3}Academic papers algorithm description}{38}{section.9.3}
-\contentsline {chapter}{\numberline {10}Project management}{39}{chapter.10}
-\contentsline {section}{\numberline {10.1}Using GitLab}{39}{section.10.1}
-\contentsline {section}{\numberline {10.2}Canvas logs}{39}{section.10.2}
-\contentsline {section}{\numberline {10.3}other? Gantt chart?}{39}{section.10.3}
-\contentsline {chapter}{\numberline {11}Conclusion}{40}{chapter.11}
-\contentsline {chapter}{References}{46}{appendix*.39}
+\contentsline {paragraph}{}{8}{section*.8}
+\contentsline {paragraph}{}{9}{section*.10}
+\contentsline {subsection}{\numberline {2.2.2}Filters}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Scales}{10}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Machine learning techniques}{11}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Random forests}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}K-means clustering}{12}{subsection.2.3.2}
+\contentsline {chapter}{\numberline {3}Related work}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Cover song identification in MIREX 2005 - 2018}{13}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Results evaluation}{14}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Harmonic Pitch Class Profiles}{15}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Similarity methods}{16}{subsection.3.1.3}
+\contentsline {paragraph}{}{16}{section*.17}
+\contentsline {chapter}{\numberline {4}The task}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Design}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Evaluation methods and metrics}{18}{section.4.2}
+\contentsline {section}{\numberline {4.3}Datasets used for evaluation}{18}{section.4.3}
+\contentsline {chapter}{\numberline {5}The algorithms}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}Algorithms list}{20}{section.5.1}
+\contentsline {section}{\numberline {5.2}Weak rejector}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}Cross-correlation rejector}{23}{section.5.3}
+\contentsline {paragraph}{}{26}{section*.24}
+\contentsline {paragraph}{}{27}{section*.25}
+\contentsline {section}{\numberline {5.4}Quantisation rejector}{27}{section.5.4}
+\contentsline {section}{\numberline {5.5}Timbre rejector}{29}{section.5.5}
+\contentsline {paragraph}{}{30}{section*.31}
+\contentsline {paragraph}{}{32}{section*.35}
+\contentsline {section}{\numberline {5.6}Aggregated rank rejector}{35}{section.5.6}
+\contentsline {section}{\numberline {5.7}Fingerprint rejector}{35}{section.5.7}
+\contentsline {paragraph}{}{35}{section*.38}
+\contentsline {paragraph}{}{35}{section*.39}
+\contentsline {paragraph}{}{38}{section*.43}
+\contentsline {chapter}{\numberline {6}The benchmark}{39}{chapter.6}
+\contentsline {section}{\numberline {6.1}Implementation details}{39}{section.6.1}
+\contentsline {section}{\numberline {6.2}Brief usage information}{39}{section.6.2}
+\contentsline {section}{\numberline {6.3}Algorithm structure in the benchmark}{39}{section.6.3}
+\contentsline {section}{\numberline {6.4}Result format produced by benchmark}{39}{section.6.4}
+\contentsline {chapter}{\numberline {7}Results and experimentation}{40}{chapter.7}
+\contentsline {section}{\numberline {7.1}Best results}{40}{section.7.1}
+\contentsline {section}{\numberline {7.2}Comparison to results from papers}{40}{section.7.2}
+\contentsline {section}{\numberline {7.3}Result analysis}{40}{section.7.3}
+\contentsline {chapter}{\numberline {8}Further work}{41}{chapter.8}
+\contentsline {chapter}{\numberline {9}Challenges}{42}{chapter.9}
+\contentsline {section}{\numberline {9.1}Lack of datasets}{42}{section.9.1}
+\contentsline {section}{\numberline {9.2}Lack of universal comparison metric?}{42}{section.9.2}
+\contentsline {section}{\numberline {9.3}Academic papers algorithm description}{42}{section.9.3}
+\contentsline {chapter}{\numberline {10}Project management}{43}{chapter.10}
+\contentsline {section}{\numberline {10.1}Using GitLab}{43}{section.10.1}
+\contentsline {section}{\numberline {10.2}Canvas logs}{43}{section.10.2}
+\contentsline {section}{\numberline {10.3}other? Gantt chart?}{43}{section.10.3}
+\contentsline {chapter}{\numberline {11}Conclusion}{44}{chapter.11}
+\contentsline {chapter}{References}{50}{appendix*.49}

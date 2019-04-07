@@ -128,10 +128,10 @@ B.~Benward, {\em Music in Theory and Practice Volume 1}.
   encyclopedia,'' 2019.
 \newblock [Online; accessed 31-March-2019].
 
-\bibitem{wiki:dtft}
-{Wikipedia contributors}, ``Discrete-time fourier transform --- {Wikipedia}{,}
-  the free encyclopedia,'' 2019.
-\newblock [Online; accessed 4-April-2019].
+\bibitem{wiki:periodicsummation}
+{Wikipedia contributors}, ``Periodic summation --- {Wikipedia}{,} the free
+  encyclopedia,'' 2019.
+\newblock [Online; accessed 6-April-2019].
 
 \bibitem{fft}
 {Wolfram MathWorld}, ``Fast fourier transform,'' 2019.
@@ -322,6 +322,11 @@ O.~Viikki and K.~Laurila, ``Cepstral domain segmental feature vector
 A.~M. Noll, ``Cepstrum pitch determination,'' {\em The journal of the
   acoustical society of America}, vol.~41, no.~2, pp.~293--309, 1967.
 
+\bibitem{schorkhuber2010constant}
+C.~Sch{\"o}rkhuber and A.~Klapuri, ``Constant-q transform toolbox for music
+  processing,'' in {\em 7th Sound and Music Computing Conference, Barcelona,
+  Spain}, pp.~3--64, 2010.
+
 \bibitem{roederer2008physics}
 J.~G. Roederer, {\em The physics and psychophysics of music: an introduction}.
 \newblock Springer Science \& Business Media, 2008.
@@ -349,5 +354,14 @@ J.~Serra, E.~G{\'o}mez, and P.~Herrera, ``Improving binary similarity and local
 \bibitem{serra2009cover}
 J.~Serra, M.~Zanin, and R.~G. Andrzejak, ``Cover song retrieval by cross
   recurrence quantification and unsupervised set detection,'' 2009.
+
+\bibitem{wiki:dtft}
+{Wikipedia contributors}, ``Discrete-time fourier transform --- {Wikipedia}{,}
+  the free encyclopedia,'' 2019.
+\newblock [Online; accessed 4-April-2019].
+
+\bibitem{houghlinesgraph}
+{OpenCV}, ``Hough lines,'' 2019.
+\newblock [Online; accessed 6-April-2019].
 
 \end{thebibliography}

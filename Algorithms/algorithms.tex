@@ -63,7 +63,7 @@ The analysis if performed on the following algorithm:
 \end{figure}
 
 \section{Weak rejector} 
-\label{sec:osmalskyj}
+\label{sec:weakfeatures}
 
 The weak rejector takes its name from the fact that it uses global single-valued
 features of sound to calculate a similarity score. Weak features include tempo,
@@ -117,7 +117,7 @@ covers. Grouping the results per song produces a database ordering that is
 required by the evaluation task.
 
 \section{Cross-correlation rejector} 
-\label{sec:weakfeatures}
+\label{sec:ccs}
 The cross-correlation rejector uses chroma features as the main audio feature
 describing each song. Chroma is another name for pitch class profiles, i.e. a
 12-dimensional representation of the intensity distribution in each of the
@@ -234,7 +234,7 @@ highest peak value in the cross correlation matrix.
 \end{figure}
 
 \section{Quantisation rejector}
-\label{sec:ccs}
+\label{sec:quantisation}
 
 The dominant audio feature in the quantisation rejector is again chroma vectors
 which are beat-synchronous and unit normalised. The extraction implementation is
@@ -285,7 +285,7 @@ The final similarity metric returned
 by the quantisation rejector is the cosine similarity between both histograms.
 
 \section{Timbre rejector} 
-\label{sec:quantisation}
+\label{sec:timbre}
 Beat synchronisation deals with tempo variations, but cannot handle any key
 changes in a cover song compared to the original. Chroma features also mix all
 octaves into pitch classes which obscures the nuances in the "colour" of sound.
@@ -503,7 +503,133 @@ The finalised similarity score assigned after a run of the Smith-Waterman
 algorithm is the sum of the scores along the longest identified local alignment.
 
 \section{Aggregated rank rejector} 
-\label{sec:timbre}
-\section{Fingerprint rejector} 
 \label{sec:rankaggregation}
 
+\section{Fingerprint rejector} 
+\label{sec:rafii}
+
+The final rejector examined is originally created to tackle the problem of live
+song identification. It works on short query segments (usually from 6 to 10
+seconds) or \textit{snippets} of live performance recordings. The sources of the
+recordings vary from official live releases to amateur capturing of a live
+performance through an audience-based device (smartphone, portable recorder,
+etc.). The snippets are then compared to a song database through several image
+processing techniques. It is the only analysed rejector which does not work with
+full versions of songs.
+
+\paragraph{}
+As an initial step the rejector obtains frequency information using
+\textit{Constant Q Transform (CQT)}. This technique, similarly to FFT,
+transforms a signal from the time to frequency domain and produces a
+spectrogram. While the frequency bins (the intervals of each frequency) in a FFT
+spectrogram are uniformly spaced out, the bins resulting from CQT are
+logarithmically spaced and follow the equal tempered scale. This is a better
+representation of the human perception of frequencies. It also leads to a better
+frequency resolution for the low and mid frequencies, as well as better time
+resolution for high frequencies \cite{schorkhuber2010constant}.
+
+The computation complexity of CQT is considerably high compared to FFT. The
+exact implementation is not straight forward and it involves details beyond the
+scope of my knowledge in the area. A further specification of CQT is therefore
+unavailable in this report. In the benchmark a library implementation of CQT is
+used throughout.
+
+\paragraph{}
+The first stage of the rejector is the \textit{fingerprinting stage}. After CQT
+is applied on a song, the resulting spectrogram is converted into binary image
+using adaptive thresholding. Threshold is a simple form of image segmentation
+most frequently used to covert grayscale images into binary form. Thresholding
+varies in relation to the type of image information used, adaptive thresholding
+modifies each pixel value based on a local pixel neighbourhood of predetermined
+size. For a neighbourhood around a pixel $(i, j)$ of matrix $X$ we calculate the
+median of the neighbouring values:
+\begin{equation}
+   M(i, j) = median\; \{\; X(I, J) \mid i-\Delta_N \leq I \leq i+\Delta_N \text{ and } j-\Delta_N \leq J \leq j+\Delta_N \; \}
+\end{equation}
+
+In the median calculation $\Delta_N$ is the neighbourhood size. Using the local
+median value the neighbourhood the point $X(i, j)$ can be binarised:
+\begin{equation}
+    B(i, j) = \begin{cases}
+        1,& \text{if } X(i, j) > M(i, j) \\
+        0,& \text{otherwise}
+    \end{cases}
+\end{equation}
+
+By repeating the procedure for each element of the spectrogram we obtain the
+binary matrix $B$. The ones in the representation indicate local areas with high
+sound energy (the peaks of the spectrogram). A binary representation is
+extracted for every song in the database. In the interest of clarity we refer to
+the binary matrix of a database song as a \textit{reference fingerprint}. 
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.7\textwidth]{Algorithms/adaptivethresh.png} 
+   \captionof{figure}[Adaptive thresholding on CQT spectrogram]{Overview of the \textit{fingerprinting} stage of the rejector \cite{rafii2014audio}}
+\end{figure}
+
+The following \textit{matching} stage starts by constructing a similarity
+matrices from the binary image of the query song and each of the reference
+fingerprints. The similarity metric used is the Hamming similarity, i.e. the
+percentage of values that match between both matrices. First, the reference
+fingerprints are modified using the function $A(x) = 2x - 1$ and then multiplied
+with the query fingerprint. The product is converted with the inverse of A
+$(f_{-1} = (x + 1)/2)$. The resulting matrix is normalised by the frequency
+dimension of the CQT spectrogram specification, which gives us a matrix
+containing Hamming similarity scores for each pair of time frames between the
+query segment and the reference.
+
+After a further binarisation of the Hamming matrix using an empirically chosen
+pre-defined fixed value, the final similarity score returned by the rejector is
+calculated using the largest cumulated Hamming similarity defined by a line in
+the matrix. A line containing the highest sum of similarity values signifies the
+best alignment between a query segment and a reference fingerprint. Similarly to
+the timbre rejector, because one of the dimensions represents alignment along
+the time domain. Therefore the expected best alignment should correspond to a
+diagonal line within the Hamming similarity matrix.
+
+To detect best cumulative Hamming similarity in the matrix a method called
+\textit{Hough transform} is utilised. The technique is a used to detect straight
+lines within an image (or set of points) using the following line representation on a coordinate system:
+\begin{equation}
+   \rho = c \cos\theta + y \sin\theta
+\end{equation}
+
+where $\rho$ represents the shortest distance of the defined line from the
+origin and $\theta$ is the angle between the $x$ axis and the perpendicular from
+the origin to the line (figure \ref{fig:rthetaline}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Algorithms/rthetaline.png}
+    \captionof{figure}[Hesse normal form of line]{Geometric representation of the Hesse normal form of a line}
+    \label{fig:rthetaline}
+\end{figure}
+
+This equation helps us define a line using $(\rho, \theta)$. Plotting the set of
+all values of $(\rho, \theta)$ for a fixed point describes a sine curve:
+
+\begin{figure}[H]
+   \centering
+   \includegraphics[width=0.4\textwidth]{Algorithms/houghlines.jpg} 
+   \captionof{figure}[Sinusoidal curve of all lines within a point in relation to Hough transform]{Plot of the set of all lines through a single point}
+\end{figure}
+
+Given multiple points the straight line passing through all of them is
+defined by the point in the $(\rho, \theta)$ plane which is the intersection of
+all sinusoidal curves. Given a line the result of Hough transform is the set of
+coordinates of the points lying on the line.
+
+\paragraph{}
+The fingerprint rejector exploits the idea of representing a line using a
+distance and an angle. A range of values for $\rho$ and $\theta$ is defined and
+the formed lines are passed to a Hough transform. The cumulative Hamming
+similarity for the line is calculated using the locations within the matrix
+returned by the transform.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Algorithms/matchingcqt.png}
+    \label{fig:matchingcqt}
+    \captionof{figure}[Matching phase of the fingerprint rejector]{Overview of the \textit{matching} phase of the rejector}
+\end{figure}
