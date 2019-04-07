@@ -49,8 +49,8 @@
 \contentsline {section}{\numberline {6.4}Result format produced by benchmark}{39}{section.6.4}
 \contentsline {chapter}{\numberline {7}Results and experimentation}{40}{chapter.7}
 \contentsline {section}{\numberline {7.1}Best results}{40}{section.7.1}
-\contentsline {section}{\numberline {7.2}Comparison to results from papers}{40}{section.7.2}
-\contentsline {section}{\numberline {7.3}Result analysis}{40}{section.7.3}
+\contentsline {section}{\numberline {7.2}Results analysis}{40}{section.7.2}
+\contentsline {section}{\numberline {7.3}Experimentation}{40}{section.7.3}
 \contentsline {chapter}{\numberline {8}Further work}{41}{chapter.8}
 \contentsline {chapter}{\numberline {9}Challenges}{42}{chapter.9}
 \contentsline {section}{\numberline {9.1}Lack of supporting academic infrastructure}{42}{section.9.1}

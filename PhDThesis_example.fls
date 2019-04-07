@@ -419,9 +419,6 @@ INPUT /Users/martin/Documents/GitHub/FYP-report/Acknowledgement/acknowledgement.
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/Abstract/abstract.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/Abstract/abstract.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/Abstract/abstract.tex
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.toc
 INPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.toc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
@@ -430,6 +427,7 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
@@ -453,6 +451,8 @@ OUTPUT /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.lof
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/Introduction/introduction.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/Introduction/introduction.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/Introduction/introduction.tex
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 OUTPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.aux
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.tex
 INPUT /Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.tex

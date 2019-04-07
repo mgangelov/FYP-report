@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.29)  7 APR 2019 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.29)  7 APR 2019 19:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -891,13 +891,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 \openout2 = `Abstract/abstract.aux'.
 
  (/Users/martin/Documents/GitHub/FYP-report/Abstract/abstract.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
-
 Underfull \hbox (badness 10000) has occurred while \output is active
 []
  []
@@ -945,7 +938,14 @@ l.71
 
 
 
-]) [2]
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 84.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
+) [2]
 \openout2 = `BackgroundTheory/backgroundtheory.aux'.
 
  (/Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.tex
@@ -1197,21 +1197,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
 Package rerunfilecheck Info: File `PhDThesis_example.out' has not changed.
-(rerunfilecheck)             Checksum: 20C85C0C97F5C706BFDE4592145CAF69;3627.
+(rerunfilecheck)             Checksum: 8C632FB187635BF714512853650031C1;3610.
 Package rerunfilecheck Info: File `PhDThesis_example.brf' has not changed.
 (rerunfilecheck)             Checksum: AD135728826797DF9F054711E0AC69F3;5106.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
  36792 strings out of 492649
- 836225 string characters out of 6129622
- 1090731 words of memory out of 5000000
+ 836235 string characters out of 6129622
+ 1091731 words of memory out of 5000000
  39600 multiletter control sequences out of 15000+600000
  11872 words of font info for 45 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  62i,12n,96p,2045b,1898s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.pdf (59 pages, 7000479 bytes).
+Output written on /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.pdf (59 pages, 7000739 bytes).
 PDF statistics:
  1105 PDF objects out of 1200 (max. 8388607)
  956 compressed objects within 10 object streams
