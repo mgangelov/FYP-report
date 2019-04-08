@@ -1,8 +1,8 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Time envelope \textit {add citations and description}\relax }}{6}{figure.caption.3}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Spectral envelope \textit {add citations and description}\relax }}{6}{figure.caption.4}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Audio envelope}}{6}{figure.caption.3}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Spectral envelope}}{6}{figure.caption.4}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Fourier transform applied on a periodic function}}{7}{figure.caption.5}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Fourier transformation equation for periodic functions}}{8}{figure.caption.6}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Fourier series parameter derivation}}{8}{figure.caption.7}
@@ -38,9 +38,11 @@
 \contentsline {figure}{\numberline {5.19}{\ignorespaces Sinusoidal curve of all lines within a point in relation to Hough transform}}{38}{figure.caption.42}
 \contentsline {figure}{\numberline {5.20}{\ignorespaces Matching phase of the fingerprint rejector}}{38}{figure.caption.44}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Example of an algorithm result in database}}{42}{figure.caption.45}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Example of verbose similarity score in database}}{43}{figure.caption.46}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces GitLab project commit graph}}{44}{figure.caption.47}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces GitLab project commit graph}}{48}{figure.caption.48}
 \addvspace {10\p@ }

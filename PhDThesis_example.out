@@ -19,11 +19,11 @@
 \BOOKMARK [2][]{subsection.3.1.1}{3.1.1 Results evaluation}{section.3.1}% 19
 \BOOKMARK [2][]{subsection.3.1.2}{3.1.2 Harmonic Pitch Class Profiles}{section.3.1}% 20
 \BOOKMARK [2][]{subsection.3.1.3}{3.1.3 Similarity methods}{section.3.1}% 21
-\BOOKMARK [0][]{chapter.4}{4 The task}{}% 22
+\BOOKMARK [0][]{chapter.4}{4 Evaluation task}{}% 22
 \BOOKMARK [1][]{section.4.1}{4.1 Design}{chapter.4}% 23
 \BOOKMARK [1][]{section.4.2}{4.2 Evaluation methods and metrics}{chapter.4}% 24
 \BOOKMARK [1][]{section.4.3}{4.3 Datasets used for evaluation}{chapter.4}% 25
-\BOOKMARK [0][]{chapter.5}{5 The algorithms}{}% 26
+\BOOKMARK [0][]{chapter.5}{5 Examined algorithms}{}% 26
 \BOOKMARK [1][]{section.5.1}{5.1 Algorithms list}{chapter.5}% 27
 \BOOKMARK [1][]{section.5.2}{5.2 Weak rejector}{chapter.5}% 28
 \BOOKMARK [1][]{section.5.3}{5.3 Cross-correlation rejector}{chapter.5}% 29
@@ -31,23 +31,28 @@
 \BOOKMARK [1][]{section.5.5}{5.5 Timbre rejector}{chapter.5}% 31
 \BOOKMARK [1][]{section.5.6}{5.6 Aggregated rank rejector}{chapter.5}% 32
 \BOOKMARK [1][]{section.5.7}{5.7 Fingerprint rejector}{chapter.5}% 33
-\BOOKMARK [0][]{chapter.6}{6 The benchmark}{}% 34
+\BOOKMARK [0][]{chapter.6}{6 Evaluation benchmark}{}% 34
 \BOOKMARK [1][]{section.6.1}{6.1 Implementation details}{chapter.6}% 35
-\BOOKMARK [1][]{section.6.2}{6.2 Brief usage information}{chapter.6}% 36
-\BOOKMARK [1][]{section.6.3}{6.3 Algorithm structure in the benchmark}{chapter.6}% 37
-\BOOKMARK [1][]{section.6.4}{6.4 Result format produced by benchmark}{chapter.6}% 38
-\BOOKMARK [0][]{chapter.7}{7 Results and experimentation}{}% 39
-\BOOKMARK [1][]{section.7.1}{7.1 Best results}{chapter.7}% 40
-\BOOKMARK [1][]{section.7.2}{7.2 Results analysis}{chapter.7}% 41
-\BOOKMARK [1][]{section.7.3}{7.3 Experimentation}{chapter.7}% 42
-\BOOKMARK [0][]{chapter.8}{8 Further work}{}% 43
-\BOOKMARK [0][]{chapter.9}{9 Challenges}{}% 44
-\BOOKMARK [1][]{section.9.1}{9.1 Lack of supporting academic infrastructure}{chapter.9}% 45
-\BOOKMARK [1][]{section.9.2}{9.2 Project scope}{chapter.9}% 46
-\BOOKMARK [1][]{section.9.3}{9.3 Ambiguity in the algorithm papers}{chapter.9}% 47
-\BOOKMARK [0][]{chapter.10}{10 Project management}{}% 48
-\BOOKMARK [1][]{section.10.1}{10.1 Using GitLab}{chapter.10}% 49
-\BOOKMARK [1][]{section.10.2}{10.2 Canvas logs}{chapter.10}% 50
-\BOOKMARK [1][]{section.10.3}{10.3 Supervisor meetings}{chapter.10}% 51
-\BOOKMARK [0][]{chapter.11}{11 Conclusion}{}% 52
-\BOOKMARK [0][]{appendix*.48}{References}{}% 53
+\BOOKMARK [1][]{section.6.2}{6.2 Algorithm implementations in the benchmark}{chapter.6}% 36
+\BOOKMARK [2][]{subsection.6.2.1}{6.2.1 Weak rejectors}{section.6.2}% 37
+\BOOKMARK [2][]{subsection.6.2.2}{6.2.2 Cross-correlation rejector}{section.6.2}% 38
+\BOOKMARK [2][]{subsection.6.2.3}{6.2.3 Quantisation rejector}{section.6.2}% 39
+\BOOKMARK [2][]{subsection.6.2.4}{6.2.4 Timbre rejector}{section.6.2}% 40
+\BOOKMARK [2][]{subsection.6.2.5}{6.2.5 Rank aggregation rejector}{section.6.2}% 41
+\BOOKMARK [2][]{subsection.6.2.6}{6.2.6 Fingerprint rejector}{section.6.2}% 42
+\BOOKMARK [1][]{section.6.3}{6.3 Benchmark result format}{chapter.6}% 43
+\BOOKMARK [0][]{chapter.7}{7 Results and experimentation}{}% 44
+\BOOKMARK [1][]{section.7.1}{7.1 Best results}{chapter.7}% 45
+\BOOKMARK [1][]{section.7.2}{7.2 Results analysis}{chapter.7}% 46
+\BOOKMARK [1][]{section.7.3}{7.3 Experimentation}{chapter.7}% 47
+\BOOKMARK [0][]{chapter.8}{8 Further work}{}% 48
+\BOOKMARK [0][]{chapter.9}{9 Challenges}{}% 49
+\BOOKMARK [1][]{section.9.1}{9.1 Lack of supporting academic infrastructure}{chapter.9}% 50
+\BOOKMARK [1][]{section.9.2}{9.2 Project scope}{chapter.9}% 51
+\BOOKMARK [1][]{section.9.3}{9.3 Ambiguity in the algorithm papers}{chapter.9}% 52
+\BOOKMARK [0][]{chapter.10}{10 Project management}{}% 53
+\BOOKMARK [1][]{section.10.1}{10.1 Using GitLab}{chapter.10}% 54
+\BOOKMARK [1][]{section.10.2}{10.2 Canvas logs}{chapter.10}% 55
+\BOOKMARK [1][]{section.10.3}{10.3 Supervisor meetings}{chapter.10}% 56
+\BOOKMARK [0][]{chapter.11}{11 Conclusion}{}% 57
+\BOOKMARK [0][]{appendix*.49}{References}{}% 58

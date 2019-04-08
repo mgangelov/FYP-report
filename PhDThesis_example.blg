@@ -22,45 +22,45 @@ Warning--empty year in mullershort
 Warning--can't use both volume and number fields in friedman2001elements
 Warning--empty journal in martin1986power
 Warning--empty journal in serra2009cover
-You've used 78 entries,
+You've used 86 entries,
             1876 wiz_defined-function locations,
-            809 strings with 12936 characters,
-and the built_in function-call counts, 14790 in all, are:
-= -- 1469
-> -- 465
+            836 strings with 13614 characters,
+and the built_in function-call counts, 16265 in all, are:
+= -- 1603
+> -- 543
 < -- 0
-+ -- 198
-- -- 120
-* -- 776
-:= -- 2063
-add.period$ -- 125
-call.type$ -- 78
-change.case$ -- 70
++ -- 229
+- -- 143
+* -- 857
+:= -- 2284
+add.period$ -- 140
+call.type$ -- 86
+change.case$ -- 78
 chr.to.int$ -- 0
-cite$ -- 84
-duplicate$ -- 692
-empty$ -- 1725
-format.name$ -- 120
-if$ -- 3712
+cite$ -- 92
+duplicate$ -- 739
+empty$ -- 1884
+format.name$ -- 143
+if$ -- 4071
 int.to.chr$ -- 0
-int.to.str$ -- 78
-missing$ -- 46
-newline$ -- 285
-num.names$ -- 78
-pop$ -- 450
+int.to.str$ -- 86
+missing$ -- 47
+newline$ -- 316
+num.names$ -- 86
+pop$ -- 500
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 429
+skip$ -- 467
 stack$ -- 0
-substring$ -- 594
-swap$ -- 179
+substring$ -- 634
+swap$ -- 190
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 141
-width$ -- 80
-write$ -- 726
+while$ -- 152
+width$ -- 88
+write$ -- 800
 (There were 6 warnings)

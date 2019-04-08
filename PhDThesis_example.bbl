@@ -106,6 +106,15 @@ R.~Erickson, {\em Sound structure in music}.
   encyclopedia,'' 2019.
 \newblock [Online; accessed 31-March-2019].
 
+\bibitem{wiki:timbre}
+{Wikipedia contributors}, ``Timbre --- {Wikipedia}{,} the free encyclopedia,''
+  2019.
+\newblock [Online; accessed 8-April-2019].
+
+\bibitem{spectralenvelope}
+{Diemo Schwarz}, ``Spectral {Envelopes},'' 2019.
+\newblock [Online; accessed 8-April-2019].
+
 \bibitem{benward2014music}
 B.~Benward, {\em Music in Theory and Practice Volume 1}.
 \newblock McGraw-Hill Higher Education, 2014.
@@ -296,6 +305,13 @@ J.~Serra and E.~G{\'o}mez, ``Audio cover song identification based on tonal
   sequence alignment,'' in {\em 2008 IEEE International Conference on
   Acoustics, Speech and Signal Processing}, pp.~61--64, IEEE, 2008.
 
+\bibitem{scikit-learn}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay, ``Scikit-learn:
+  Machine learning in {P}ython,'' {\em Journal of Machine Learning Research},
+  vol.~12, pp.~2825--2830, 2011.
+
 \bibitem{martin1986power}
 R.~Martin and C.~Burley, ``Power cepstrum technique with application to model
   helicopter acoustic data,'' 1986.
@@ -326,6 +342,27 @@ A.~M. Noll, ``Cepstrum pitch determination,'' {\em The journal of the
 C.~Sch{\"o}rkhuber and A.~Klapuri, ``Constant-q transform toolbox for music
   processing,'' in {\em 7th Sound and Music Computing Conference, Barcelona,
   Spain}, pp.~3--64, 2010.
+
+\bibitem{librosa}
+{LabROSA}, ``Librosa,'' 2019.
+\newblock [Online; accessed 6-April-2019].
+
+\bibitem{aubio}
+{Aubio}, ``Aubio,'' 2019.
+\newblock [Online; accessed 6-April-2019].
+
+\bibitem{pyAudioAnalysis}
+{pyAudioAnalysis}, ``pyaudioanalysis,'' 2019.
+\newblock [Online; accessed 6-April-2019].
+
+\bibitem{pymongo}
+{MongoDB}, ``Pymongo,'' 2019.
+\newblock [Online; accessed 6-April-2019].
+
+\bibitem{numpy}
+{Travis Oliphant}, ``{NumPy}: A guide to {NumPy}.'' USA: Trelgol Publishing,
+  2006.
+\newblock [Online; accessed 6-April-2019].
 
 \bibitem{roederer2008physics}
 J.~G. Roederer, {\em The physics and psychophysics of music: an introduction}.

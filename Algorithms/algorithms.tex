@@ -3,7 +3,7 @@
 %        1         2         3         4         5         6         7         8
 % THESIS CHAPTER
 
-\chapter{The algorithms}
+\chapter{Examined algorithms}
 \label{chap:algorithms}
 \ifpdf
     \graphicspath{{Algorithms/Figures/PNG/}{EvaluationTask/Figures/PDF/}{Algorithms/Figures/}}
@@ -283,6 +283,11 @@ vectors to achieve best alignment between both songs:
 \captionof{figure}[Transposing a histogram based on OTI]{Shifting $\vec{A}$ to best align with $\vec{B}$}
 \end{figure}
 
+The performance of each K-means clustering model during training is evaluated
+through the sum of squared distances of each clustered point to their closest
+cluster center, a metric called \textit{inertia} \cite{scikit-learn}. A low
+inertia indicates a a good separation of the points and therefore a good model.
+
 The final similarity metric returned
 by the quantisation rejector is the cosine similarity between both histograms.
 
@@ -506,6 +511,9 @@ algorithm is the sum of the scores along the longest identified local alignment.
 
 \section{Aggregated rank rejector} 
 \label{sec:rankaggregation}
+
+Don't forget to mention that the 2DFT and other weak rejectors have not been
+implemented due to lack of sufficient data
 
 \section{Fingerprint rejector} 
 \label{sec:rafii}
