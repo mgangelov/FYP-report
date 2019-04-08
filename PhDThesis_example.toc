@@ -38,32 +38,32 @@
 \contentsline {paragraph}{}{30}{section*.31}
 \contentsline {paragraph}{}{32}{section*.35}
 \contentsline {section}{\numberline {5.6}Aggregated rank rejector}{35}{section.5.6}
-\contentsline {section}{\numberline {5.7}Fingerprint rejector}{35}{section.5.7}
-\contentsline {paragraph}{}{35}{section*.38}
-\contentsline {paragraph}{}{35}{section*.39}
-\contentsline {paragraph}{}{38}{section*.43}
-\contentsline {chapter}{\numberline {6}Evaluation benchmark}{39}{chapter.6}
-\contentsline {section}{\numberline {6.1}Implementation details}{39}{section.6.1}
-\contentsline {section}{\numberline {6.2}Algorithm implementations in the benchmark}{40}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Weak rejectors}{40}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Cross-correlation rejector}{40}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Quantisation rejector}{41}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Timbre rejector}{41}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Rank aggregation rejector}{42}{subsection.6.2.5}
-\contentsline {subsection}{\numberline {6.2.6}Fingerprint rejector}{42}{subsection.6.2.6}
-\contentsline {section}{\numberline {6.3}Benchmark result format}{42}{section.6.3}
-\contentsline {chapter}{\numberline {7}Results and experimentation}{44}{chapter.7}
-\contentsline {section}{\numberline {7.1}Best results}{44}{section.7.1}
-\contentsline {section}{\numberline {7.2}Results analysis}{44}{section.7.2}
-\contentsline {section}{\numberline {7.3}Experimentation}{44}{section.7.3}
-\contentsline {chapter}{\numberline {8}Further work}{45}{chapter.8}
-\contentsline {chapter}{\numberline {9}Challenges}{46}{chapter.9}
-\contentsline {section}{\numberline {9.1}Lack of supporting academic infrastructure}{46}{section.9.1}
-\contentsline {section}{\numberline {9.2}Project scope}{47}{section.9.2}
-\contentsline {section}{\numberline {9.3}Ambiguity in the algorithm papers}{47}{section.9.3}
-\contentsline {chapter}{\numberline {10}Project management}{48}{chapter.10}
-\contentsline {section}{\numberline {10.1}Using GitLab}{48}{section.10.1}
-\contentsline {section}{\numberline {10.2}Canvas logs}{49}{section.10.2}
-\contentsline {section}{\numberline {10.3}Supervisor meetings}{49}{section.10.3}
-\contentsline {chapter}{\numberline {11}Conclusion}{50}{chapter.11}
-\contentsline {chapter}{References}{57}{appendix*.49}
+\contentsline {section}{\numberline {5.7}Fingerprint rejector}{36}{section.5.7}
+\contentsline {paragraph}{}{36}{section*.39}
+\contentsline {paragraph}{}{36}{section*.40}
+\contentsline {paragraph}{}{39}{section*.44}
+\contentsline {chapter}{\numberline {6}Evaluation benchmark}{40}{chapter.6}
+\contentsline {section}{\numberline {6.1}Implementation details}{40}{section.6.1}
+\contentsline {section}{\numberline {6.2}Algorithm implementations in the benchmark}{41}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Weak rejectors}{41}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Cross-correlation rejector}{41}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Quantisation rejector}{42}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Timbre rejector}{42}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Rank aggregation rejector}{43}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}Fingerprint rejector}{43}{subsection.6.2.6}
+\contentsline {section}{\numberline {6.3}Benchmark result format}{43}{section.6.3}
+\contentsline {chapter}{\numberline {7}Results and experimentation}{45}{chapter.7}
+\contentsline {section}{\numberline {7.1}Best results}{45}{section.7.1}
+\contentsline {section}{\numberline {7.2}Results analysis}{45}{section.7.2}
+\contentsline {section}{\numberline {7.3}Experimentation}{45}{section.7.3}
+\contentsline {chapter}{\numberline {8}Further work}{46}{chapter.8}
+\contentsline {chapter}{\numberline {9}Challenges}{47}{chapter.9}
+\contentsline {section}{\numberline {9.1}Lack of supporting academic infrastructure}{47}{section.9.1}
+\contentsline {section}{\numberline {9.2}Project scope}{48}{section.9.2}
+\contentsline {section}{\numberline {9.3}Ambiguity in the algorithm papers}{48}{section.9.3}
+\contentsline {chapter}{\numberline {10}Project management}{49}{chapter.10}
+\contentsline {section}{\numberline {10.1}Using GitLab}{49}{section.10.1}
+\contentsline {section}{\numberline {10.2}Canvas logs}{50}{section.10.2}
+\contentsline {section}{\numberline {10.3}Supervisor meetings}{50}{section.10.3}
+\contentsline {chapter}{\numberline {11}Conclusion}{51}{chapter.11}
+\contentsline {chapter}{References}{58}{appendix*.50}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.29)  8 APR 2019 06:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.29)  8 APR 2019 07:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -955,18 +955,18 @@ Chapter 2.
 
 
 ] [4] [5]
-<BackgroundTheory/time_envelope.png, id=484, 561.59813pt x 288.3272pt>
+<BackgroundTheory/time_envelope.png, id=486, 561.59813pt x 288.3272pt>
 File: BackgroundTheory/time_envelope.png Graphic file (type png)
 <use BackgroundTheory/time_envelope.png>
 Package pdftex.def Info: BackgroundTheory/time_envelope.png  used on input line 158.
 (pdftex.def)             Requested size: 309.4237pt x 158.8576pt.
-<BackgroundTheory/spectral_envelope.png, id=487, 704.6325pt x 378.41376pt>
+<BackgroundTheory/spectral_envelope.png, id=489, 704.6325pt x 378.41376pt>
 File: BackgroundTheory/spectral_envelope.png Graphic file (type png)
 <use BackgroundTheory/spectral_envelope.png>
 Package pdftex.def Info: BackgroundTheory/spectral_envelope.png  used on input line 165.
 (pdftex.def)             Requested size: 309.4237pt x 166.16766pt.
  [6 </Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/time_envelope.png> </Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/spectral_envelope.png>]
-<BackgroundTheory/fourier-series.png, id=503, 596.72937pt x 472.76625pt>
+<BackgroundTheory/fourier-series.png, id=506, 596.72937pt x 472.76625pt>
 File: BackgroundTheory/fourier-series.png Graphic file (type png)
 <use BackgroundTheory/fourier-series.png>
 Package pdftex.def Info: BackgroundTheory/fourier-series.png  used on input line 199.
@@ -976,19 +976,19 @@ LaTeX Font Info:    Try loading font information for U+eus on input line 257.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 )
-<Algorithms/dft.png, id=527, 2007.5pt x 1291.82625pt>
+<Algorithms/dft.png, id=529, 2007.5pt x 1291.82625pt>
 File: Algorithms/dft.png Graphic file (type png)
 <use Algorithms/dft.png>
 Package pdftex.def Info: Algorithms/dft.png  used on input line 267.
 (pdftex.def)             Requested size: 412.56496pt x 265.47658pt.
  [8]
-<BackgroundTheory/spectrogram.png, id=548, 646.415pt x 336.25626pt>
+<BackgroundTheory/spectrogram.png, id=550, 646.415pt x 336.25626pt>
 File: BackgroundTheory/spectrogram.png Graphic file (type png)
 <use BackgroundTheory/spectrogram.png>
 Package pdftex.def Info: BackgroundTheory/spectrogram.png  used on input line 290.
 (pdftex.def)             Requested size: 309.4237pt x 160.95477pt.
  [9 </Users/martin/Documents/GitHub/FYP-report/Algorithms/dft.png>]
-<BackgroundTheory/mel-scale.png, id=562, 2007.5pt x 952.55875pt>
+<BackgroundTheory/mel-scale.png, id=564, 2007.5pt x 952.55875pt>
 File: BackgroundTheory/mel-scale.png Graphic file (type png)
 <use BackgroundTheory/mel-scale.png>
 Package pdftex.def Info: BackgroundTheory/mel-scale.png  used on input line 330.
@@ -1007,7 +1007,7 @@ Chapter 3.
 
  (/Users/martin/Documents/GitHub/FYP-report/EvaluationTask/evaluationtask.tex
 Chapter 4.
-<EvaluationTask/benchmark_architecture_2.jpg, id=628, 2007.5pt x 1129.21875pt>
+<EvaluationTask/benchmark_architecture_2.jpg, id=630, 2007.5pt x 1129.21875pt>
 File: EvaluationTask/benchmark_architecture_2.jpg Graphic file (type jpg)
 <use EvaluationTask/benchmark_architecture_2.jpg>
 Package pdftex.def Info: EvaluationTask/benchmark_architecture_2.jpg  used on input line 48.
@@ -1026,124 +1026,130 @@ Chapter 5.
 
 
 ]
-<Algorithms/algorithm_diagram_3.jpg, id=664, 2007.5pt x 1129.21875pt>
+<Algorithms/algorithm_diagram_3.jpg, id=666, 2007.5pt x 1129.21875pt>
 File: Algorithms/algorithm_diagram_3.jpg Graphic file (type jpg)
 <use Algorithms/algorithm_diagram_3.jpg>
 Package pdftex.def Info: Algorithms/algorithm_diagram_3.jpg  used on input line 62.
 (pdftex.def)             Requested size: 412.56496pt x 232.05995pt.
  [21 </Users/martin/Documents/GitHub/FYP-report/Algorithms/algorithm_diagram_3.jpg>] [22]
-<Algorithms/chromagram_picture.png, id=686, 683.1924pt x 273.6624pt>
+<Algorithms/chromagram_picture.png, id=688, 683.1924pt x 273.6624pt>
 File: Algorithms/chromagram_picture.png Graphic file (type png)
 <use Algorithms/chromagram_picture.png>
 Package pdftex.def Info: Algorithms/chromagram_picture.png  used on input line 137.
 (pdftex.def)             Requested size: 412.56496pt x 165.25932pt.
  [23 </Users/martin/Documents/GitHub/FYP-report/Algorithms/chromagram_picture.png>]
-<Algorithms/stft.png, id=695, 853.1875pt x 515.9275pt>
+<Algorithms/stft.png, id=697, 853.1875pt x 515.9275pt>
 File: Algorithms/stft.png Graphic file (type png)
 <use Algorithms/stft.png>
 Package pdftex.def Info: Algorithms/stft.png  used on input line 159.
 (pdftex.def)             Requested size: 412.56496pt x 249.48453pt.
  [24 </Users/martin/Documents/GitHub/FYP-report/Algorithms/stft.png>]
-<Algorithms/spectrogram_to_chromagram.png, id=709, 659.46375pt x 816.04875pt>
+<Algorithms/spectrogram_to_chromagram.png, id=711, 659.46375pt x 816.04875pt>
 File: Algorithms/spectrogram_to_chromagram.png Graphic file (type png)
 <use Algorithms/spectrogram_to_chromagram.png>
 Package pdftex.def Info: Algorithms/spectrogram_to_chromagram.png  used on input line 200.
 (pdftex.def)             Requested size: 284.67082pt x 352.27629pt.
  [25] [26 </Users/martin/Documents/GitHub/FYP-report/Algorithms/spectrogram_to_chromagram.png>]
-<Algorithms/cross-correlation.png, id=726, 765.5802pt x 476.5002pt>
+<Algorithms/cross-correlation.png, id=728, 765.5802pt x 476.5002pt>
 File: Algorithms/cross-correlation.png Graphic file (type png)
 <use Algorithms/cross-correlation.png>
 Package pdftex.def Info: Algorithms/cross-correlation.png  used on input line 233.
 (pdftex.def)             Requested size: 412.56496pt x 256.78278pt.
  [27 </Users/martin/Documents/GitHub/FYP-report/Algorithms/cross-correlation.png>]
-<Algorithms/quantisation.png, id=736, 745.3446pt x 575.751pt>
+<Algorithms/quantisation.png, id=738, 745.3446pt x 575.751pt>
 File: Algorithms/quantisation.png Graphic file (type png)
 <use Algorithms/quantisation.png>
 Package pdftex.def Info: Algorithms/quantisation.png  used on input line 253.
 (pdftex.def)             Requested size: 412.56496pt x 318.70221pt.
  [28 </Users/martin/Documents/GitHub/FYP-report/Algorithms/quantisation.png>] [29]
-<Algorithms/powercepstrum.png, id=764, 725.71124pt x 139.52126pt>
+<Algorithms/powercepstrum.png, id=766, 725.71124pt x 139.52126pt>
 File: Algorithms/powercepstrum.png Graphic file (type png)
 <use Algorithms/powercepstrum.png>
 Package pdftex.def Info: Algorithms/powercepstrum.png  used on input line 332.
 (pdftex.def)             Requested size: 412.56496pt x 79.31929pt.
-<Algorithms/powercepstrum2.png, id=772, 753.81625pt x 625.33624pt>
+<Algorithms/powercepstrum2.png, id=774, 753.81625pt x 625.33624pt>
 File: Algorithms/powercepstrum2.png Graphic file (type png)
 <use Algorithms/powercepstrum2.png>
 Package pdftex.def Info: Algorithms/powercepstrum2.png  used on input line 361.
 (pdftex.def)             Requested size: 412.56496pt x 342.24709pt.
  [30 </Users/martin/Documents/GitHub/FYP-report/Algorithms/powercepstrum.png>] [31 </Users/martin/Documents/GitHub/FYP-report/Algorithms/powercepstrum2.png>]
-<Algorithms/ssms.png, id=794, 1031.855pt x 550.055pt>
+<Algorithms/ssms.png, id=796, 1031.855pt x 550.055pt>
 File: Algorithms/ssms.png Graphic file (type png)
 <use Algorithms/ssms.png>
 Package pdftex.def Info: Algorithms/ssms.png  used on input line 403.
 (pdftex.def)             Requested size: 247.54149pt x 131.95714pt.
  [32 </Users/martin/Documents/GitHub/FYP-report/Algorithms/ssms.png>]
-<Algorithms/csmbm.png, id=807, 978.65625pt x 387.4475pt>
+<Algorithms/csmbm.png, id=809, 978.65625pt x 387.4475pt>
 File: Algorithms/csmbm.png Graphic file (type png)
 <use Algorithms/csmbm.png>
 Package pdftex.def Info: Algorithms/csmbm.png  used on input line 438.
 (pdftex.def)             Requested size: 247.54149pt x 97.99672pt.
  [33 </Users/martin/Documents/GitHub/FYP-report/Algorithms/csmbm.png>]
-<Algorithms/swworkings.png, id=820, 309.155pt x 308.15125pt>
+<Algorithms/swworkings.png, id=822, 309.155pt x 308.15125pt>
 File: Algorithms/swworkings.png Graphic file (type png)
 <use Algorithms/swworkings.png>
 Package pdftex.def Info: Algorithms/swworkings.png  used on input line 497.
 (pdftex.def)             Requested size: 114.178pt x 113.81102pt.
-<Algorithms/swmatrix.png, id=821, 473.77pt x 371.3875pt>
+<Algorithms/swmatrix.png, id=823, 473.77pt x 371.3875pt>
 File: Algorithms/swmatrix.png Graphic file (type png)
 <use Algorithms/swmatrix.png>
 Package pdftex.def Info: Algorithms/swmatrix.png  used on input line 503.
 (pdftex.def)             Requested size: 181.48752pt x 142.26378pt.
- [34 </Users/martin/Documents/GitHub/FYP-report/Algorithms/swworkings.png> </Users/martin/Documents/GitHub/FYP-report/Algorithms/swmatrix.png>] [35]
-<Algorithms/adaptivethresh.png, id=841, 243.7908pt x 227.4096pt>
+ [34 </Users/martin/Documents/GitHub/FYP-report/Algorithms/swworkings.png> </Users/martin/Documents/GitHub/FYP-report/Algorithms/swmatrix.png>]
+<Algorithms/raschema2.png, id=836, 827.09pt x 181.67876pt>
+File: Algorithms/raschema2.png Graphic file (type png)
+<use Algorithms/raschema2.png>
+Package pdftex.def Info: Algorithms/raschema2.png  used on input line 535.
+(pdftex.def)             Requested size: 412.56496pt x 90.62569pt.
+ [35 </Users/martin/Documents/GitHub/FYP-report/Algorithms/raschema2.png>] [36]
+<Algorithms/adaptivethresh.png, id=854, 243.7908pt x 227.4096pt>
 File: Algorithms/adaptivethresh.png Graphic file (type png)
 <use Algorithms/adaptivethresh.png>
-Package pdftex.def Info: Algorithms/adaptivethresh.png  used on input line 577.
+Package pdftex.def Info: Algorithms/adaptivethresh.png  used on input line 617.
 (pdftex.def)             Requested size: 288.7942pt x 269.39587pt.
- [36 </Users/martin/Documents/GitHub/FYP-report/Algorithms/adaptivethresh.png>]
-<Algorithms/rthetaline.png, id=852, 334.24875pt x 280.04625pt>
+ [37 </Users/martin/Documents/GitHub/FYP-report/Algorithms/adaptivethresh.png>]
+<Algorithms/rthetaline.png, id=863, 334.24875pt x 280.04625pt>
 File: Algorithms/rthetaline.png Graphic file (type png)
 <use Algorithms/rthetaline.png>
-Package pdftex.def Info: Algorithms/rthetaline.png  used on input line 614.
+Package pdftex.def Info: Algorithms/rthetaline.png  used on input line 654.
 (pdftex.def)             Requested size: 165.02345pt x 138.2665pt.
-<Algorithms/houghlines.jpg, id=853, 301.125pt x 203.76125pt>
+<Algorithms/houghlines.jpg, id=864, 301.125pt x 203.76125pt>
 File: Algorithms/houghlines.jpg Graphic file (type jpg)
 <use Algorithms/houghlines.jpg>
-Package pdftex.def Info: Algorithms/houghlines.jpg  used on input line 624.
+Package pdftex.def Info: Algorithms/houghlines.jpg  used on input line 664.
 (pdftex.def)             Requested size: 165.02345pt x 111.67105pt.
- [37 </Users/martin/Documents/GitHub/FYP-report/Algorithms/rthetaline.png>]
-<Algorithms/matchingcqt.png, id=860, 244.7544pt x 117.0774pt>
+ [38 </Users/martin/Documents/GitHub/FYP-report/Algorithms/rthetaline.png> </Users/martin/Documents/GitHub/FYP-report/Algorithms/houghlines.jpg>]
+<Algorithms/matchingcqt.png, id=871, 244.7544pt x 117.0774pt>
 File: Algorithms/matchingcqt.png Graphic file (type png)
 <use Algorithms/matchingcqt.png>
-Package pdftex.def Info: Algorithms/matchingcqt.png  used on input line 642.
+Package pdftex.def Info: Algorithms/matchingcqt.png  used on input line 682.
 (pdftex.def)             Requested size: 247.54149pt x 118.41158pt.
-) [38 </Users/martin/Documents/GitHub/FYP-report/Algorithms/houghlines.jpg> </Users/martin/Documents/GitHub/FYP-report/Algorithms/matchingcqt.png>]
+) [39 </Users/martin/Documents/GitHub/FYP-report/Algorithms/matchingcqt.png>]
 \openout2 = `Benchmark/benchmark.aux'.
 
  (/Users/martin/Documents/GitHub/FYP-report/Benchmark/benchmark.tex
 Chapter 6.
-[39
+[40
 
 
 
-] [40] [41]
-<Benchmark/overallresult.png, id=895, 326.21875pt x 193.72375pt>
+] [41] [42]
+<Benchmark/overallresult.png, id=908, 326.21875pt x 193.72375pt>
 File: Benchmark/overallresult.png Graphic file (type png)
 <use Benchmark/overallresult.png>
 Package pdftex.def Info: Benchmark/overallresult.png  used on input line 171.
 (pdftex.def)             Requested size: 206.28247pt x 122.50478pt.
-<Benchmark/scoresresult.png, id=896, 375.4025pt x 190.7125pt>
+<Benchmark/scoresresult.png, id=909, 375.4025pt x 190.7125pt>
 File: Benchmark/scoresresult.png Graphic file (type png)
 <use Benchmark/scoresresult.png>
 Package pdftex.def Info: Benchmark/scoresresult.png  used on input line 180.
 (pdftex.def)             Requested size: 206.28247pt x 104.79616pt.
- [42 </Users/martin/Documents/GitHub/FYP-report/Benchmark/overallresult.png>]) [43 </Users/martin/Documents/GitHub/FYP-report/Benchmark/scoresresult.png>]
+ [43 </Users/martin/Documents/GitHub/FYP-report/Benchmark/overallresult.png>]) [44 </Users/martin/Documents/GitHub/FYP-report/Benchmark/scoresresult.png>]
 \openout2 = `Results/results.aux'.
 
  (/Users/martin/Documents/GitHub/FYP-report/Results/results.tex
 Chapter 7.
-) [44
+) [45
 
 
 
@@ -1152,7 +1158,7 @@ Chapter 7.
 
  (/Users/martin/Documents/GitHub/FYP-report/FurtherWork/furtherwork.tex
 Chapter 8.
-) [45
+) [46
 
 
 
@@ -1161,30 +1167,30 @@ Chapter 8.
 
  (/Users/martin/Documents/GitHub/FYP-report/Challenges/challenges.tex
 Chapter 9.
-[46
+[47
 
 
 
-]) [47]
+]) [48]
 \openout2 = `ProjectManagement/projectmanagement.aux'.
 
  (/Users/martin/Documents/GitHub/FYP-report/ProjectManagement/projectmanagement.tex
 Chapter 10.
-<ProjectManagement/commitgraph.png, id=930, 961.5925pt x 191.71625pt>
+<ProjectManagement/commitgraph.png, id=942, 961.5925pt x 191.71625pt>
 File: ProjectManagement/commitgraph.png Graphic file (type png)
 <use ProjectManagement/commitgraph.png>
 Package pdftex.def Info: ProjectManagement/commitgraph.png  used on input line 39.
 (pdftex.def)             Requested size: 412.56496pt x 82.255pt.
-[48
+[49
 
 
 
- </Users/martin/Documents/GitHub/FYP-report/ProjectManagement/commitgraph.png>]) [49]
+ </Users/martin/Documents/GitHub/FYP-report/ProjectManagement/commitgraph.png>]) [50]
 \openout2 = `Conclusions/conclusions.aux'.
 
  (/Users/martin/Documents/GitHub/FYP-report/Conclusions/conclusions.tex
 Chapter 11.
-) [50
+) [51
 
 
 
@@ -1192,40 +1198,40 @@ Chapter 11.
 \tf@brf=\write11
 \openout11 = `PhDThesis_example.brf'.
 
- [51
+ [52
 
 
-] [52] [53] [54] [55] [56])
+] [53] [54] [55] [56] [57])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-[57]
+[58]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
  (/Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.aux (/Users/martin/Documents/GitHub/FYP-report/Acknowledgement/acknowledgement.aux) (/Users/martin/Documents/GitHub/FYP-report/Abstract/abstract.aux) (/Users/martin/Documents/GitHub/FYP-report/Introduction/introduction.aux) (/Users/martin/Documents/GitHub/FYP-report/BackgroundTheory/backgroundtheory.aux) (/Users/martin/Documents/GitHub/FYP-report/RelatedWork/relatedwork.aux) (/Users/martin/Documents/GitHub/FYP-report/EvaluationTask/evaluationtask.aux) (/Users/martin/Documents/GitHub/FYP-report/Algorithms/algorithms.aux) (/Users/martin/Documents/GitHub/FYP-report/Benchmark/benchmark.aux) (/Users/martin/Documents/GitHub/FYP-report/Results/results.aux) (/Users/martin/Documents/GitHub/FYP-report/FurtherWork/furtherwork.aux) (/Users/martin/Documents/GitHub/FYP-report/Challenges/challenges.aux) (/Users/martin/Documents/GitHub/FYP-report/ProjectManagement/projectmanagement.aux) (/Users/martin/Documents/GitHub/FYP-report/Conclusions/conclusions.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
 Package rerunfilecheck Info: File `PhDThesis_example.out' has not changed.
-(rerunfilecheck)             Checksum: A28A72E7211EC17D1071CA5CB7A2933B;4025.
+(rerunfilecheck)             Checksum: CF060F0750BA64FF2760932127D58355;4025.
 Package rerunfilecheck Info: File `PhDThesis_example.brf' has not changed.
-(rerunfilecheck)             Checksum: 26A1B230753B0EABCC73B759017DD6DE;5718.
+(rerunfilecheck)             Checksum: 844949D0624456899E32B97618729518;5776.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 36865 strings out of 492649
- 837513 string characters out of 6129622
+ 36874 strings out of 492649
+ 837694 string characters out of 6129622
  1090730 words of memory out of 5000000
- 39652 multiletter control sequences out of 15000+600000
+ 39657 multiletter control sequences out of 15000+600000
  11872 words of font info for 45 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  62i,12n,96p,2045b,1898s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.pdf (64 pages, 7098916 bytes).
+Output written on /Users/martin/Documents/GitHub/FYP-report/PhDThesis_example.pdf (65 pages, 7150753 bytes).
 PDF statistics:
- 1199 PDF objects out of 1200 (max. 8388607)
- 1038 compressed objects within 11 object streams
- 280 named destinations out of 1000 (max. 500000)
- 612 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1212 PDF objects out of 1440 (max. 8388607)
+ 1048 compressed objects within 11 object streams
+ 283 named destinations out of 1000 (max. 500000)
+ 617 words of extra memory for PDF output out of 10000 (max. 10000000)
 

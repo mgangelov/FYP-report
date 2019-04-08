@@ -512,8 +512,48 @@ algorithm is the sum of the scores along the longest identified local alignment.
 \section{Aggregated rank rejector} 
 \label{sec:rankaggregation}
 
-Don't forget to mention that the 2DFT and other weak rejectors have not been
-implemented due to lack of sufficient data
+The aggregated rank rejector applies several rank aggregation techniques in an
+attempt to improve individual results. The algorithm cannot be used on its own
+to identify cover or live songs.
+
+A \textit{rank aggregation rule} is a function takes the ranks of each database
+song within the rankings returned by other rejectors. A new rank is then
+calculated using either the \textit{minimum, maximum, median} or \textit{mean}
+of the previous rank positions. 
+
+The rank aggregation examined combines the results of all rejectors described so
+far. A diagram of the exact rank aggregation is available on figure
+\ref{fig:raschema}. The original algorithm specification includes rank
+aggregation on more rejectors - an average chroma and average number of beats
+weak rejector, as well as a 2D Fourier transform magnitude (2DFTM) rejector
+\cite{osmalsky2016enhancing}. Unfortunately due to lack of sufficient amount of
+training data the implementation of the missing algorithms is not possible
+within the scope of this project.
+
+\begin{figure}[H]
+   \centering 
+   \includegraphics[width=\textwidth]{Algorithms/raschema2.png}
+   \captionof{figure}[Rank aggregation of rejector results]{Rank aggregation applied to the results of rejectors. The types of rules at each stage are decided based on the evaluation metric results they return}
+   \label{fig:raschema}
+\end{figure}
+
+A final rank optimisation step called \textit{local Kemenization} is applied
+following rank aggregation. Kemenization refines the final aggregated ranking by
+taking into account all ranking results returned by the participating rejectors.
+For every pair of adjacent songs $(i, j)$ in the final aggregated ranking, the
+refinement method checks whether a swap would reduce the \textit{aggregated
+Kendall measure}. A Kendal measure takes two rejector rankings is defined by:
+\begin{equation}
+    \tau = \frac{n_c - n_d}{n(n-1)/2}
+\end{equation}
+
+where $n_c$ counts the number of song pairs $(i, j)$ for which $i$ is ahead
+of $j$ in both rankings. The count of song pairs that does not satisfy this
+condition, i.e. $j$ is above $i$ in any of the rankings, is indicated using
+$n_d$. The total number of song pairs is defined by $n$.
+
+The aggregated Kendall measure is defined by the sum of Kendal measures of
+all ranking combinations.
 
 \section{Fingerprint rejector} 
 \label{sec:rafii}

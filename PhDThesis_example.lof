@@ -33,16 +33,17 @@
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Cross-similarity matrix and binary matrix from two cover songs}}{33}{figure.caption.36}
 \contentsline {figure}{\numberline {5.15}{\ignorespaces Smith-Waterman algorithm traversal}}{34}{figure.caption.37}
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Smith-Waterman matrix}}{34}{figure.caption.37}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Adaptive thresholding on CQT spectrogram}}{36}{figure.caption.40}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Hesse normal form of line}}{37}{figure.caption.41}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Sinusoidal curve of all lines within a point in relation to Hough transform}}{38}{figure.caption.42}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Matching phase of the fingerprint rejector}}{38}{figure.caption.44}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Rank aggregation of rejector results}}{35}{figure.caption.38}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Adaptive thresholding on CQT spectrogram}}{37}{figure.caption.41}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Hesse normal form of line}}{38}{figure.caption.42}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Sinusoidal curve of all lines within a point in relation to Hough transform}}{38}{figure.caption.43}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Matching phase of the fingerprint rejector}}{39}{figure.caption.45}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Example of an algorithm result in database}}{42}{figure.caption.45}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Example of verbose similarity score in database}}{43}{figure.caption.46}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Example of an algorithm result in database}}{43}{figure.caption.46}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Example of verbose similarity score in database}}{44}{figure.caption.47}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces GitLab project commit graph}}{48}{figure.caption.48}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces GitLab project commit graph}}{49}{figure.caption.49}
 \addvspace {10\p@ }
